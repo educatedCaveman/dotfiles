@@ -350,9 +350,9 @@ exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminato
 #exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/gnome-terminal --window-with-profile=htop'
 #exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/gnome-terminal --window-with-profile=speedometer-eno1'
 #exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/gnome-terminal --window-with-profile=speedometer-tun0'
-exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p command -e "bash -i -c \"htop && bash\""'
-exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p command -e "bash -i -c \"speedometer -t eno1 -r eno1 && bash\""'
-exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p command -e "bash -i -c \"speedometer -t tun0 -r tun0 && bash\""'
+exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p htop'
+exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p speedometer-eno1'
+exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p speedometer-tun0'
 #exec --no-startup-id exec gtk-redshift -l 39.4:-76.8 -t 6500:4000 -m randr:preserve=1 2>/dev/null &
 exec --no-startup-id exec /home/drake/scripts/displayColors.sh &
 exec --no-startup-id exec /home/drake/scripts/dropbox.py start &
