@@ -15,11 +15,6 @@ maybe include too:
 /etc/fstab
 /etc/anacrontab
 
-#change gnome-terminal to terminator so I can backup configs
-terminator -p command -e "bash -i -c \"htop && bash\""
-terminator -p command -e "bash -i -c \"speedometer -t eno1 -r eno1 && bash\""
-terminator -p command -e "bash -i -c \"speedometer -t tun0 -r tun0 && bash\""
-
 #links:
 ln -s /home/drake/dotfiles/init.vim /home/drake/.config/nvim/init.vim
 ln -s /home/drake/dotfiles/init.vim /home/drake/.nvimrc
