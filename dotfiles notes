@@ -1,0 +1,32 @@
+dotfiles:
+
+.config/i3/config
+.py3config.conf
+.i3status.conf
+.vimrc
+.config/nvim/init.vim
+.bash_aliases
+.bashrc
+.config/terminator/config
+
+maybe include too:
+/etc/X11/xorg.conf.d/90-evoluent.conf
+/etc/hosts
+/etc/fstab
+/etc/anacrontab
+
+#change gnome-terminal to terminator so I can backup configs
+terminator -p command -e "bash -i -c \"htop && bash\""
+terminator -p command -e "bash -i -c \"speedometer -t eno1 -r eno1 && bash\""
+terminator -p command -e "bash -i -c \"speedometer -t tun0 -r tun0 && bash\""
+
+#links:
+ln -s /home/drake/dotfiles/init.vim /home/drake/.config/nvim/init.vim
+ln -s /home/drake/dotfiles/init.vim /home/drake/.nvimrc
+ln -s /home/drake/dotfiles/vimrc /home/drake/.vimrc
+ln -s /home/drake/dotfiles/i3config.NeonBlack /home/drake/.config/i3/config
+ln -s /home/drake/dotfiles/py3status.conf.NeonBlack /home/drake/.py3status.conf
+ln -s /home/drake/dotfiles/i3status.conf /home/drake/.i3status.conf
+ln -s /home/drake/dotfiles/bash_aliases.NeonBlack /home/drake/.bash_aliases
+ln -s /home/drake/dotfiles/bashrc.NeonBlack /home/drake/.bashrc
+ln -s /home/drake/dotfiles/terminator.config /home/drake/.config/terminator/config
