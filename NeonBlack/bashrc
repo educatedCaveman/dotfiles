@@ -145,7 +145,7 @@ xterm*|rxvt*|screen*)
 esac
 
 #for funsies:
-./scripts/spaceInvadersColors.sh
+/home/drake/scripts/spaceInvadersColors.sh
 
 #user aliases:
 #alias psgrep='ps -e | grep'
