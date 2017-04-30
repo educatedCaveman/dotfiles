@@ -17,3 +17,4 @@ set clipboard=unnamed
 set laststatus=2
 set clipboard+=unnamedplus
 set ru
+set backspace=indent

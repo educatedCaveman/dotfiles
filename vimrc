@@ -18,3 +18,4 @@ set clipboard=unnamed
 set laststatus=2
 set clipboard+=unnamedplus
 set directory=~/.vim/tmp
+set backspace=indent
