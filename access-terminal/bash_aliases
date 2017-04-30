@@ -1,0 +1,6 @@
+alias psgrep='ps -e | grep'
+alias vpnstop='sudo systemctl stop openvpn@Chicago.service'
+alias vpnstart='sudo systemctl start openvpn@Chicago.service'
+alias vpnstatus='systemctl status openvpn@Chicago.service'
+alias vpnkill='sudo killall openvpn'
+alias speedo='speedometer -t tun0 -r tun0 -t wlan1 -r wlan1'

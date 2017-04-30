@@ -1,0 +1,352 @@
+################################################################################
+# Modifier                                                                     #
+################################################################################
+
+set $mod Mod1
+set $win Mod4
+
+#ALT passthrough
+set $mode_ALT ALT: 
+bindsym $mod+End mode "$mode_ALT"
+mode "$mode_ALT" {
+    bindsym Escape mode "default"
+}
+
+################################################################################
+# Look & Feel                                                                  #
+################################################################################
+
+#default layout:
+workspace_layout tabbed
+
+#main monitor bar.  shows everything
+bar {
+    status_command py3status -c /home/drake/.py3status.conf
+    #status_command i3status
+ 	font pango:Hack 10 
+	strip_workspace_numbers yes
+	colors {
+		background #2b2b2b
+        statusline #dedede
+       	separator  #555555
+
+		#color class	   border  back.   text	
+	    #focused_workspace   #4e9a06 #4e9a06 #ffffff
+	    focused_workspace   #a0a0a0 #a0a0a0 #000000
+	    #focused_workspace  #007030 #007030 #ffffff
+        active_workspace   #555555 #555555 #ffffff
+	    inactive_workspace #2b2b2b #2b2b2b #a0a0a0
+        urgent_workspace   #2f343a #900000 #ffffff
+	}
+}
+
+#colors:	        	border	backgr.	text	indicator
+#client.focused         	#007030 #007030 #ffffff #2b2b2b
+client.focused         	#a0a0a0 #a0a0a0 #000000 #2b2b2b
+#client.focused         	#4e9a06 #4e9a06 #2b2b2b #ffffff
+client.focused_inactive #2b2b2b #404040 #ffffff #888888
+client.unfocused       	#2b2b2b #404040 #a0a0a0 #2b2b2b
+client.urgent           #900000 #900000 #ffffff #2b2b2b
+
+#font
+font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+font pango:Hack 11
+
+#borders
+#for_window [class="^.*"] border pixel 5 
+new_window normal 0
+new_float normal 5
+
+################################################################################
+# Window Manipulation                                                          #
+################################################################################
+
+# kill focused window
+bindsym $mod+Shift+q kill
+bindsym $mod+q kill
+
+# change focus
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+h split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+bindsym $mod+Shift+f fullscreen global
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+bindsym $mod+shift+a focus child
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+#adjust borders mode
+set $mode_borders Borders: +|-|0
+bindsym $win+$mod+b mode "$mode_borders"
+mode "$mode_borders" {
+    bindsym 0   border normal 0
+    bindsym 1   border normal 1
+    bindsym 2   border normal 2
+    bindsym 3   border normal 3
+    bindsym 4   border normal 4
+    bindsym 5   border normal 5
+    bindsym 6   border normal 6
+    bindsym 7   border normal 7
+    bindsym 8   border normal 8
+    bindsym 9   border normal 9
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+} 
+
+################################################################################
+# Floating                                                                     #
+################################################################################
+
+floating_modifier $mod
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+#move floating windows
+bindsym $win+m mode "move" focus floating
+mode "move" {
+    bindsym $mod+Tab focus right
+
+    bindsym Left    move left 40
+    bindsym Down    move down 40
+    bindsym Up      move up 40 
+    bindsym Right   move right 40
+
+    bindsym d     move left 40
+    bindsym s     move down 40
+    bindsym w     move up 40
+    bindsym a     move right 40
+    
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+################################################################################
+# Workspaces                                                                   #
+################################################################################
+
+# switch to workspace
+bindsym $mod+1 workspace "1: I "
+bindsym $mod+2 workspace "2: II "
+bindsym $mod+3 workspace "3: III "
+bindsym $mod+4 workspace "4: IV "
+bindsym $mod+5 workspace "5: V "
+bindsym $mod+6 workspace "6: VI "
+bindsym $mod+7 workspace "7: VII "
+bindsym $mod+8 workspace "8: VIII "
+bindsym $mod+9 workspace "9: IX "
+bindsym $mod+0 workspace "0: X "
+
+#special workspaces
+bindsym $mod+m workspace "12: Mail "
+bindsym $mod+u workspace "13: Music "
+bindsym $mod+p workspace "15: pr0n "
+bindsym $mod+n workspace "20: VNC "
+bindsym $mod+y workspace "30: Video "
+bindsym $mod+g workspace "40: Steam "
+
+#move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace "1: I "
+bindsym $mod+Shift+2 move container to workspace "2: II "
+bindsym $mod+Shift+3 move container to workspace "3: III "
+bindsym $mod+Shift+4 move container to workspace "4: IV "
+bindsym $mod+Shift+5 move container to workspace "5: V "
+bindsym $mod+Shift+6 move container to workspace "6: VI "
+bindsym $mod+Shift+7 move container to workspace "7: VII "
+bindsym $mod+Shift+8 move container to workspace "8: VIII "
+bindsym $mod+Shift+9 move container to workspace "9: IX "
+bindsym $mod+Shift+0 move container to workspace "0: X "
+
+#move focused container to special workspace
+bindsym $mod+Shift+m move container to workspace "12: Mail "
+bindsym $mod+Shift+u move container to workspace "13: Music "
+bindsym $mod+Shift+p move container to workspace "15: pr0n "
+bindsym $mod+Shift+n move container to workspace "20: VNC "
+bindsym $mod+Shift+y move container to workspace "30: Video "
+bindsym $mod+Shift+g move container to workspace "40: Steam "
+
+#move workspace mode
+bindsym $mod+$win+Shift+m mode "$move_WS"
+mode "$move_WS" {
+    bindsym 1 move container to workspace "1: I "
+    bindsym 2 move container to workspace "2: II "
+    bindsym 3 move container to workspace "3: III "
+    bindsym 4 move container to workspace "4: IV "
+    bindsym 5 move container to workspace "5: V "
+    bindsym 6 move container to workspace "6: VI "
+    bindsym 7 move container to workspace "7: VII "
+    bindsym 8 move container to workspace "8: VIII "
+    bindsym 9 move container to workspace "9: IX "
+    bindsym 0 move container to workspace "0: X "
+    bindsym m move container to workspace "12: Mail "
+    bindsym u move container to workspace "13: Music "
+    bindsym p move container to workspace "15: pr0n "
+    bindsym n move container to workspace "20: VNC "
+    bindsym y move container to workspace "30: Video "
+    bindsym g move container to workspace "40: Steam "
+
+    bindsym Escape mode "default"
+    bindsym Return mode "default"
+}
+
+#move workspaces
+bindsym $win+Left move workspace to output left
+bindsym $win+Right move workspace to output right
+bindsym $win+Up move workspace to output up
+bindsym $win+Down move workspace to output down
+
+#scratchpad
+bindsym XF86Search scratchpad show
+bindsym $mod+XF86Search move scratchpad
+bindsym $win+XF86Search exec /home/drake/scripts/scratchpad.sh
+
+################################################################################
+# Application Launching                                                        #
+################################################################################
+
+# start a terminal
+#bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec terminator
+
+# start dmenu (a program launcher)
+#bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec /home/drake/scripts/rofi.sh
+#bindsym $mod+d exec rofi -show run -bg "#2b2b2b" -bc "#dedede" -fg "#dedede" -hlfg "#2b2b2b" -hlbg "#dedede" -bw 5
+
+# Kupfer
+bindsym $win+d exec kupfer
+
+#lanch calculator in floating mode
+bindsym $win+c exec gnome-calculator
+for_window [title="Calculator"] floating enable
+
+#launch browser
+bindsym $win+b exec firefox
+bindsym $mod+b exec google-chrome-stable
+
+#screenshots
+bindsym Print exec scrot -m		#whole screen
+bindsym $mod+Print exec scrot -s	#select area
+
+#settings
+bindsym $win+s exec /home/drake/scripts/unity-control-center.sh
+bindsym $win+$mod+s exec unity-tweak-tool
+
+#file browser
+bindsym $win+f exec nautilus --no-desktop
+bindsym $win+$mod+f exec sudo nautilus --no-desktop
+
+#lauch synaptic
+bindsym $win+Escape exec gksudo synaptic & 
+
+#Ubuntu Software Center
+bindsym $win+$mod+u exec gksudo software-center &
+
+#graphical text editor
+bindsym $win+t exec gedit &
+
+#autostart
+exec --no-startup-id exec unity-settings-daemon &
+#exec --no-startup-id i3-msg 'workspace "12: Mail "; exec /usr/bin/thunderbird'
+exec --no-startup-id i3-msg 'workspace "12: Mail "; exec /usr/bin/evolution'
+exec --no-startup-id exec gtk-redshift -l 39.4:-76.6 -t 6500:4000 -m randr:preserve=1 &
+#exec --no-startup-id i3-msg 'workspace "2: II "; exec gnome-terminal --window-with-profile=htop'
+#exec --no-startup-id i3-msg 'workspace "2: II "; exec gnome-terminal --window-with-profile=speedometer'
+exec --no-startup-id i3-msg 'workspace "2: II "; exec terminator -p htop'
+exec --no-startup-id i3-msg 'workspace "2: II "; exec terminator -p speedometer'
+exec --no-startup-id exec /home/drake/.dropbox-dist/dropboxd &
+exec --no-startup-id i3-msg 'workspace "1: I "; exec google-chrome-stable'
+exec --no-startup-id nm-applet &
+exec --no-startup-id compton -f -D 1 --vsync none 2>/dev/null &
+exec --no-startup-id nitrogen --restore
+#exec --no-startup-id xautolock -corners ---- -cornersize 100 -time 15 -locker /home/drake/scripts/lock.sh &
+
+################################################################################
+# power management                                                             #
+# shutdown, reboot, lock, hibernate/suspend, etc.                              #
+################################################################################
+
+#hibernate
+bindsym $mod+Pause exec /home/drake/scripts/hibernateAndLock.sh
+
+#lock screen
+#bindsym $win+l exec lock
+bindsym $win+l exec /home/drake/scripts/lock.sh
+
+#reboot
+bindsym $mod+$win+r exec sudo reboot now
+
+#shutdown
+bindsym $mod+$win+Escape exec sudo shutdown -h now
+
+################################################################################
+# others/misc.                                                                 #
+################################################################################
+
+#audio
+bindsym F3 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}')  +5%
+bindsym F2 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}')  -5%
+bindsym F1 exec pactl set-sink-mute $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}') toggle
+exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}') 70%
+ 
+#bindsym F12 exec xbacklight -inc 5
+#bindsym F11 exec xbacklight -dec 5
+bindsym F12 exec sudo /home/drake/scripts/bright_up.sh
+bindsym F11 exec sudo /home/drake/scripts/bright_down.sh
+ 
+#dont work yet
+#bindsym XF86AudioPlay exec playerctl play
+#bindsym XF86AudioPause exec playerctl pause
+#bindsym XF86AudioNext exec playerctl next
+#bindsym XF86AudioPrev exec playerctl previous
+
+
+#logging
+exec shmlog $((128*1024*1024))
+exec shmlog on
+exec debuglog on
