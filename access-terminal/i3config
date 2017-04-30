@@ -22,7 +22,6 @@ workspace_layout tabbed
 #main monitor bar.  shows everything
 bar {
     status_command py3status -c /home/drake/.py3status.conf
-    #status_command i3status
  	font pango:Hack 10 
 	strip_workspace_numbers yes
 	colors {
@@ -31,9 +30,7 @@ bar {
        	separator  #555555
 
 		#color class	   border  back.   text	
-	    #focused_workspace   #4e9a06 #4e9a06 #ffffff
 	    focused_workspace   #a0a0a0 #a0a0a0 #000000
-	    #focused_workspace  #007030 #007030 #ffffff
         active_workspace   #555555 #555555 #ffffff
 	    inactive_workspace #2b2b2b #2b2b2b #a0a0a0
         urgent_workspace   #2f343a #900000 #ffffff
@@ -41,9 +38,7 @@ bar {
 }
 
 #colors:	        	border	backgr.	text	indicator
-#client.focused         	#007030 #007030 #ffffff #2b2b2b
 client.focused         	#a0a0a0 #a0a0a0 #000000 #2b2b2b
-#client.focused         	#4e9a06 #4e9a06 #2b2b2b #ffffff
 client.focused_inactive #2b2b2b #404040 #ffffff #888888
 client.unfocused       	#2b2b2b #404040 #a0a0a0 #2b2b2b
 client.urgent           #900000 #900000 #ffffff #2b2b2b
@@ -53,7 +48,6 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 font pango:Hack 11
 
 #borders
-#for_window [class="^.*"] border pixel 5 
 new_window normal 0
 new_float normal 5
 
@@ -250,13 +244,10 @@ bindsym $win+XF86Search exec /home/drake/scripts/scratchpad.sh
 ################################################################################
 
 # start a terminal
-#bindsym $mod+Return exec gnome-terminal
 bindsym $mod+Return exec terminator
 
 # start dmenu (a program launcher)
-#bindsym $mod+d exec dmenu_run
 bindsym $mod+d exec /home/drake/scripts/rofi.sh
-#bindsym $mod+d exec rofi -show run -bg "#2b2b2b" -bc "#dedede" -fg "#dedede" -hlfg "#2b2b2b" -hlbg "#dedede" -bw 5
 
 # Kupfer
 bindsym $win+d exec kupfer
@@ -292,11 +283,8 @@ bindsym $win+t exec gedit &
 
 #autostart
 exec --no-startup-id exec unity-settings-daemon &
-#exec --no-startup-id i3-msg 'workspace "12: Mail "; exec /usr/bin/thunderbird'
 exec --no-startup-id i3-msg 'workspace "12: Mail "; exec /usr/bin/evolution'
 exec --no-startup-id exec gtk-redshift -l 39.4:-76.6 -t 6500:4000 -m randr:preserve=1 &
-#exec --no-startup-id i3-msg 'workspace "2: II "; exec gnome-terminal --window-with-profile=htop'
-#exec --no-startup-id i3-msg 'workspace "2: II "; exec gnome-terminal --window-with-profile=speedometer'
 exec --no-startup-id i3-msg 'workspace "2: II "; exec terminator -p htop'
 exec --no-startup-id i3-msg 'workspace "2: II "; exec terminator -p speedometer'
 exec --no-startup-id exec /home/drake/.dropbox-dist/dropboxd &
@@ -315,7 +303,6 @@ exec --no-startup-id nitrogen --restore
 bindsym $mod+Pause exec /home/drake/scripts/hibernateAndLock.sh
 
 #lock screen
-#bindsym $win+l exec lock
 bindsym $win+l exec /home/drake/scripts/lock.sh
 
 #reboot
@@ -333,19 +320,11 @@ bindsym F3 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | 
 bindsym F2 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}')  -5%
 bindsym F1 exec pactl set-sink-mute $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}') toggle
 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}') 70%
- 
-#bindsym F12 exec xbacklight -inc 5
-#bindsym F11 exec xbacklight -dec 5
+
+#backlight
 bindsym F12 exec sudo /home/drake/scripts/bright_up.sh
 bindsym F11 exec sudo /home/drake/scripts/bright_down.sh
  
-#dont work yet
-#bindsym XF86AudioPlay exec playerctl play
-#bindsym XF86AudioPause exec playerctl pause
-#bindsym XF86AudioNext exec playerctl next
-#bindsym XF86AudioPrev exec playerctl previous
-
-
 #logging
 exec shmlog $((128*1024*1024))
 exec shmlog on
