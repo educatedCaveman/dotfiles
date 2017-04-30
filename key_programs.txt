@@ -1,0 +1,42 @@
+#key things to install
+
+#programs
+py3status
+i3-wm (and all associated things)
+i3status
+xdotool
+terminator
+rofi
+google-chrome
+maim
+unity-tweak-tool
+gksu
+nitrogen
+evolution
+RealVNC Viewer
+remmina
+rhythmbox
+redshift
+gtk-redshift
+dropbox
+speedometer
+ifconfig
+htop
+screenfetch
+xautolock
+compton
+whatsie (optional)
+synaptic (optional)
+ffmpeg
+lm-sensors
+nfs-common
+cifs-utils
+nvim
+vim
+openvpn
+nm-applet (laptop only)
+
+#extras:
+Hack (font)
+arc-dark-grey (GTK theme)
+ultra flat icons (via noobslab)
