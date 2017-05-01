@@ -342,6 +342,7 @@ exec --no-startup-id i3-msg 'workspace "13: Music "; exec /usr/bin/rhythmbox'
 exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p default'
 exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p speedometer-eno1'
 exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p speedometer-tun0'
+exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p htop'
 exec --no-startup-id exec /home/drake/scripts/displayColors.sh &
 exec --no-startup-id exec /home/drake/scripts/dropbox.py start &
 exec --no-startup-id xautolock -corners ---- -cornersize 100 -time 30 -locker /home/drake/scripts/lock.sh &
