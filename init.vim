@@ -3,6 +3,7 @@ syntax enable
 set nocp
 set wildmenu
 set relativenumber
+set number
 set ignorecase
 set smartcase
 set incsearch
