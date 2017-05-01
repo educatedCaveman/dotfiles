@@ -2,7 +2,7 @@ syntax enable
 :color peachpuff
 set nocp
 set wildmenu
-set number
+set relativenumber
 set ignorecase
 set smartcase
 set incsearch
