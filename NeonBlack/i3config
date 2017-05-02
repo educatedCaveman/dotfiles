@@ -1,4 +1,4 @@
-##############################################################################
+################################################################################
 # Modifier                                                                     #
 ################################################################################
 
@@ -140,7 +140,7 @@ mode " resize " {
 bindsym $mod+r mode " resize "
 
 #adjust borders mode
-bindsym $win+$mod+b mode " Borders: +|-|0 "
+bindsym $win+b mode " Borders: +|-|0 "
 mode " Borders: +|-|0 " {
     bindsym 0   border normal 0
     bindsym 1   border normal 1
@@ -301,7 +301,7 @@ for_window [class="gnome-calculator"] floating enable
 #for_window [class="gnome-calculator" window_type="normal"] floating enable border normal 5
 
 #launch browser
-bindsym $win+b exec firefox
+#bindsym $win+b exec firefox
 bindsym $mod+b exec google-chrome-stable
 bindsym $mod+Shift+b exec chromium-browser
 
@@ -336,18 +336,22 @@ for_window [class="Whatsie" window_type="normal"] move scratchpad
 #autostart
 exec --no-startup-id exec /home/drake/scripts/unityAndNitrogen.sh &
 exec --no-startup-id i3-msg 'workspace "12: Mail "; exec /usr/bin/evolution'
-exec --no-startup-id i3-msg 'workspace "20: VNC "; exec /usr/bin/vncviewer'
-exec --no-startup-id i3-msg 'workspace "20: VNC "; exec /usr/bin/remmina'
 exec --no-startup-id i3-msg 'workspace "13: Music "; exec /usr/bin/rhythmbox'
-exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p default'
+exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -l scratchpad'
 exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p speedometer-eno1'
 exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p speedometer-tun0'
 exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p htop'
 exec --no-startup-id exec /home/drake/scripts/displayColors.sh &
 exec --no-startup-id exec /home/drake/scripts/dropbox.py start &
-exec --no-startup-id xautolock -corners ---- -cornersize 100 -time 30 -locker /home/drake/scripts/lock.sh &
-exec --no-startup-id compton -f -D 5 --vsync none 2>/dev/null &
-exec --no-startup-id i3-msg 'workspace "0: X "; exec google-chrome-stable'
+exec --no-startup-id /usr/bin/xautolock -corners ---- -cornersize 100 -time 30 -locker /home/drake/scripts/lock.sh &
+exec --no-startup-id /usr/bin/compton -f -D 5 --vsync none 2>/dev/null &
+exec --no-startup-id i3-msg 'workspace "0: X "; exec /usr/bin/google-chrome-stable'
+exec --no-startup-id i3-msg 'workspace "20: VNC "; exec /usr/bin/vncviewer'
+exec --no-startup-id i3-msg 'workspace "20: VNC "; exec /usr/bin/remmina'
+
+#application-WS mapping
+assign [class="VNC Viewer"] → "20: VNC "
+assign [class="Remmina"] → "20: VNC "
 
 #workspace windows
 workspace "12: Mail " output DisplayPort-4
