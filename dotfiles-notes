@@ -8,6 +8,7 @@ dotfiles:
 .bash_aliases
 .bashrc
 .config/terminator/config
+.tmux.conf
 
 maybe include too:
 /etc/X11/xorg.conf.d/90-evoluent.conf
