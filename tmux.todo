@@ -7,3 +7,5 @@ switch to window N
 #switch to prev window
 
 indicate if in command mode or not
+
+fix occasional status line blinking
