@@ -1,0 +1,3 @@
+need 2 ssh keys.
+1 for general use, password protected
+a second for local use only, no password, so I can auto-login to local servers
