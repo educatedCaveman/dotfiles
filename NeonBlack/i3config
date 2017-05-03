@@ -287,23 +287,17 @@ bindsym $win+F9 exec /home/drake/scripts/scratchpad.sh
 ################################################################################
 
 # start a terminal
-#bindsym $mod+Return exec gnome-terminal
 bindsym $mod+Return exec terminator
 
 # start dmenu (a program launcher)
-#bindsym $mod+d exec dmenu_run
 bindsym $mod+d exec /home/drake/scripts/rofi.sh
-bindsym $mod+space exec /home/drake/scripts/rofi.sh
 
 #lanch calculator in floating mode
 bindsym $win+c exec gnome-calculator
 for_window [class="gnome-calculator"] floating enable
-#for_window [class="gnome-calculator" window_type="normal"] floating enable border normal 5
 
 #launch browser
-#bindsym $win+b exec firefox
 bindsym $mod+b exec google-chrome-stable
-bindsym $mod+Shift+b exec chromium-browser
 
 #screenshots
 bindsym Print exec maim /home/drake/Screenshots/$(date +%Y-%m-%d-%R:%S).png     #whole screen
@@ -364,7 +358,7 @@ workspace "0: Monitoring " output DisplayPort-5
 workspace "1: Remote " output DisplayPort-5
 workspace "20: Info " output DisplayPort-4
 workspace "10: L.N.D. " output DisplayPort-3
-#workspace "30: Steam " output DisplayPort-3
+workspace "30: Steam " output DisplayPort-3
 
 ################################################################################
 # power management                                                             #
