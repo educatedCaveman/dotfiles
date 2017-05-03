@@ -114,8 +114,7 @@ fi
 
 
 #usef added:
-
-screenfetch
+neofetch
 
 #editor:
 export EDITOR=vim
