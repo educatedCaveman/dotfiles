@@ -1,9 +1,9 @@
 keys to remap
 
-kill current window
+#kill current window
 
 switch to window N
-switch to next window
-switch to prev window
+#switch to next window
+#switch to prev window
 
 indicate if in command mode or not
