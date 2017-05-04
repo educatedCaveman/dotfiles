@@ -10,11 +10,11 @@ if [ "${tmuxpid}" ];
 then
     #stuff if running:
     echo "tmux is running..."
-    echo "to attach, use: 'tmux attach -s monitor-vinculum'"
+    echo "to attach, use: 'tmux attach -t monitor-vinculum'"
 else
     #stuff if not running:
     echo "tmux is not running..."
-    echo "to start and attach, use: 'tmux attach -s monitor-vinculum'"
+    echo "to start and attach, use: 'tmux attach -t monitor-vinculum'"
 fi
 
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
