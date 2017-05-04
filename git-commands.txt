@@ -1,0 +1,15 @@
+#############################
+# common git commands/info: #
+#############################
+
+#commands:
+git pull origin master
+git add *
+git commit -m "message"
+git push origin master
+
+git cp <source> <destination>
+git rm <source> <destination>
+
+#SSH:
+https://help.github.com/articles/connecting-to-github-with-ssh/
