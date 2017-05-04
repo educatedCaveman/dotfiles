@@ -301,7 +301,8 @@ bindsym $mod+b exec google-chrome-stable
 
 #screenshots
 bindsym Print exec maim /home/drake/Screenshots/$(date +%Y-%m-%d-%R:%S).png     #whole screen
-bindsym $win+Print exec maim -i $(xdotool getactivewindow) /home/drake/Screenshots/$(date +%Y-%m-%d-%R:%S).png      #active window
+bindsym $win+F1 exec escrotum -x $(xdotool getactivewindow) /home/drake/Screenshots/$(date +%Y-%m-%d-%R:%S).png &>/dev/null
+bindsym $win+F2 exec maim -s /home/drake/Screenshots/$(date +%Y-%m-%d-%R:%S).png 
 
 #settings
 bindsym $win+s exec /home/drake/scripts/unity-control-center.sh &
