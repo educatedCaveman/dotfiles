@@ -13,3 +13,4 @@ git rm <source> <destination>
 
 #SSH:
 https://help.github.com/articles/connecting-to-github-with-ssh/
+https://help.github.com/articles/changing-a-remote-s-url/
