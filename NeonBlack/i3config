@@ -340,8 +340,8 @@ exec --no-startup-id exec /home/drake/scripts/displayColors.sh &
 exec --no-startup-id exec /home/drake/scripts/dropbox.py start &
 exec --no-startup-id /usr/bin/xautolock -corners ---- -cornersize 100 -time 30 -locker /home/drake/scripts/lock.sh &
 exec --no-startup-id /usr/bin/compton -f -D 5 --vsync none 2>/dev/null &
-exec --no-startup-id i3-msg 'workspace "20: VNC "; exec /usr/bin/vncviewer'
-exec --no-startup-id i3-msg 'workspace "20: VNC "; exec /usr/bin/remmina'
+#exec --no-startup-id i3-msg 'workspace "20: VNC "; exec /usr/bin/vncviewer'
+#exec --no-startup-id i3-msg 'workspace "20: VNC "; exec /usr/bin/remmina'
 exec --no-startup-id i3-msg 'workspace "0: X "; exec /usr/bin/google-chrome-stable'
 
 #application-WS mapping
