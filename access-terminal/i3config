@@ -112,7 +112,7 @@ bindsym $mod+r mode "resize"
 
 #adjust borders mode
 set $mode_borders Borders: +|-|0
-bindsym $win+$mod+b mode "$mode_borders"
+bindsym $win+b mode "$mode_borders"
 mode "$mode_borders" {
     bindsym 0   border normal 0
     bindsym 1   border normal 1
@@ -285,8 +285,9 @@ bindsym $win+t exec gedit &
 exec --no-startup-id exec unity-settings-daemon &
 exec --no-startup-id i3-msg 'workspace "12: Mail "; exec /usr/bin/evolution'
 exec --no-startup-id exec gtk-redshift -l 39.4:-76.6 -t 6500:4000 -m randr:preserve=1 &
-exec --no-startup-id i3-msg 'workspace "2: II "; exec terminator -p htop'
-exec --no-startup-id i3-msg 'workspace "2: II "; exec terminator -p speedometer'
+exec --no-startup-id i3-msg 'workspace "9: IX "; exec terminator -p htop'
+exec --no-startup-id i3-msg 'workspace "9: IX "; exec terminator -p speedometer'
+exec --no-startup-id i3-msg 'workspace "2: II "; exec terminator -p default' #update to have tabbed profile
 exec --no-startup-id exec /home/drake/.dropbox-dist/dropboxd &
 exec --no-startup-id i3-msg 'workspace "1: I "; exec google-chrome-stable'
 exec --no-startup-id nm-applet &
