@@ -147,12 +147,6 @@ esac
 #for funsies:
 /home/drake/scripts/spaceInvadersColors.sh
 
-#user aliases:
-#alias psgrep='ps -e | grep'
-#alias vpnstop='sudo systemctl stop openvpn@Chicago.service'
-#alias vpnstart='sudo systemctl start openvpn@Chicago.service'
-#alias vpnstatus='systemctl status openvpn@Chicago.service'
-
 #colored man pages:
 man() {
     env \
