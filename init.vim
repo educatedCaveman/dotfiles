@@ -17,3 +17,14 @@ set clipboard=unnamed
 set laststatus=2
 set clipboard+=unnamedplus
 set ru
+
+"sudo after opening:
+cmap w!! w !sudo tee >/dev/null %
+
+"formatting brackets and such:
+inoremap {<Tab> {}<Esc>i
+inoremap {<CR> {<CR>}<Esc>ko<Tab>
+inoremap (<Tab> ()<Esc>i
+inoremap (<CR> (<CR>)<Esc>ko<Tab>
+inoremap [<Tab> []<Esc>i
+inoremap [<CR> [<CR>]<Esc>ko<Tab>
