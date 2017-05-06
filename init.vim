@@ -88,6 +88,10 @@ set shiftwidth=4
 
 "tabs:
 set showtabline=1
+nmap <Tab> :tabn<CR>
+nmap <S-Tab> :tabp<CR>
+"open a new tab and open NERDTree:
+nmap nt :tabe<CR><F5>  
 
 "line wrapping:
 set wrap
