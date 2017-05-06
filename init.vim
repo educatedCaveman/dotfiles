@@ -10,11 +10,13 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+
+"core plugins
 Plugin 'scrooloose/nerdcommenter'   "comments
 Plugin 'scrooloose/nerdtree'        "file manager
-Plugin 'flazz/vim-colorschemes'
 
 "colorschemes:
+Plugin 'flazz/vim-colorschemes'
 Plugin 'romainl/Apprentice'
 
 " All of your Plugins must be added before the following line
@@ -47,11 +49,13 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 "appearance:
 syntax enable
-":color peachpuff
 colorscheme apprentice
+
+"line numbering:
 set relativenumber
 set number
-set nowrap
+autocmd InsertEnter * :set norelativenumber "dont want relative number in insert mode
+autocmd InsertLeave * :set relativenumber   "DO want relative number in command mode
 
 "status line
 set showcmd
@@ -69,10 +73,12 @@ set tabstop=4
 set softtabstop=0
 set expandtab
 set shiftwidth=4
-"set autoindent
+
+"line wrapping:
+set wrap
+set showbreak=\ \ \ \   "indent wrapped lines
 
 "misc.:
-"set nocp "duplicate from Vundle config
 set clipboard=unnamed
 set clipboard+=unnamedplus
 
