@@ -18,6 +18,12 @@ Plugin 'scrooloose/nerdtree'        "file manager
 "colorschemes:
 Plugin 'flazz/vim-colorschemes'
 Plugin 'romainl/Apprentice'
+Plugin 'xero/blaquemagick.vim'
+Plugin 'xero/sourcerer.vim'
+Plugin 'encody/vim-colors'
+Plugin 'Konstruktionist/vim'
+Plugin 'marcopaganini/termschool-vim-theme'
+Plugin 'NLKNguyen/papercolor-theme'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
