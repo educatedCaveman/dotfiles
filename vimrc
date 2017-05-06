@@ -1,4 +1,6 @@
-"vundle:
+"""""""""""""""""""""""""
+" vundle configuration: "
+"""""""""""""""""""""""""
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -9,45 +11,97 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-"comments:
-Plugin 'scrooloose/nerdcommenter'
-    let mapleader=","
-    set timeout timeoutlen=1500
+"core plugins
+Plugin 'scrooloose/nerdcommenter'   "comments
+Plugin 'scrooloose/nerdtree'        "file manager
+
+"colorschemes:
+Plugin 'flazz/vim-colorschemes'
+Plugin 'romainl/Apprentice'
+Plugin 'xero/blaquemagick.vim'
+Plugin 'xero/sourcerer.vim'
+Plugin 'encody/vim-colors'
+Plugin 'Konstruktionist/vim'
+Plugin 'marcopaganini/termschool-vim-theme'
+Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'w0ng/vim-hybrid'
+Plugin 'tyrannicaltoucan/vim-deep-space'
+Plugin 'rakr/vim-two-firewatch'
+Plugin 'kamwitsta/nordisk'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
 filetype plugin on
 
-"non-Plugin stuff here:
+"""""""""""""""""""
+" Plugin options: "
+"""""""""""""""""""
+
+"nerdCommenter:
+let mapleader=","
+set timeout timeoutlen=1500
+let g:NERDDefaultAlign = 'left'
+let g:NERDCommentEmptyLines = 1
+
+"nerdTree:
+nnoremap <F5> :NERDTreeToggle<CR> 
+let NERDTreeShowHidden=1
+"autostart if no file specified:
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+"quit if only nerdtree showing:
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+""""""""""""""""""""""""""
+" non-Plugin stuff here: "
+""""""""""""""""""""""""""
+
+"appearance:
 syntax enable
-:color peachpuff
-set nocp
-set wildmenu
+colorscheme apprentice
+"set background=dark
+"colorscheme hybrid
+
+"line numbering:
 set relativenumber
+set number
+autocmd InsertEnter * :set norelativenumber "dont want relative number in insert mode
+autocmd InsertLeave * :set relativenumber   "DO want relative number in command mode
+
+"status line
+set showcmd
+set laststatus=2
+set ru  "ruler
+
+"searching:
+set wildmenu
 set ignorecase
 set smartcase
 set incsearch
-set nowrap
+
+"indentation and tabbing:
 set tabstop=4
 set softtabstop=4
 set expandtab
 set shiftwidth=4
-set showcmd
+
+"line wrapping:
+set wrap
+set showbreak=\ \ \ \   "indent wrapped lines
+
+"misc.:
 set clipboard=unnamed
-set laststatus=2
 set clipboard+=unnamedplus
-set directory=~/.vim/tmp
 
 "sudo after opening:
 cmap w!! w !sudo tee >/dev/null %
 
 "formatting brackets and such:
-inoremap {<Tab> {}<Esc>i
+inoremap {<Space> {}<Esc>i
 inoremap {<CR> {<CR>}<Esc>ko<Tab>
-inoremap (<Tab> ()<Esc>i
+inoremap (<Space> ()<Esc>i
 inoremap (<CR> (<CR>)<Esc>ko<Tab>
-inoremap [<Tab> []<Esc>i
+inoremap [<Space> []<Esc>i
 inoremap [<CR> [<CR>]<Esc>ko<Tab>
 
