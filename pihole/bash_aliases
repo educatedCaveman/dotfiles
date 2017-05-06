@@ -6,5 +6,4 @@ alias vpnstatus='systemctl status openvpn@Miami.service'
 alias vpnkill='sudo killall openvpn'
 alias please='sudo $( history -p !!)'
 alias fuck='sudo $( history -p !!)'
-alias fucking='sudo'
-
+aias fucking='sudo'
