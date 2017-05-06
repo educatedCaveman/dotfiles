@@ -294,6 +294,7 @@ bindsym $mod+Return exec terminator
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec /home/drake/scripts/rofi.sh
+bindsym $mod+$win+d exec gksudo /home/drake/scripts/rofi.sh
 
 #lanch calculator in floating mode
 bindsym $win+c exec gnome-calculator
