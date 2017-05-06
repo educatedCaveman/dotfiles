@@ -14,9 +14,6 @@ Plugin 'scrooloose/nerdcommenter'   "comments
 Plugin 'scrooloose/nerdtree'        "file manager
 Plugin 'flazz/vim-colorschemes'
 
-"colorshcemes
-Plugin 'liuchengxu/space-vim-dark'
-
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -72,7 +69,6 @@ set shiftwidth=4
 
 "misc.:
 "set nocp "duplicate from Vundle config
-
 set clipboard=unnamed
 set clipboard+=unnamedplus
 
@@ -80,10 +76,10 @@ set clipboard+=unnamedplus
 cmap w!! w !sudo tee >/dev/null %
 
 "formatting brackets and such:
-inoremap {<Tab> {}<Esc>i
+inoremap {<Space> {}<Esc>i
 inoremap {<CR> {<CR>}<Esc>ko<Tab>
-inoremap (<Tab> ()<Esc>i
+inoremap (<Space> ()<Esc>i
 inoremap (<CR> (<CR>)<Esc>ko<Tab>
-inoremap [<Tab> []<Esc>i
+inoremap [<Space> []<Esc>i
 inoremap [<CR> [<CR>]<Esc>ko<Tab>
 
