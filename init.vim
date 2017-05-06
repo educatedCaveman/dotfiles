@@ -14,6 +14,9 @@ Plugin 'scrooloose/nerdcommenter'   "comments
 Plugin 'scrooloose/nerdtree'        "file manager
 Plugin 'flazz/vim-colorschemes'
 
+"colorschemes:
+Plugin 'romainl/Apprentice'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -44,7 +47,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 "appearance:
 syntax enable
-:color peachpuff
+":color peachpuff
+colorscheme apprentice
 set relativenumber
 set number
 set nowrap
