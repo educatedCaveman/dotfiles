@@ -24,6 +24,10 @@ Plugin 'encody/vim-colors'
 Plugin 'Konstruktionist/vim'
 Plugin 'marcopaganini/termschool-vim-theme'
 Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'w0ng/vim-hybrid'
+Plugin 'tyrannicaltoucan/vim-deep-space'
+Plugin 'rakr/vim-two-firewatch'
+Plugin 'kamwitsta/nordisk'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -56,6 +60,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 "appearance:
 syntax enable
 colorscheme apprentice
+"set background=dark
+"colorscheme hybrid
 
 "line numbering:
 set relativenumber
