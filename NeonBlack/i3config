@@ -282,6 +282,9 @@ bindsym F9 scratchpad show
 bindsym $mod+F9 move scratchpad
 bindsym $win+F9 exec /home/drake/scripts/scratchpad.sh
 
+#"hide" windows:
+bindsym $win+h exec /home/drake/scripts/i3-hide.sh
+
 ################################################################################
 # Application Launching                                                        #
 ################################################################################
@@ -330,7 +333,7 @@ for_window [class="Whatsie" window_type="normal"] move scratchpad
 
 #autostart
 exec --no-startup-id exec /home/drake/scripts/unityAndNitrogen.sh &
-exec --no-startup-id i3-msg 'workspace "0: X "; exec /usr/bin/google-chrome-stable'
+exec --no-startup-id i3-msg 'workspace "0: X "; exec /usr/bin/google-chrome-stable; workspace "0: X "'
 exec --no-startup-id i3-msg 'workspace "12: Mail "; exec /usr/bin/evolution'
 exec --no-startup-id i3-msg 'workspace "13: Music "; exec /usr/bin/rhythmbox'
 exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -l scratchpad'
@@ -360,6 +363,11 @@ workspace "1: Remote " output DisplayPort-5
 workspace "20: Info " output DisplayPort-4
 workspace "10: L.N.D. " output DisplayPort-3
 workspace "30: Steam " output DisplayPort-3
+
+#for "blank" workspaces:
+workspace "100: Desktop " output DisplayPort-3
+workspace "101: Desktop " output DisplayPort-4
+workspace "102: Desktop " output DisplayPort-5
 
 ################################################################################
 # power management                                                             #
