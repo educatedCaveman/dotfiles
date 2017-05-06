@@ -80,11 +80,14 @@ set ignorecase
 set smartcase
 set incsearch
 
-"indentation and tabbing:
+"indentation:
 set tabstop=4
 set softtabstop=0
 set expandtab
 set shiftwidth=4
+
+"tabs:
+set showtabline=1
 
 "line wrapping:
 set wrap
