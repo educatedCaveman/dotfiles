@@ -28,6 +28,7 @@ Plugin 'w0ng/vim-hybrid'
 Plugin 'tyrannicaltoucan/vim-deep-space'
 Plugin 'rakr/vim-two-firewatch'
 Plugin 'kamwitsta/nordisk'
+Plugin 'zakj/vim-mourning'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -59,7 +60,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 "appearance:
 syntax enable
-colorscheme apprentice
+"colorscheme apprentice
+colorscheme mourning 
 "set background=dark
 "colorscheme hybrid
 
