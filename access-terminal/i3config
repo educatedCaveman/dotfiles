@@ -248,16 +248,13 @@ bindsym $mod+Return exec terminator
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec /home/drake/scripts/rofi.sh
-
-# Kupfer
-bindsym $win+d exec kupfer
+bindsym $mod+$win+d exec gksudo /home/drake/scripts/rofi.sh
 
 #lanch calculator in floating mode
 bindsym $win+c exec gnome-calculator
 for_window [title="Calculator"] floating enable
 
 #launch browser
-bindsym $win+b exec firefox
 bindsym $mod+b exec google-chrome-stable
 
 #screenshots
