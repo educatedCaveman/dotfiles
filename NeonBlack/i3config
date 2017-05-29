@@ -338,7 +338,7 @@ exec --no-startup-id i3-msg 'workspace "12: Mail "; exec /usr/bin/evolution'
 exec --no-startup-id i3-msg 'workspace "13: Music "; exec /usr/bin/rhythmbox'
 exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -l scratchpad'
 exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p speedometer-eno1'
-exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p speedometer-tun0'
+#exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p speedometer-tun0'
 exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p htop'
 exec --no-startup-id exec /home/drake/scripts/displayColors.sh &
 exec --no-startup-id exec /home/drake/scripts/dropbox.py start &
