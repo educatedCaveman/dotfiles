@@ -337,8 +337,8 @@ exec --no-startup-id exec /home/drake/scripts/unityAndNitrogen.sh &
 exec --no-startup-id i3-msg 'workspace "12: Mail "; exec /usr/bin/evolution'
 exec --no-startup-id i3-msg 'workspace "13: Music "; exec /usr/bin/rhythmbox'
 exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -l scratchpad'
-exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p speedometer-eno1-up'
-exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p speedometer-eno1-down'
+exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p speedometer-up'
+exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p speedometer-down'
 exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p htop'
 exec --no-startup-id exec /home/drake/scripts/displayColors.sh &
 exec --no-startup-id exec /home/drake/scripts/dropbox.py start &
