@@ -290,7 +290,7 @@ bindsym $win+h exec /home/drake/scripts/i3-hide.sh
 ################################################################################
 
 # start a terminal
-bindsym $mod+Return exec terminator -p default
+bindsym $mod+Return exec terminator
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec /home/drake/scripts/rofi.sh
@@ -302,6 +302,7 @@ for_window [class="gnome-calculator"] floating enable
 
 #launch browser
 bindsym $mod+b exec google-chrome-stable
+bindsym $win+x exec firefox
 
 #screenshots
 bindsym Print exec maim /home/drake/Screenshots/$(date +%Y-%m-%d-%R:%S).png     #whole screen
