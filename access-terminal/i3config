@@ -282,9 +282,9 @@ bindsym $win+t exec gedit &
 exec --no-startup-id exec unity-settings-daemon &
 exec --no-startup-id i3-msg 'workspace "12: Mail "; exec /usr/bin/evolution'
 exec --no-startup-id exec gtk-redshift -l 39.4:-76.6 -t 6500:4000 -m randr:preserve=1 &
-exec --no-startup-id i3-msg 'workspace "9: IX "; exec terminator -p htop'
-exec --no-startup-id i3-msg 'workspace "9: IX "; exec terminator -p speedometer'
-exec --no-startup-id i3-msg 'workspace "2: II "; exec terminator -l remote'
+#exec --no-startup-id i3-msg 'workspace "9: IX "; exec terminator -p htop'
+#exec --no-startup-id i3-msg 'workspace "9: IX "; exec terminator -p speedometer'
+#exec --no-startup-id i3-msg 'workspace "2: II "; exec terminator -l remote'
 exec --no-startup-id exec /home/drake/.dropbox-dist/dropboxd &
 exec --no-startup-id i3-msg 'workspace "1: I "; exec google-chrome-stable'
 exec --no-startup-id nm-applet &
