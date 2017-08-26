@@ -112,8 +112,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
-#usef added:
+#user added:
 neofetch
 
 #editor:
@@ -125,11 +124,10 @@ if [ "${tmuxpid}" ];
 then
     #stuff if running:
     echo "tmux is running..."
-    echo "to attach, use: 'tmux -2 attach -t monitor-pihole'"
+    echo "to attach, use: 'tmux attach -t monitor-wormhole'"
 else
     #stuff if not running:
     echo "tmux is not running..."
-    echo "to start and attach, use: 'tmux -2 attach -t monitor-pihole'"
+    echo "to start and attach, use: 'tmux attach -t monitor-wormhole'"
 fi
-
 
