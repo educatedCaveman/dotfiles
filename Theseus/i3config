@@ -311,7 +311,9 @@ bindsym $win+F2 exec maim -s /home/drake/Screenshots/$(date +%Y-%m-%d-%R:%S).png
 
 #settings
 bindsym $win+s exec /home/drake/scripts/unity-control-center.sh &
-bindsym $win+$mod+s exec unity-tweak-tool
+#bindsym $win+s exec /home/drake/scripts/gnome-control-center.sh &
+#bindsym $win+$mod+s exec unity-tweak-tool
+bindsym $win+$mod+s exec gnome-tweak-tool
 
 #file browser
 bindsym $win+f exec nautilus --no-desktop &>/dev/null &
@@ -334,7 +336,9 @@ for_window [class="Whatsie" window_type="normal"] floating enable border normal 
 for_window [class="Whatsie" window_type="normal"] move scratchpad
 
 #autostart
+#exec --no-startup-id exec /home/drake/scripts/scrren-pos-loc.sh &
 exec --no-startup-id exec /home/drake/scripts/unityAndNitrogen.sh &
+#exec --no-startup-id exec /home/drake/scripts/gnomeAndNitrogen.sh &
 exec --no-startup-id i3-msg 'workspace "12: Mail "; exec /usr/bin/evolution'
 exec --no-startup-id i3-msg 'workspace "13: Music "; exec /usr/bin/rhythmbox'
 #exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p scratchpad -l scratchpad'
@@ -397,6 +401,8 @@ bindsym $mod+$win+Escape exec sudo shutdown -h now
 #audio
 bindsym F12 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}') +5%
 bindsym F11 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}') -5%
+bindsym $mod+F12 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}') +1%
+bindsym $mod+F11 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}') -1%
 bindsym F10 exec pactl set-sink-mute $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}') toggle
 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}') 50%
 
