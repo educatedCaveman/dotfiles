@@ -263,28 +263,27 @@ bindsym $mod+Print exec scrot -s	#select area
 
 #settings
 bindsym $win+s exec /home/drake/scripts/unity-control-center.sh
-bindsym $win+$mod+s exec unity-tweak-tool
+bindsym $win+$mod+s exec gnome-tweak-tool
 
 #file browser
-bindsym $win+f exec nautilus --no-desktop
-bindsym $win+$mod+f exec sudo nautilus --no-desktop
+#bindsym $win+f exec nautilus --no-desktop
+#bindsym $win+$mod+f exec sudo nautilus --no-desktop
+bindsym $win+f exec nautilus
+#bindsym $win+$mod+f exec sudo nautilus 
 
 #lauch synaptic
-bindsym $win+Escape exec gksudo synaptic & 
+#bindsym $win+Escape exec gksudo synaptic & 
 
 #Ubuntu Software Center
-bindsym $win+$mod+u exec gksudo software-center &
+#bindsym $win+$mod+u exec gksudo gnome-software &
 
 #graphical text editor
 bindsym $win+t exec gedit &
 
 #autostart
-exec --no-startup-id exec unity-settings-daemon &
+exec --no-startup-id exec gnome-settings-daemon &
 exec --no-startup-id i3-msg 'workspace "12: Mail "; exec /usr/bin/evolution'
 exec --no-startup-id exec gtk-redshift -l 39.4:-76.6 -t 6500:4000 -m randr:preserve=1 &
-#exec --no-startup-id i3-msg 'workspace "9: IX "; exec terminator -p htop'
-#exec --no-startup-id i3-msg 'workspace "9: IX "; exec terminator -p speedometer'
-#exec --no-startup-id i3-msg 'workspace "2: II "; exec terminator -l remote'
 exec --no-startup-id exec /home/drake/.dropbox-dist/dropboxd &
 exec --no-startup-id i3-msg 'workspace "1: I "; exec google-chrome-stable'
 exec --no-startup-id nm-applet &
