@@ -263,7 +263,8 @@ bindsym $mod+Print exec scrot -s	#select area
 
 #settings
 bindsym $win+s exec /home/drake/scripts/gnome-control-center.sh
-bindsym $win+$mod+s exec gnome-tweak-tool
+#bindsym $win+$mod+s exec gnome-tweak-tool
+bindsym $win+$mod+s exec gnome-tweaks
 
 #file browser
 #bindsym $win+f exec nautilus --no-desktop
@@ -285,7 +286,7 @@ exec --no-startup-id exec gnome-settings-daemon &
 exec --no-startup-id i3-msg 'workspace "12: Mail "; exec /usr/bin/evolution'
 exec --no-startup-id exec gtk-redshift -l 39.4:-76.6 -t 6500:4000 -m randr:preserve=1 &
 exec --no-startup-id exec /home/drake/.dropbox-dist/dropboxd &
-exec --no-startup-id i3-msg 'workspace "1: I "; exec google-chrome-stable'
+exec --no-startup-id i3-msg 'workspace "0: X "; exec google-chrome-stable'
 exec --no-startup-id nm-applet &
 exec --no-startup-id compton -f -D 1 --vsync none 2>/dev/null &
 exec --no-startup-id nitrogen --restore
