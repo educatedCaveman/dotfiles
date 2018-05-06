@@ -29,7 +29,8 @@ mode "&mode_ALT" {
 ################################################################################
 
 #default layout:
-workspace_layout tabbed
+#workspace_layout tabbed
+workspace_layout splith
 
 #main monitor bar.  shows everything
 bar {
