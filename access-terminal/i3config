@@ -317,6 +317,8 @@ bindsym $mod+$win+Escape exec sudo shutdown -h now
 #audio
 bindsym F3 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}')  +5%
 bindsym F2 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}')  -5%
+bindsym $mod+F3 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}')  +1%
+bindsym $mod+F2 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}')  -1%
 bindsym F1 exec pactl set-sink-mute $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}') toggle
 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}') 70%
 
