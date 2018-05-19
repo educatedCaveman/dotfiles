@@ -283,7 +283,7 @@ bindsym $win+t exec gedit &
 
 #autostart
 exec --no-startup-id exec gnome-settings-daemon &
-exec --no-startup-id i3-msg 'workspace "12: Mail "; exec /usr/bin/evolution'
+exec --no-startup-id i3-msg 'workspace "12: Mail "; exec /usr/bin/thunderbird'
 exec --no-startup-id exec gtk-redshift -l 39.4:-76.6 -t 6500:4000 -m randr:preserve=1 &
 exec --no-startup-id exec /home/drake/.dropbox-dist/dropboxd &
 exec --no-startup-id i3-msg 'workspace "0: X "; exec google-chrome-stable'
