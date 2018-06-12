@@ -1,14 +1,26 @@
-################################################################################
-# Modifier                                                                     #
-################################################################################
-
+### Variables
+# Logo key. Use Mod1 for Alt.
 set $mod Mod1
 set $win Mod4
+# Home row direction keys, like vim
+set $left h
+set $down j
+set $up k
+set $right l
 
-#ALT passthrough
-set $mode_ALT ALT: 
+### Output configuration
+output * bg /home/drake/Pictures/nature_adirondack_mountains.jpg fill
+
+input "1739:30381:DLL0665:01_06CB:76AD_To" {
+   tap enabled
+}
+
+include /etc/sway/config.d/*
+
+#ALT passthrough:
+set $mode_ALT ALT:
 bindsym $mod+End mode "$mode_ALT"
-mode "$mode_ALT" {
+mode "&mode_ALT" {
     bindsym Escape mode "default"
 }
 
@@ -17,7 +29,8 @@ mode "$mode_ALT" {
 ################################################################################
 
 #default layout:
-workspace_layout tabbed
+#workspace_layout tabbed
+workspace_layout splith
 
 #main monitor bar.  shows everything
 bar {
@@ -59,52 +72,67 @@ new_float normal 5
 bindsym $mod+Shift+q kill
 bindsym $mod+q kill
 
-# change focus
+# Move your focus around
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+# or use $mod+[up|down|left|right]
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-# move focused window
+# _move_ the focused window
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+# ditto, with arrow keys
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# split in horizontal orientation
-bindsym $mod+h split h
+# split horizontal/vertical
+bindsym $mod+h splith
+bindsym $mod+v splitv
 
-# split in vertical orientation
-bindsym $mod+v split v
-
-# enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
-bindsym $mod+Shift+f fullscreen global
-
-# change container layout (stacked, tabbed, toggle split)
+# Switch the current container between different layout styles
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
-# focus the parent container
+# Make the current focus fullscreen
+bindsym $mod+f fullscreen toggle
+#bindsym $mod+Shift+f fullscreen global
+
+# move focus to the parent container
 bindsym $mod+a focus parent
 
-# focus the child container
-bindsym $mod+shift+a focus child
+# move focus to the child container
+bindsym $mod+Shift+a focus child
 
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+# reload the configuration file
+bindsym $mod+Shift+r reload
 
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+# exit sway (logs you out of your wayland session)
+bindsym $mod+Shift+e exit
 
-# resize window (you can also use the mouse for that)
+# Resizing containers:
 mode "resize" {
+    bindsym $left resize shrink width 10 px or 10 ppt
+    bindsym $down resize grow height 10 px or 10 ppt
+    bindsym $up resize shrink height 10 px or 10 ppt
+    bindsym $right resize grow width 10 px or 10 ppt
+
+    # ditto, with arrow keys
     bindsym Left resize shrink width 10 px or 10 ppt
     bindsym Down resize grow height 10 px or 10 ppt
     bindsym Up resize shrink height 10 px or 10 ppt
     bindsym Right resize grow width 10 px or 10 ppt
 
+    # return to default mode
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
@@ -234,11 +262,6 @@ bindsym $win+Right move workspace to output right
 bindsym $win+Up move workspace to output up
 bindsym $win+Down move workspace to output down
 
-#scratchpad
-bindsym XF86Search scratchpad show
-bindsym $mod+XF86Search move scratchpad
-bindsym $win+XF86Search exec /home/drake/scripts/scratchpad.sh
-
 ################################################################################
 # Application Launching                                                        #
 ################################################################################
@@ -258,16 +281,20 @@ for_window [title="Calculator"] floating enable
 bindsym $mod+b exec google-chrome-stable
 
 #screenshots
-bindsym Print exec scrot -m		#whole screen
-bindsym $mod+Print exec scrot -s	#select area
+#bindsym Print exec scrot -m		#whole screen
+#bindsym $mod+Print exec scrot -s	#select area
+bindsym Print exec swaygrab		#whole screen
+bindsym $mod+Print exec swaygrab -f	#focused container
 
 #settings
-bindsym $win+s exec /home/drake/scripts/unity-control-center.sh
-bindsym $win+$mod+s exec unity-tweak-tool
+#bindsym $win+s exec /home/drake/scripts/unity-control-center.sh
+#bindsym $win+$mod+s exec unity-tweak-tool
+bindsym $win+s exec /home/drake/scripts/gnome-control-center.sh
+bindsym $win+$mod+s exec gnome-tweak-tool
 
 #file browser
-bindsym $win+f exec nautilus --no-desktop
-bindsym $win+$mod+f exec sudo nautilus --no-desktop
+bindsym $win+f exec nautilus
+bindsym $win+$mod+f exec sudo nautilus
 
 #lauch synaptic
 bindsym $win+Escape exec gksudo synaptic & 
@@ -279,18 +306,16 @@ bindsym $win+$mod+u exec gksudo software-center &
 bindsym $win+t exec gedit &
 
 #autostart
-exec --no-startup-id exec unity-settings-daemon &
-exec --no-startup-id i3-msg 'workspace "12: Mail "; exec /usr/bin/evolution'
+exec --no-startup-id exec gnome-settings-daemon &
+#exec --no-startup-id swaymsg 'workspace "12: Mail "; exec /usr/bin/evolution'
 exec --no-startup-id exec gtk-redshift -l 39.4:-76.6 -t 6500:4000 -m randr:preserve=1 &
-#exec --no-startup-id i3-msg 'workspace "9: IX "; exec terminator -p htop'
-#exec --no-startup-id i3-msg 'workspace "9: IX "; exec terminator -p speedometer'
-#exec --no-startup-id i3-msg 'workspace "2: II "; exec terminator -l remote'
 exec --no-startup-id exec /home/drake/.dropbox-dist/dropboxd &
-exec --no-startup-id i3-msg 'workspace "1: I "; exec google-chrome-stable'
+exec --no-startup-id swaymsg 'workspace "0: X "; exec google-chrome-stable'
 exec --no-startup-id nm-applet &
 exec --no-startup-id compton -f -D 1 --vsync none 2>/dev/null &
 exec --no-startup-id nitrogen --restore
-#exec --no-startup-id xautolock -corners ---- -cornersize 100 -time 15 -locker /home/drake/scripts/lock.sh &
+exec --no-startup-id exec gnome-session &
+exec --no-startup-id exec xinput set-prop 11 276 1  # enable tap to click
 
 ################################################################################
 # power management                                                             #
@@ -301,7 +326,8 @@ exec --no-startup-id nitrogen --restore
 bindsym $mod+Pause exec /home/drake/scripts/hibernateAndLock.sh
 
 #lock screen
-bindsym $win+l exec /home/drake/scripts/lock.sh
+#bindsym $win+l exec /home/drake/scripts/lock.sh
+bindsym $win+l exec swaylock -c 2b2b2b
 
 #reboot
 bindsym $mod+$win+r exec sudo reboot now
@@ -315,7 +341,9 @@ bindsym $mod+$win+Escape exec sudo shutdown -h now
 
 #audio
 bindsym F3 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}')  +5%
+bindsym $mod+F3 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}')  +1%
 bindsym F2 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}')  -5%
+bindsym $mod+F2 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}')  -1%
 bindsym F1 exec pactl set-sink-mute $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}') toggle
 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}') 70%
 
@@ -327,3 +355,4 @@ bindsym F11 exec sudo /home/drake/scripts/bright_down.sh
 exec shmlog $((128*1024*1024))
 exec shmlog on
 exec debuglog on
+

@@ -262,35 +262,36 @@ bindsym Print exec scrot -m		#whole screen
 bindsym $mod+Print exec scrot -s	#select area
 
 #settings
-bindsym $win+s exec /home/drake/scripts/unity-control-center.sh
-bindsym $win+$mod+s exec unity-tweak-tool
+bindsym $win+s exec /home/drake/scripts/gnome-control-center.sh
+#bindsym $win+$mod+s exec gnome-tweak-tool
+bindsym $win+$mod+s exec gnome-tweaks
 
 #file browser
-bindsym $win+f exec nautilus --no-desktop
-bindsym $win+$mod+f exec sudo nautilus --no-desktop
+#bindsym $win+f exec nautilus --no-desktop
+#bindsym $win+$mod+f exec sudo nautilus --no-desktop
+bindsym $win+f exec nautilus
+#bindsym $win+$mod+f exec sudo nautilus 
 
 #lauch synaptic
-bindsym $win+Escape exec gksudo synaptic & 
+#bindsym $win+Escape exec gksudo synaptic & 
 
 #Ubuntu Software Center
-bindsym $win+$mod+u exec gksudo software-center &
+#bindsym $win+$mod+u exec gksudo gnome-software &
 
 #graphical text editor
 bindsym $win+t exec gedit &
 
 #autostart
-exec --no-startup-id exec unity-settings-daemon &
-exec --no-startup-id i3-msg 'workspace "12: Mail "; exec /usr/bin/evolution'
+exec --no-startup-id exec gnome-settings-daemon &
+exec --no-startup-id i3-msg 'workspace "12: Mail "; exec /usr/bin/thunderbird'
 exec --no-startup-id exec gtk-redshift -l 39.4:-76.6 -t 6500:4000 -m randr:preserve=1 &
-#exec --no-startup-id i3-msg 'workspace "9: IX "; exec terminator -p htop'
-#exec --no-startup-id i3-msg 'workspace "9: IX "; exec terminator -p speedometer'
-#exec --no-startup-id i3-msg 'workspace "2: II "; exec terminator -l remote'
 exec --no-startup-id exec /home/drake/.dropbox-dist/dropboxd &
-exec --no-startup-id i3-msg 'workspace "1: I "; exec google-chrome-stable'
+exec --no-startup-id i3-msg 'workspace "0: X "; exec google-chrome-stable'
 exec --no-startup-id nm-applet &
 exec --no-startup-id compton -f -D 1 --vsync none 2>/dev/null &
 exec --no-startup-id nitrogen --restore
 #exec --no-startup-id xautolock -corners ---- -cornersize 100 -time 15 -locker /home/drake/scripts/lock.sh &
+exec --no-startup-id xinput set-prop 11 277 1 #tap to click
 
 ################################################################################
 # power management                                                             #
@@ -316,6 +317,8 @@ bindsym $mod+$win+Escape exec sudo shutdown -h now
 #audio
 bindsym F3 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}')  +5%
 bindsym F2 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}')  -5%
+bindsym $mod+F3 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}')  +1%
+bindsym $mod+F2 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}')  -1%
 bindsym F1 exec pactl set-sink-mute $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}') toggle
 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}') 70%
 
