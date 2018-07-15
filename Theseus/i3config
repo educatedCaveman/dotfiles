@@ -307,6 +307,7 @@ bindsym $win+x exec firefox
 #screenshots
 bindsym Print exec maim /home/drake/Screenshots/$(date +%Y-%m-%d-%R:%S).png     #whole screen
 bindsym $win+F1 exec escrotum -x $(xdotool getactivewindow) /home/drake/Screenshots/$(date +%Y-%m-%d-%R:%S).png &>/dev/null
+bindsym $win+Print exec escrotum -x $(xdotool getactivewindow) /home/drake/Screenshots/$(date +%Y-%m-%d-%R:%S).png &>/dev/null
 bindsym $win+F2 exec maim -s /home/drake/Screenshots/$(date +%Y-%m-%d-%R:%S).png 
 
 #settings
