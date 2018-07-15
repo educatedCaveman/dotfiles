@@ -258,8 +258,12 @@ for_window [title="Calculator"] floating enable
 bindsym $mod+b exec google-chrome-stable
 
 #screenshots
-bindsym Print exec scrot -m		#whole screen
-bindsym $mod+Print exec scrot -s	#select area
+#whole screen
+bindsym Print exec maim -u /home/drake/Screenshots/$(date +%F_%T).png
+#select area
+bindsym Shift+Print exec maim -s /home/drake/Screenshots/$(date +%F_%T).png
+#current window
+bindsym $win+Print exec maim -i $(xdotool getactivewindow) /home/drake/Screenshots/$(date +%F_%T).png
 
 #settings
 bindsym $win+s exec /home/drake/scripts/gnome-control-center.sh
