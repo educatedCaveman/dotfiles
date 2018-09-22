@@ -297,8 +297,8 @@ bindsym $mod+d exec /home/drake/scripts/rofi.sh
 bindsym $mod+$win+d exec gksudo /home/drake/scripts/rofi.sh
 
 #lanch calculator in floating mode
-bindsym $win+c exec gnome-calculator
-for_window [class="gnome-calculator"] floating enable
+bindsym $win+c exec gnome-calculator &
+for_window [class="Gnome-calculator" window_type="normal"] floating enable border normal 5
 
 #launch browser
 bindsym $mod+b exec google-chrome-stable
@@ -311,10 +311,12 @@ bindsym $win+Print exec escrotum -x $(xdotool getactivewindow) /home/drake/Scree
 bindsym $win+F2 exec maim -s /home/drake/Screenshots/$(date +%Y-%m-%d-%R:%S).png 
 
 #settings
-bindsym $win+s exec /home/drake/scripts/unity-control-center.sh &
-#bindsym $win+s exec /home/drake/scripts/gnome-control-center.sh &
-#bindsym $win+$mod+s exec unity-tweak-tool
-bindsym $win+$mod+s exec gnome-tweak-tool
+bindsym $win+s exec /home/drake/scripts/gnome-control-center.sh &
+for_window [class="Gnome-control-center" window_type="normal"] floating enable border normal 5
+bindsym $win+$mod+s exec gnome-tweaks
+for_window [class="Gnome-tweaks" window_type="normal"] floating enable border normal 5
+bindsym $win+Shift+s exec lxappearance
+for_window [class="Lxappearance" window_type="normal"] floating enable border normal 5
 
 #file browser
 bindsym $win+f exec nautilus --no-desktop &>/dev/null &
@@ -326,7 +328,8 @@ for_window [class="Nautilus" window_type="normal"] floating enable border normal
 bindsym $win+Escape exec gksudo synaptic & 
 
 #Ubuntu Software Center
-bindsym $win+$mod+u exec gksudo software-center &
+#bindsym $win+$mod+u exec gksudo software-center &
+bindsym $win+$mod+u exec gksudo gnome-software &
 
 #graphical text editor
 bindsym $win+t exec gedit &
@@ -338,8 +341,8 @@ for_window [class="Whatsie" window_type="normal"] move scratchpad
 
 #autostart
 #exec --no-startup-id exec /home/drake/scripts/scrren-pos-loc.sh &
-exec --no-startup-id exec /home/drake/scripts/unityAndNitrogen.sh &
-#exec --no-startup-id exec /home/drake/scripts/gnomeAndNitrogen.sh &
+#exec --no-startup-id exec /home/drake/scripts/unityAndNitrogen.sh &
+exec --no-startup-id exec /home/drake/scripts/gnomeAndNitrogen.sh &
 exec --no-startup-id i3-msg 'workspace "12: Mail "; exec /usr/bin/evolution'
 exec --no-startup-id i3-msg 'workspace "13: Music "; exec /usr/bin/rhythmbox'
 #exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p scratchpad -l scratchpad'
@@ -347,7 +350,7 @@ exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminato
 exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p speedometer-up'
 exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p speedometer-down'
 exec --no-startup-id i3-msg 'workspace "0: Monitoring "; exec /usr/bin/terminator -p htop'
-exec --no-startup-id exec /home/drake/scripts/displayColors.sh &
+#exec --no-startup-id exec /home/drake/scripts/displayColors.sh &
 exec --no-startup-id exec /home/drake/scripts/dropbox.py start &
 exec --no-startup-id /usr/bin/xautolock -corners ---- -cornersize 100 -time 30 -locker /home/drake/scripts/lock.sh &
 exec --no-startup-id /usr/bin/compton -f -D 5 --vsync none 2>/dev/null &
