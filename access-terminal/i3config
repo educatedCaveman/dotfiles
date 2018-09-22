@@ -238,6 +238,9 @@ bindsym $win+Down move workspace to output down
 bindsym XF86Search scratchpad show
 bindsym $mod+XF86Search move scratchpad
 bindsym $win+XF86Search exec /home/drake/scripts/scratchpad.sh
+bindsym F9 scratchpad show
+bindsym $mod+F9 move scratchpad
+bindsym $win+F9 exec /home/drake/scripts/scratchpad.sh
 
 ################################################################################
 # Application Launching                                                        #
