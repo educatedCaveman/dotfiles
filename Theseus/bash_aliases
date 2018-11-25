@@ -9,4 +9,4 @@ alias vim='/home/drake/scripts/neovim_reminder.sh'
 alias please='sudo $( history -p !!)'
 alias fuck='sudo $( history -p !!)'
 alias fucking='sudo'
-
+alias ll='ls -lhA'
