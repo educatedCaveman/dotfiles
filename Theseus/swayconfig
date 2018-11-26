@@ -300,7 +300,7 @@ bindsym $mod+F9 move scratchpad
 bindsym $win+F9 exec /home/drake/scripts/sway-scratchpad.sh
 
 #"hide" windows:
-bindsym $win+h exec /home/drake/scripts/i3-hide.sh
+bindsym $win+h exec /home/drake/scripts/sway-hide.sh
 
 ################################################################################
 # Application Launching                                                        #
@@ -363,11 +363,15 @@ exec_always {
 exec swaymsg 'workspace "12: Mail "; exec /usr/bin/evolution'
 exec swaymsg 'workspace "13: Music "; exec /usr/bin/rhythmbox'
 exec /home/drake/scripts/sway-scratch-n-monitor.sh
-exec /home/drake/scripts/dropbox.py start &
+#exec /home/drake/scripts/dropbox.py start &
+exec dropbox &
 exec swaymsg 'workspace "0: X "'
 #lock after an hour:
-exec swayidle timeout 3600 /home/drake/scripts/sway-blurry-lock.sh &
-
+#exec swayidle timeout 3600 /home/drake/scripts/sway-blurry-lock.sh &
+exec swayidle timeout 3600 '/home/drake/scripts/sway-blurry-lock.sh idle' \
+    timeout 3900 'swaymsg "output * dpms off"' \
+    resume 'swaymsg "output * dpms on"' &
+exec mako &     #notifications
 
 #application-WS mapping
 #TODO: fix this
