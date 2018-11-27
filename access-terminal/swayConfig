@@ -8,14 +8,14 @@ set $down j
 set $up k
 set $right l
 
-### Output configuration
-output * bg /home/drake/Pictures/nature_adirondack_mountains.jpg fill
-
-input "1739:30381:DLL0665:01_06CB:76AD_To" {
+### Input/Output configuration
+input "1739:30381:DLL0665:01_06CB:76AD_Touchpad" {
    tap enabled
 }
 
-include /etc/sway/config.d/*
+output eDP-1 {
+    background /home/drake/wallpapers/nature_adirondack_mountains.jpg fill
+}
 
 #ALT passthrough:
 set $mode_ALT ALT:
@@ -29,8 +29,8 @@ mode "&mode_ALT" {
 ################################################################################
 
 #default layout:
-#workspace_layout tabbed
-workspace_layout splith
+workspace_layout tabbed
+#workspace_layout splith
 
 #main monitor bar.  shows everything
 bar {
@@ -51,10 +51,10 @@ bar {
 }
 
 #colors:	        	border	backgr.	text	indicator
-client.focused         	#a0a0a0 #a0a0a0 #000000 #2b2b2b
-client.focused_inactive #2b2b2b #404040 #ffffff #888888
-client.unfocused       	#2b2b2b #404040 #a0a0a0 #2b2b2b
-client.urgent           #900000 #900000 #ffffff #2b2b2b
+client.focused         	#a0a0a0 #a0a0a0 #000000 #2b2b2b #a0a0a0
+client.focused_inactive #2b2b2b #404040 #ffffff #888888 #2b2b2b
+client.unfocused       	#2b2b2b #404040 #a0a0a0 #2b2b2b #2b2b2b
+client.urgent           #900000 #900000 #ffffff #2b2b2b #ffffff
 
 #font
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -105,7 +105,6 @@ bindsym $mod+e layout toggle split
 
 # Make the current focus fullscreen
 bindsym $mod+f fullscreen toggle
-#bindsym $mod+Shift+f fullscreen global
 
 # move focus to the parent container
 bindsym $mod+a focus parent
@@ -114,7 +113,7 @@ bindsym $mod+a focus parent
 bindsym $mod+Shift+a focus child
 
 # reload the configuration file
-bindsym $mod+Shift+r reload
+bindsym $win+r reload
 
 # exit sway (logs you out of your wayland session)
 bindsym $mod+Shift+e exit
@@ -235,22 +234,22 @@ bindsym $mod+Shift+g move container to workspace "40: Steam "
 #move workspace mode
 bindsym $mod+$win+Shift+m mode "$move_WS"
 mode "$move_WS" {
-    bindsym 1 move container to workspace "1: I "
-    bindsym 2 move container to workspace "2: II "
-    bindsym 3 move container to workspace "3: III "
-    bindsym 4 move container to workspace "4: IV "
-    bindsym 5 move container to workspace "5: V "
-    bindsym 6 move container to workspace "6: VI "
-    bindsym 7 move container to workspace "7: VII "
-    bindsym 8 move container to workspace "8: VIII "
-    bindsym 9 move container to workspace "9: IX "
-    bindsym 0 move container to workspace "0: X "
-    bindsym m move container to workspace "12: Mail "
-    bindsym u move container to workspace "13: Music "
-    bindsym p move container to workspace "15: pr0n "
-    bindsym n move container to workspace "20: VNC "
-    bindsym y move container to workspace "30: Video "
-    bindsym g move container to workspace "40: Steam "
+    bindsym 1 move container to workspace '"1: I '"
+    bindsym 2 move container to workspace '"2: II '"
+    bindsym 3 move container to workspace '"3: III '"
+    bindsym 4 move container to workspace '"4: IV '"
+    bindsym 5 move container to workspace '"5: V '"
+    bindsym 6 move container to workspace '"6: VI '"
+    bindsym 7 move container to workspace '"7: VII '"
+    bindsym 8 move container to workspace '"8: VIII '"
+    bindsym 9 move container to workspace '"9: IX '"
+    bindsym 0 move container to workspace '"0: X '"
+    bindsym m move container to workspace '"12: Mail '"
+    bindsym u move container to workspace '"13: Music '"
+    bindsym p move container to workspace '"15: pr0n '"
+    bindsym n move container to workspace '"20: VNC '"
+    bindsym y move container to workspace '"30: Video '"
+    bindsym g move container to workspace '"40: Steam '"
 
     bindsym Escape mode "default"
     bindsym Return mode "default"
@@ -275,47 +274,43 @@ bindsym $mod+$win+d exec gksudo /home/drake/scripts/rofi.sh
 
 #lanch calculator in floating mode
 bindsym $win+c exec gnome-calculator
-for_window [title="Calculator"] floating enable
+#for_window [title="Calculator"] floating enable
+for_window [app_id="gnome-calculator"] floating enable
 
 #launch browser
-bindsym $mod+b exec google-chrome-stable
+bindsym $mod+x exec google-chrome-stable
+bindsym $mod+b exec firefox
 
 #screenshots
-#bindsym Print exec scrot -m		#whole screen
-#bindsym $mod+Print exec scrot -s	#select area
-bindsym Print exec swaygrab		#whole screen
-bindsym $mod+Print exec swaygrab -f	#focused container
+bindsym $mod+Print exec slurp | grim -g - /home/drake/Screenshots/$(date +%F-%T).png
+bindsym Print exec grim -o eDP-1 /home/drake/Screenshots/$(date +%F-%T).png
 
 #settings
-#bindsym $win+s exec /home/drake/scripts/unity-control-center.sh
-#bindsym $win+$mod+s exec unity-tweak-tool
-bindsym $win+s exec /home/drake/scripts/gnome-control-center.sh
-bindsym $win+$mod+s exec gnome-tweak-tool
+bindsym $win+s exec /home/drake/scripts/gnome-control-center.sh &>/dev/null &
+bindsym $win+$mod+s exec lxappearance
 
 #file browser
 bindsym $win+f exec nautilus
-bindsym $win+$mod+f exec sudo nautilus
-
-#lauch synaptic
-bindsym $win+Escape exec gksudo synaptic & 
-
-#Ubuntu Software Center
-bindsym $win+$mod+u exec gksudo software-center &
+#bindsym $win+f exec nemo &>/dev/null &
 
 #graphical text editor
 bindsym $win+t exec gedit &
 
+#GTK theme (instead of the gnomeAndNitrogen script:                                               
+set $gnome-schema org.gnome.desktop.interface
+exec_always {
+    gsettings set $gnome-schema gtk-theme 'Shades-of-gray'
+    gsettings set $gnome-schema icon-theme 'Ultra-Flat'
+    gsettings set $gnome-schema cursor-theme 'Adwaita'
+}
+
 #autostart
-exec --no-startup-id exec gnome-settings-daemon &
-#exec --no-startup-id swaymsg 'workspace "12: Mail "; exec /usr/bin/evolution'
-exec --no-startup-id exec gtk-redshift -l 39.4:-76.6 -t 6500:4000 -m randr:preserve=1 &
-exec --no-startup-id exec /home/drake/.dropbox-dist/dropboxd &
-exec --no-startup-id swaymsg 'workspace "0: X "; exec google-chrome-stable'
-exec --no-startup-id nm-applet &
-exec --no-startup-id compton -f -D 1 --vsync none 2>/dev/null &
-exec --no-startup-id nitrogen --restore
-exec --no-startup-id exec gnome-session &
-exec --no-startup-id exec xinput set-prop 11 276 1  # enable tap to click
+exec swaymsg 'workspace "12: Mail "; exec /usr/bin/evolution'
+#exec --no-startup-id exec gtk-redshift -l 39.4:-76.6 -t 6500:4000 -m randr:preserve=1 &
+#exec /home/drake/.dropbox-dist/dropboxd &
+exec dropbox &
+#exec swaymsg 'workspace "0: X "; exec google-chrome-stable'
+#exec --no-startup-id exec xinput set-prop 11 276 1  # enable tap to click
 
 ################################################################################
 # power management                                                             #
@@ -323,11 +318,11 @@ exec --no-startup-id exec xinput set-prop 11 276 1  # enable tap to click
 ################################################################################
 
 #hibernate
-bindsym $mod+Pause exec /home/drake/scripts/hibernateAndLock.sh
+#bindsym $mod+Pause exec /home/drake/scripts/hibernateAndLock.sh
+bindsym $win+Escape /home/drake/scripts/sway-blurry-lock.sh hibernte
 
 #lock screen
-#bindsym $win+l exec /home/drake/scripts/lock.sh
-bindsym $win+l exec swaylock -c 2b2b2b
+bindsym $win+l exec /home/drake/scripts/sway-blurry-lock.sh
 
 #reboot
 bindsym $mod+$win+r exec sudo reboot now
@@ -340,16 +335,18 @@ bindsym $mod+$win+Escape exec sudo shutdown -h now
 ################################################################################
 
 #audio
-bindsym F3 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}')  +5%
-bindsym $mod+F3 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}')  +1%
-bindsym F2 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}')  -5%
-bindsym $mod+F2 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}')  -1%
+bindsym F3 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}') +5%
+bindsym Shift+F3 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}') +1%
+bindsym F2 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}') -5%
+bindsym Shift+F2 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}') -1%
 bindsym F1 exec pactl set-sink-mute $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}') toggle
 exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print $3}') 70%
 
 #backlight
-bindsym F12 exec sudo /home/drake/scripts/bright_up.sh
-bindsym F11 exec sudo /home/drake/scripts/bright_down.sh
+bindsym F12 exec brightnessctl set +5%
+bindsym F11 exec brightnessctl set 5%-
+bindsym Shift+F12 exec brightnessctl set +1%
+bindsym Shift+F11 exec brightnessctl set 1%-
  
 #logging
 exec shmlog $((128*1024*1024))
