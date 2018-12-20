@@ -311,6 +311,7 @@ exec swaymsg 'workspace "12: Mail "; exec /usr/bin/evolution'
 exec dropbox &
 #exec swaymsg 'workspace "0: X "; exec google-chrome-stable'
 #exec --no-startup-id exec xinput set-prop 11 276 1  # enable tap to click
+exec mako &
 
 ################################################################################
 # power management                                                             #
