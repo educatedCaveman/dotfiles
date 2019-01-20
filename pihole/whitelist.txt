@@ -1135,3 +1135,4 @@ tiles.services.mozilla.com
 incoming.telemetry.mozilla.org
 www.techrepublic.com
 thefappeningblog.com
+display.ugc.bazaarvoice.com

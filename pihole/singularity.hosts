@@ -36,7 +36,7 @@ ff02::3 ip6-allhosts
 192.168.11.6    rclone.srv
 
 192.168.12.1    router.vm
-192.168.12.2    mobius.vm
+192.168.12.2    plex.vm
 192.168.12.3    emby.vm
 192.168.12.4    helix.vm
 192.168.12.5    airlock.vm

@@ -3,7 +3,7 @@
 ff02::1		ip6-allnodes
 ff02::2		ip6-allrouters
 
-127.0.1.1   event-horizon 
+127.0.1.1	event-horizon
 
 #local machines
 
@@ -31,7 +31,7 @@ ff02::2		ip6-allrouters
 192.168.11.6    rclone.srv
 
 192.168.12.1    router.vm
-192.168.12.2    plex.vm
+192.168.12.2    plex.vm 
 192.168.12.3    emby.vm
 192.168.12.4    helix.vm
 192.168.12.5    airlock.vm
