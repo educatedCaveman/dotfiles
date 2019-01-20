@@ -1,9 +1,14 @@
-127.0.0.1	localhost
-::1		localhost ip6-localhost ip6-loopback
-ff02::1		ip6-allnodes
-ff02::2		ip6-allrouters
+127.0.0.1	localhost.localdomain	localhost
+::1		localhost6.localdomain6	localhost6
 
-127.0.1.1	event-horizon
+# The following lines are desirable for IPv6 capable hosts
+::1     localhost ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+ff02::3 ip6-allhosts
+
+127.0.1.1   singularity
 
 #local machines
 
@@ -36,6 +41,7 @@ ff02::2		ip6-allrouters
 192.168.12.4    helix.vm
 192.168.12.5    airlock.vm
 192.168.12.6    rclone.vm
+192.168.12.7    singularity.vm
 
 192.168.20.1    router.iot
 192.168.20.2    cortical-implant.iot
