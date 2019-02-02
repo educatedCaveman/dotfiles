@@ -52,3 +52,8 @@ ff02::2		ip6-allrouters
 192.168.100.1   router.dmz
 192.168.100.2   wormhole.dmz
 
+10.13.37.1      router.vpn
+10.13.37.2      cortical-implant.vpn
+
+10.13.38.1      router.vpn2
+10.13.38.2      cortical-implant.vpn2
