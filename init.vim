@@ -29,6 +29,7 @@ Plugin 'romainl/Apprentice'
 "Plugin 'rakr/vim-two-firewatch'
 "Plugin 'kamwitsta/nordisk'
 Plugin 'zakj/vim-mourning'
+Plugin 'sickill/vim-monokai'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -61,7 +62,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 "appearance:
 syntax enable
 colorscheme apprentice
-colorscheme mourning 
+"colorscheme mourning 
+"colorscheme monokai
 "set background=dark
 "colorscheme hybrid
 
