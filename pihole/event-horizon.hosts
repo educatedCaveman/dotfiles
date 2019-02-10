@@ -37,7 +37,7 @@ ff02::2		ip6-allrouters
 192.168.12.5    airlock.vm
 192.168.12.6    rclone.vm
 192.168.12.7    singularity.vm
-192.168.12.8    backdoor.vm
+192.168.12.8    rura-penthe.vm
 
 192.168.20.1    router.iot
 192.168.20.2    cortical-implant.iot
