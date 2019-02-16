@@ -1,8 +1,9 @@
 #aliases:
 alias psgrep='ps -e | grep'
 alias vim='/home/drake/scripts/neovim_reminder.sh'
-alias please='sudo $( history -p !!)'
-alias fuck='sudo $( history -p !!)'
+alias please='echo "depreciated. ESC x2, instead"'
+alias fuck='echo "depreciated. ESC x2, instead"'
 alias fucking='sudo'
 alias la='ls -lhAp'
 alias ll='ls -lhp'
+alias mobius='cd /media/mobius; ll'
