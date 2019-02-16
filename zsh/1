@@ -1,0 +1,46 @@
+: 1550345948:0;!
+: 1550345951:0;clear
+: 1550345954:0;history
+: 1550345961:0;ll
+: 1550345963:0;history
+: 1550346021:0;speedometer -t en01 -r eno1
+: 1550346028:0;speedometer -t eno1 -r eno1
+: 1550346051:0;nvim zsh_aliases
+: 1550346086:0;source ~/.zsh_aliases
+: 1550346096:0;pacman -Syu
+: 1550346098:0;fuck
+: 1550346130:0;nvim zsh_aliases
+: 1550346150:0;source ~/.zsh_aliases
+: 1550346154:0;pacman -Syu
+: 1550346156:0;fuck
+: 1550346367:0;history
+: 1550346373:0;history -p
+: 1550346381:0;man history
+: 1550346409:0;history -1
+: 1550346461:0;cat zsh_aliases
+: 1550346468:0;please
+: 1550346483:0;history -n1
+: 1550346487:0;history -1
+: 1550346502:0;history 1
+: 1550346512:0;clear
+: 1550346514:0;history
+: 1550346517:0;man history
+: 1550346585:0;history event -1
+: 1550346589:0;history event 1
+: 1550346595:0;history event
+: 1550346607:0;alias
+: 1550346612:0;alias|history
+: 1550346625:0;alias | grep history
+: 1550346641:0;omz_history
+: 1550346650:0;command history
+: 1550346806:0;nvim zshrc
+: 1550346835:0;source ~/.zshrc
+: 1550347013:0;zle
+: 1550347018:0;man zle
+: 1550347023:0;zle up-history
+: 1550347046:0;clear
+: 1550347093:0;sudo-command-line
+: 1550347115:0;ls
+: 1550347130:0;alias|grep "ls"
+: 1550347144:0;clear
+: 1550347146:0;ls
