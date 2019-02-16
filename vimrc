@@ -61,7 +61,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 "appearance:
 syntax enable
 colorscheme apprentice
-colorscheme mourning 
+"colorscheme mourning 
 "set background=dark
 "colorscheme hybrid
 

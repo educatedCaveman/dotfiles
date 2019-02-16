@@ -113,6 +113,6 @@ inoremap {<Space> {}<Esc>i
 inoremap {<CR> {<CR>}<Esc>ko<Tab>
 inoremap (<Space> ()<Esc>i
 inoremap (<CR> (<CR>)<Esc>ko<Tab>
-inoremap [<Space> []<Esc>i
+inoremap [<Space> [  ]<Esc>hi
+inoremap [[<Space> [[  ]]<Esc>hhi
 inoremap [<CR> [<CR>]<Esc>ko<Tab>
-
