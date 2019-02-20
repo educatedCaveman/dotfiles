@@ -107,11 +107,14 @@ set clipboard+=unnamedplus
 cmap w!! w !sudo tee >/dev/null %
 
 "formatting brackets and such:
-inoremap {<Space> {}<Esc>i
+inoremap {<Tab> {}<Esc>i
 inoremap {<CR> {<CR>}<Esc>ko<Tab>
-inoremap (<Space> ()<Esc>i
+inoremap (<Tab> ()<Esc>i
 inoremap (<CR> (<CR>)<Esc>ko<Tab>
-inoremap [<Space> []<Esc>i
+inoremap [<Tab> []<Esc>i
+inoremap [<Space> [  ]<Esc>hi
+inoremap [[<Tab> [[]]<Esc>hi
+inoremap [[<Space> [[  ]]<Esc>hhi
 inoremap [<CR> [<CR>]<Esc>ko<Tab>
 
 

@@ -9,54 +9,6 @@
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="less-fishy"  #custom theme, based on fishy
-#ZSH_THEME="agnoster"
-#ZSH_THEME="dieter"
-#ZSH_THEME="arrow"
-#ZSH_THEME="avit"
-#ZSH_THEME="awesomepanda"
-#ZSH_THEME="bureau"
-#ZSH_THEME="candy-kingdom"
-#ZSH_THEME="candy"
-#ZSH_THEME="clean"
-#ZSH_THEME="cypher"
-#ZSH_THEME="daveverwer"
-#ZSH_THEME="dstufft"
-#ZSH_THEME="emotty"
-#ZSH_THEME="fishy"
-#ZSH_THEME="example"
-#ZSH_THEME="gozilla"
-#ZSH_THEME="half-life"
-#ZSH_THEME="imajes"
-#ZSH_THEME="kardan"
-#ZSH_THEME="lambda"
-#ZSH_THEME="maran"
-#ZSH_THEME="mh"
-#ZSH_THEME="michelebologna"
-#ZSH_THEME="mikeh"
-#ZSH_THEME="miloshadzic"
-#ZSH_THEME="minimal"
-#ZSH_THEME="mira"
-#ZSH_THEME="mrtazz"
-#ZSH_THEME="murilasso"
-#ZSH_THEME="muse"
-#ZSH_THEME="nanotech"
-#ZSH_THEME="nicoulaj"
-#ZSH_THEME="philips"
-#ZSH_THEME="pure"
-#ZSH_THEME="rgm"
-#ZSH_THEME="robbyrussell"
-#ZSH_THEME="sammy"
-#ZSH_THEME="simple"
-#ZSH_THEME="sonicradish"
-#ZSH_THEME="sorin"
-#ZSH_THEME="sunaku"
-#ZSH_THEME="superjarin"
-#ZSH_THEME="terminalparty"
-#ZSH_THEME="tjkirch_mod"
-#ZSH_THEME="tjkirch"
-#ZSH_THEME="tonotdo"
-#ZSH_THEME="wedisagree"
-#ZSH_THEME="xiong-chiamiov"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -110,7 +62,7 @@ ZSH_THEME="less-fishy"  #custom theme, based on fishy
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo)
+plugins=(git sudo colored-man-pages history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
