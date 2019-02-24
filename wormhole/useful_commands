@@ -1,0 +1,13 @@
+#####################################
+# useful, frequently used commands: #
+#####################################
+
+#nginx:
+    sudo service nginx start|stop|restart|reload
+    cd /etc/nginx/sites-available|sites-enabled
+    sudo nginx -t
+    sudo ln -s /etc/nginx/sites-available/<site> /etc/nginx/sites-enabled/<site>
+
+#certbot:
+    sudo certbot -d <domain> --manual --preferred-challenges dns certonly
+
