@@ -10,4 +10,4 @@
 
 #certbot:
     sudo certbot -d <domain> --manual --preferred-challenges dns certonly
-
+    sudo certbot certificates
