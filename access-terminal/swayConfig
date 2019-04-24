@@ -262,9 +262,12 @@ bindsym $win+Down move workspace to output down
 # start a terminal
 bindsym $mod+Return exec terminator
 
-# start dmenu (a program launcher)
+# start rofi
 bindsym $mod+d exec /home/drake/scripts/rofi.sh
 bindsym $mod+$win+d exec gksudo /home/drake/scripts/rofi.sh
+
+#ALT+TAB:
+bindsym $mod+Tab exec /home/drake/scripts/alt-tab.sh
 
 #lanch calculator in floating mode
 bindsym $win+c exec gnome-calculator

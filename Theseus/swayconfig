@@ -310,9 +310,12 @@ bindsym $win+h exec /home/drake/scripts/sway-hide.sh
 # start a terminal
 bindsym $mod+Return exec terminator
 
-# start dmenu (a program launcher)
+# start Rofi
 bindsym $mod+d exec /home/drake/scripts/rofi.sh
 bindsym $mod+$win+d exec gksudo /home/drake/scripts/rofi.sh
+
+#ALT+TAB:
+bindsym $mod+Tab exec /home/drake/scripts/alt-tab.sh
 
 #lanch calculator in floating mode
 bindsym $win+c exec gnome-calculator
