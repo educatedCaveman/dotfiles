@@ -30,7 +30,6 @@ mode "&mode_ALT" {
 
 #default layout:
 workspace_layout tabbed
-#workspace_layout splith
 
 #main monitor bar.  shows everything
 bar {
@@ -269,7 +268,6 @@ bindsym $mod+$win+d exec gksudo /home/drake/scripts/rofi.sh
 
 #lanch calculator in floating mode
 bindsym $win+c exec gnome-calculator
-#for_window [title="Calculator"] floating enable
 for_window [app_id="gnome-calculator"] floating enable
 
 #launch browser
@@ -286,7 +284,6 @@ bindsym $win+$mod+s exec lxappearance
 
 #file browser
 bindsym $win+f exec nautilus
-#bindsym $win+f exec nemo &>/dev/null &
 
 #graphical text editor
 bindsym $win+t exec gedit &
@@ -304,7 +301,7 @@ exec swaymsg 'workspace "12: Mail "; exec /usr/bin/evolution'
 exec redshift -c ~/.config/redshift.conf &
 exec dropbox &
 exec mako &
-exec_always swayidle \
+exec_always swayidle -w \
     timeout 3600 '/home/drake/scripts/sway-blurry-lock.sh idle' \
     timeout 3900 'swaymsg "output * dpms off"' \
     resume 'swaymsg "output * dpms on"' \
@@ -316,7 +313,6 @@ exec_always swayidle \
 ################################################################################
 
 #hibernate
-#bindsym $mod+Pause exec /home/drake/scripts/hibernateAndLock.sh
 bindsym $win+Escape /home/drake/scripts/sway-blurry-lock.sh hibernte
 
 #lock screen
