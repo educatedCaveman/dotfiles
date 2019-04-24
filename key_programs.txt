@@ -35,6 +35,14 @@ nvim
 vim
 openvpn
 nm-applet (laptop only)
+neovim
+neofetch
+zsh
+sway
+swaylock
+swayidle
+tree
+redshift (git-wayland)
 
 #extras:
 Hack (font)
