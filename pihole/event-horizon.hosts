@@ -28,8 +28,6 @@ ff02::2		ip6-allrouters
 192.168.11.2    mobius.srv
 192.168.11.3    tesseract.srv
 192.168.11.4    event-horizon.srv
-192.168.11.5    holodeck.srv
-192.168.11.6    rclone.srv
 
 192.168.12.1    router.vm
 192.168.12.2    plex.vm
@@ -40,6 +38,7 @@ ff02::2		ip6-allrouters
 192.168.12.7    singularity.vm
 192.168.12.8    rura-penthe.vm
 192.168.12.9    handbrake.vm
+192.168.12.10   nextcloud.vm
 
 192.168.20.1    router.iot
 192.168.20.2    cortical-implant.iot
