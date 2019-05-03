@@ -1,0 +1,31 @@
+server {
+    listen 443 ssl;
+    server_name plex.drak3.net;
+
+    ssl_certificate         /etc/letsencrypt/live/plex.drak3.net/fullchain.pem;
+    ssl_certificate_key     /etc/letsencrypt/live/plex.drak3.net/privkey.pem;
+
+    ssl on;
+    ssl_session_cache  builtin:1000  shared:SSL:10m;
+    ssl_protocols  TLSv1 TLSv1.1 TLSv1.2;
+    ssl_ciphers HIGH:!aNULL:!eNULL:!EXPORT:!CAMELLIA:!DES:!MD5:!PSK:!RC4;
+    ssl_prefer_server_ciphers on;
+
+    location /.well-known {
+        root /etc/nginx/;
+    }
+    location / {
+        proxy_pass	    http://192.168.12.2:32400;
+        include		    /etc/nginx/proxy_params;
+    }
+}
+
+server {
+    listen 80;
+    server_name plex.drak3.net;
+
+    location / {
+        proxy_pass	    http://192.168.12.2:32400;
+        include		    /etc/nginx/proxy_params;
+    }
+}

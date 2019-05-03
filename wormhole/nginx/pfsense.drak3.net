@@ -1,0 +1,8 @@
+server {
+    listen 80;
+    server_name pfsense.drak3.net;
+    location / {
+        proxy_pass	    https://192.168.100.1;
+        include		    /etc/nginx/proxy_params;
+    }
+}
