@@ -263,11 +263,11 @@ bindsym $win+Down move workspace to output down
 bindsym $mod+Return exec terminator
 
 # start rofi
-bindsym $mod+d exec /home/drake/scripts/rofi.sh
-bindsym $mod+$win+d exec gksudo /home/drake/scripts/rofi.sh
+bindsym $mod+d exec /home/drake/scripts/i3-sway/rofi.sh
+bindsym $mod+$win+d exec gksudo /home/drake/scripts/i3-sway/rofi.sh
 
 #ALT+TAB:
-bindsym $mod+Tab exec /home/drake/scripts/alt-tab.sh
+bindsym $mod+Tab exec /home/drake/scripts/i3-sway/alt-tab.sh
 
 #lanch calculator in floating mode
 bindsym $win+c exec gnome-calculator
@@ -282,7 +282,7 @@ bindsym $mod+Print exec slurp | grim -g - /home/drake/Screenshots/$(date +%F-%T)
 bindsym Print exec grim -o eDP-1 /home/drake/Screenshots/$(date +%F-%T).png
 
 #settings
-bindsym $win+s exec /home/drake/scripts/gnome-control-center.sh &>/dev/null &
+bindsym $win+s exec /home/drake/scripts/i3-sway/gnome-control-center.sh &>/dev/null &
 bindsym $win+$mod+s exec lxappearance
 
 #file browser
@@ -305,10 +305,10 @@ exec redshift -c ~/.config/redshift.conf &
 exec dropbox &
 exec mako &
 exec_always swayidle -w \
-    timeout 3600 '/home/drake/scripts/sway-blurry-lock.sh idle' \
+    timeout 3600 '/home/drake/scripts/i3-sway/sway-blurry-lock.sh idle' \
     timeout 3900 'swaymsg "output * dpms off"' \
     resume 'swaymsg "output * dpms on"' \
-    before-sleep '/home/drake/scripts/sway-blurry-lock.sh' 
+    before-sleep '/home/drake/scripts/i3-sway/sway-blurry-lock.sh' 
 
 ################################################################################
 # power management                                                             #
@@ -316,10 +316,10 @@ exec_always swayidle -w \
 ################################################################################
 
 #hibernate
-bindsym $win+Escape /home/drake/scripts/sway-blurry-lock.sh hibernte
+bindsym $win+Escape /home/drake/scripts/i3-sway/sway-blurry-lock.sh hibernte
 
 #lock screen
-bindsym $win+l exec /home/drake/scripts/sway-blurry-lock.sh
+bindsym $win+l exec /home/drake/scripts/i3-sway/sway-blurry-lock.sh
 
 #reboot
 bindsym $mod+$win+r exec sudo reboot now
@@ -344,8 +344,8 @@ exec pactl set-sink-volume $(pacmd list-sinks | grep -E "\* index" | awk '{print
 #bindsym F11 exec brightnessctl set 5%-
 #bindsym Shift+F12 exec brightnessctl set +1%
 #bindsym Shift+F11 exec brightnessctl set 1%-
-bindsym F12 exec /home/drake/scripts/bright_up.sh 
-bindsym F11 exec /home/drake/scripts/bright_down.sh
+bindsym F12 exec /home/drake/scripts/i3-sway/access-terminal/bright_up.sh 
+bindsym F11 exec /home/drake/scripts/i3-sway/access-terminal/bright_down.sh
  
 #logging
 exec shmlog $((128*1024*1024))
