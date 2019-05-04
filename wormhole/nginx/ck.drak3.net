@@ -1,8 +1,0 @@
-server {
-    listen 80;
-    server_name ck.drak3.net;
-    location / {
-        proxy_pass	    http://192.168.1.2:8443;
-        include		    /etc/nginx/proxy_params;
-    }
-}

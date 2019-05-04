@@ -1,8 +1,0 @@
-server {
-    listen 80;
-    server_name transmission.drak3.net;
-    location / {
-        proxy_pass	    http://192.168.11.5:9091;
-        include		    /etc/nginx/proxy_params;
-    }
-}

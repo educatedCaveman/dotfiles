@@ -1,2 +1,0 @@
-#url for script to get openvpn running
-https://github.com/Nyr/openvpn-install

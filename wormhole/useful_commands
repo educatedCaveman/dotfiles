@@ -9,5 +9,6 @@
     sudo ln -s /etc/nginx/sites-available/<site> /etc/nginx/sites-enabled/<site>
 
 #certbot:
-    sudo certbot -d <domain> --manual --preferred-challenges dns certonly
+    sudo certbot certonly --dns-cloudflare --dns-cloudflare-credentials /home/drake/.secrets/cloudflare.ini -d <site>.drak3.net
+    sudo certbot -d <domain> --manual --preferred-challenges dns certonly   #old, manual version
     sudo certbot certificates

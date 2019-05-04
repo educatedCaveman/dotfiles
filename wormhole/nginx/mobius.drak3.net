@@ -1,8 +1,0 @@
-server {
-    listen 80;
-    server_name mobius.drak3.net;
-    location / {
-        proxy_pass	    http://192.168.11.2;
-        include		    /etc/nginx/proxy_params;
-    }
-}
