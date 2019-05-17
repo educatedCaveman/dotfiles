@@ -23,6 +23,7 @@ ff02::2		ip6-allrouters
 192.168.10.101  access-terminal.lan
 192.168.10.102  cortical-implant.lan
 192.168.10.103  tricorder.lan
+192.168.10.104  positron.lan
 
 192.168.11.1    router.srv
 192.168.11.2    mobius.srv
@@ -50,6 +51,7 @@ ff02::2		ip6-allrouters
 192.168.20.8    work-laptop-wired.iot
 192.168.20.9    work-laptop-wireless.iot
 192.168.20.10   work-laptop-hyperV.iot
+192.168.20.11   positron.iot
 
 192.168.100.1   router.dmz
 192.168.100.2   wormhole.dmz
