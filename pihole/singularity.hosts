@@ -61,6 +61,8 @@ ff02::3 ip6-allhosts
 
 10.13.37.1      router.vpn
 10.13.37.2      cortical-implant.vpn
+10.13.37.3      positron.vpn
 
 10.13.38.1      router.vpn2
 10.13.38.2      cortical-implant.vpn2
+10.13.38.3      positron.vpn2
