@@ -43,6 +43,9 @@ ff02::3 ip6-allhosts
 192.168.12.8    rura-penthe.vm
 192.168.12.9    handbrake.vm
 192.168.12.10   nextcloud.vm
+192.168.12.11   syncthing.vm
+192.168.12.12   backup-pc.vm
+192.168.12.13   bacula.vm
 
 192.168.20.1    router.iot
 192.168.20.2    cortical-implant.iot
