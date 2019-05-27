@@ -301,6 +301,7 @@ exec_always {
 
 #autostart
 exec swaymsg 'workspace "12: Mail "; exec /usr/bin/evolution'
+exec swaymsg 'workspace "40: Steam"; exec /usr/bin/discord'
 exec redshift -c ~/.config/redshift.conf &
 exec dropbox &
 exec mako &
