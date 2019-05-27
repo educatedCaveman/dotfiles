@@ -26,6 +26,7 @@ ff02::3 ip6-allhosts
 192.168.10.101  access-terminal.lan
 192.168.10.102  cortical-implant.lan
 192.168.10.103  tricorder.lan
+192.168.10.104  positron.lan
 
 192.168.11.1    router.srv
 192.168.11.2    mobius.srv
@@ -42,6 +43,9 @@ ff02::3 ip6-allhosts
 192.168.12.8    rura-penthe.vm
 192.168.12.9    handbrake.vm
 192.168.12.10   nextcloud.vm
+192.168.12.11   syncthing.vm
+192.168.12.12   backup-pc.vm
+192.168.12.13   bacula.vm
 
 192.168.20.1    router.iot
 192.168.20.2    cortical-implant.iot
@@ -53,12 +57,15 @@ ff02::3 ip6-allhosts
 192.168.20.8    work-laptop-wired.iot
 192.168.20.9    work-laptop-wireless.iot
 192.168.20.10   work-laptop-hyperV.iot
+192.168.20.11   positron.iot
 
 192.168.100.1   router.dmz
 192.168.100.2   wormhole.dmz
 
 10.13.37.1      router.vpn
 10.13.37.2      cortical-implant.vpn
+10.13.37.3      positron.vpn
 
 10.13.38.1      router.vpn2
 10.13.38.2      cortical-implant.vpn2
+10.13.38.3      positron.vpn2

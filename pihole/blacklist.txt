@@ -27,3 +27,5 @@ sunnyplayer-frontapi.cherrytech.com
 mh.tlootas.org
 spotscenered.info
 wwwdrt.idev.fedex.com
+player.playbuzz.co
+cdn-client.whisper.sh
