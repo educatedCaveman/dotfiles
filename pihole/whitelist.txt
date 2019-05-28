@@ -324,3 +324,4 @@ prod.whisper.sh
 my.mixtape.moe
 www.lpsg.com
 xfantasy.tv
+cdn.tsyndicate.com
