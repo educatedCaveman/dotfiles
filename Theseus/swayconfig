@@ -89,8 +89,10 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 font pango:Hack 12
 
 ##borders
-new_window normal 0
-new_float normal 5
+#new_window normal 0
+default_border normal 0
+#new_float normal 5
+default_floating_border normal 5
 
 ################################################################################
 # Window Manipulation                                                          #
@@ -363,12 +365,12 @@ exec_always {
     gsettings set $gnome-schema cursor-theme 'Adwaita'
 }
 
-##autostart
+#autostart
 exec swaymsg 'workspace "12: Mail "; exec /usr/bin/evolution'
 exec swaymsg 'workspace "13: Music "; exec /usr/bin/rhythmbox'
-exec swaymsg 'workspace "30: Steam "; exec /usr/bin/discord'
+#exec swaymsg 'workspace "30: Steam "; exec /usr/bin/discord'
 exec /home/drake/scripts/i3-sway/sway-scratch-n-monitor.sh
-exec redshift -c ~/.config/redshift.conf &
+#exec redshift -c ~/.config/redshift.conf &
 exec dropbox &
 exec swaymsg 'workspace "0: X "'
 #lock after an hour:
@@ -380,8 +382,8 @@ exec mako &     #notifications
 
 #application-WS mapping
 #TODO: fix this
-assign [class="VNC Viewer"] → "20: VNC "
-assign [class="Remmina"] → "20: VNC "
+#assign [class="VNC Viewer"] → "20: VNC "
+#assign [class="Remmina"] → "20: VNC "
 
 #for "blank" workspaces:
 workspace "100: Desktop " output DP-4
