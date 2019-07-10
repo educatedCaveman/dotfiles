@@ -55,6 +55,8 @@ ff02::2		ip6-allrouters
 192.168.20.9    work-laptop-wireless.iot
 192.168.20.10   work-laptop-hyperV.iot
 192.168.20.11   positron.iot
+192.168.20.12   trojan-horse.iot
+192.168.20.13   dns-leak.iot
 
 192.168.100.1   router.dmz
 192.168.100.2   wormhole.dmz
