@@ -35,7 +35,6 @@ output DP-5 {
 
 #mouse:
 input "1133:16507:Logitech_MX_Vertical" {
-    #"ButtonMapping" "1 3 2 4 5 6 7 8 10 9 11 12 13 14"
     middle_emulation enabled
 }
 
@@ -89,9 +88,7 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 font pango:Hack 12
 
 ##borders
-#new_window normal 0
 default_border normal 0
-#new_float normal 5
 default_floating_border normal 5
 
 ################################################################################
@@ -368,7 +365,7 @@ exec_always {
 #autostart
 exec swaymsg 'workspace "12: Mail "; exec /usr/bin/evolution'
 exec swaymsg 'workspace "13: Music "; exec /usr/bin/rhythmbox'
-#exec swaymsg 'workspace "30: Steam "; exec /usr/bin/discord'
+exec swaymsg 'workspace "30: Steam "; exec /usr/bin/discord'
 exec /home/drake/scripts/i3-sway/sway-scratch-n-monitor.sh
 #exec redshift -c ~/.config/redshift.conf &
 exec dropbox &
@@ -399,7 +396,6 @@ workspace "102: Desktop " output DP-6
 bindsym $mod+Pause exec /home/drake/scripts/i3-sway/sway-blurry-lock.sh hibernate
 
 #lock screen
-#bindsym $win+l exec /home/drake/scripts/i3-sway/lock.sh
 bindsym $win+l exec /home/drake/scripts/i3-sway/sway-blurry-lock.sh
 
 #reboot
