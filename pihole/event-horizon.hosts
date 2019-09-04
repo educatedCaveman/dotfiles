@@ -24,6 +24,8 @@ ff02::2		ip6-allrouters
 192.168.10.102  cortical-implant.lan
 192.168.10.103  tricorder.lan
 192.168.10.104  positron.lan
+192.168.10.105  electron.lan
+192.168.10.106  photon.lan
 
 192.168.11.1    router.srv
 192.168.11.2    mobius.srv
