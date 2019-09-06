@@ -21,3 +21,5 @@
 ((^)|(.))adsdk.
 ((^)|(.))adserv.
 ((^)|(.))tracking.
+(^|\.)ads\.roku\.com$
+(^|\.)logs\.roku\.com$
