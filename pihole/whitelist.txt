@@ -318,7 +318,6 @@ thegrittywoman.com
 www.adt.com
 affenknecht.com
 www.spankwire.com
-cdn-client.whisper.sh
 prod.whisper.sh
 8ch.net
 my.mixtape.moe
@@ -342,3 +341,5 @@ nobodyinparticularnsfw.blogspot.com
 sxyprn.com
 www.weatherbug.com
 bobs-tube.com
+bitly.com
+www.refinery29.com
