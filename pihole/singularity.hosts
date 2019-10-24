@@ -62,6 +62,7 @@ ff02::3 ip6-allhosts
 192.168.20.11   positron.iot
 192.168.20.12   trojan-horse.iot
 192.168.20.13   dns-leak.iot
+192.168.20.15   tricorder.iot
 
 192.168.200.1   router.dmz
 192.168.200.2   wormhole.dmz

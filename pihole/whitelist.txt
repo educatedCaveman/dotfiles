@@ -343,3 +343,7 @@ www.weatherbug.com
 bobs-tube.com
 bitly.com
 www.refinery29.com
+darkreader.github.io
+therecipecritic.com
+pasteboard.co
+ift.tt
