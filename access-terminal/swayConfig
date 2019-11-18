@@ -14,7 +14,7 @@ input "1739:30381:DLL0665:01_06CB:76AD_Touchpad" {
 }
 
 output eDP-1 {
-    background /home/drake/wallpapers/nature_adirondack_mountains.jpg fill
+    background /home/drake/wallpapers/firefox-nightly-3840x2160.png fill
 }
 
 #ALT passthrough:
