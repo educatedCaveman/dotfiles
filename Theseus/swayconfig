@@ -25,7 +25,7 @@ output DP-6 {
 }
 output DP-4 {
     pos 1440 0 
-    background /home/drake/wallpapers/nature_adirondack_mountains.jpg fill
+    background /home/drake/wallpapers/FF_nightlies_4k.png fill
 }
 output DP-5 {
     pos 5280 0
