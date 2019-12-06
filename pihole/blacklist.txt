@@ -28,7 +28,6 @@ mh.tlootas.org
 spotscenered.info
 wwwdrt.idev.fedex.com
 player.playbuzz.co
-captive.roku.com
 amoeba.web.roku.com
 assets.sr.roku.com
 cloudservices.roku.com
