@@ -9,7 +9,8 @@ set $up k
 set $right l
 
 ### Input/Output configuration
-input "1739:30381:DLL0665:01_06CB:76AD_Touchpad" {
+#input "1739:30381:DLL0665:01_06CB:76AD_Touchpad" {
+input "1739:31251:SYNA2393:00_06CB:7A13_Touchpad" {
    tap enabled
 }
 
@@ -18,6 +19,7 @@ output eDP-1 {
 }
 
 #ALT passthrough:
+#TODO: fix this
 set $mode_ALT ALT:
 bindsym $mod+End mode "$mode_ALT"
 mode "&mode_ALT" {
@@ -163,6 +165,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 #move floating windows
+#TODO: fix this
 bindsym $win+m mode "move" focus floating
 mode "move" {
     bindsym $mod+Tab focus right
@@ -321,7 +324,7 @@ exec_always swayidle -w \
 ################################################################################
 
 #hibernate
-bindsym $win+Escape /home/drake/scripts/i3-sway/sway-blurry-lock.sh hibernte
+#bindsym $win+Escape /home/drake/scripts/i3-sway/sway-blurry-lock.sh hibernte
 
 #lock screen
 bindsym $win+l exec /home/drake/scripts/i3-sway/sway-blurry-lock.sh
