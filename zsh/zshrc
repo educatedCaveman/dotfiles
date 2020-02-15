@@ -62,7 +62,7 @@ ZSH_THEME="less-fishy"  #custom theme, based on fishy
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo colored-man-pages history-substring-search )
+plugins=(git sudo colored-man-pages history-substring-search python rsync tmux tmuxinator )
 
 source $ZSH/oh-my-zsh.sh
 
