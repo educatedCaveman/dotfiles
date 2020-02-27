@@ -21,6 +21,7 @@ ff02::2		ip6-allrouters
 192.168.10.3    lithium.lan
 192.168.10.5    holodeck.lan
 192.168.10.6    carbon.lan
+192.168.10.7    nitrogen.lan
 192.168.10.100  theseus.lan
 192.168.10.101  access-terminal.lan
 192.168.10.102  cortical-implant.lan
