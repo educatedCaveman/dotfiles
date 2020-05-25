@@ -53,6 +53,8 @@ ff02::2		ip6-allrouters
 192.168.12.16   sevastopol.vm
 192.168.12.99   theseus.vm
 
+192.168.13.16   lv-426.lab
+
 192.168.20.1    router.iot
 192.168.20.2    cortical-implant.iot
 192.168.20.3    wiretap.iot
