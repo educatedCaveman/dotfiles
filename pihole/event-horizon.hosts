@@ -51,6 +51,7 @@ ff02::2		ip6-allrouters
 192.168.12.14   deluge.vm
 192.168.12.15   qbittorrent.vm
 192.168.12.16   sevastopol.vm
+192.168.12.17   jenkins.vm
 192.168.12.99   theseus.vm
 
 192.168.13.16   lv-426.lab
