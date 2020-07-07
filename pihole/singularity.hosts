@@ -19,6 +19,7 @@ ff02::3 ip6-allhosts
 192.168.1.7     mobius.mgmt
 192.168.1.8     tesseract.mgmt
 192.168.1.9     tachyon.mgmt
+192.168.1.10    central_plexus.mgmt
 
 192.168.10.1    router.lan
 192.168.10.2    big-brother.lan
