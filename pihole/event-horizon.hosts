@@ -39,17 +39,12 @@ ff02::2		ip6-allrouters
 
 192.168.12.1    router.vm
 192.168.12.2    plex.vm
-192.168.12.3    emby.vm
-192.168.12.4    helix.vm
 192.168.12.5    airlock.vm
-192.168.12.6    rclone.vm
 192.168.12.7    singularity.vm
 192.168.12.8    rura-penthe.vm
-192.168.12.9    handbrake.vm
 192.168.12.10   nextcloud.vm
 192.168.12.11   syncthing.vm
 192.168.12.12   mine-os.vm
-192.168.12.14   deluge.vm
 192.168.12.15   qbittorrent.vm
 192.168.12.16   sevastopol.vm
 192.168.12.17   jenkins.vm
