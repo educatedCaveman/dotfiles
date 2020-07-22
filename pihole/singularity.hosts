@@ -60,6 +60,10 @@ ff02::3 ip6-allhosts
 192.168.13.18   med-lab-02.lab
 192.168.13.19   med-lab-03.lab
 
+#lab hosts:
+192.168.13.16   proxy.lv-426.lab
+192.168.13.16   hb.lv-426.lab
+
 192.168.20.1    router.iot
 192.168.20.2    cortical-implant.iot
 192.168.20.3    wiretap.iot
