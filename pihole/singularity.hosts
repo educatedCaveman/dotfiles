@@ -53,6 +53,28 @@ ff02::3 ip6-allhosts
 192.168.12.17   jenkins.vm
 192.168.12.99   theseus.vm
 
+#docker hosts:
+192.168.12.16       proxy.sevastopol.vm
+192.168.12.16          hb.sevastopol.vm
+192.168.12.16          dl.sevastopol.vm
+192.168.12.16        code.sevastopol.vm
+192.168.12.16        book.sevastopol.vm
+192.168.12.16      google.sevastopol.vm
+192.168.12.16      pihole.sevastopol.vm
+192.168.12.16   portainer.sevastopol.vm
+192.168.12.16       homer.sevastopol.vm
+192.168.12.16    heimdall.sevastopol.vm
+192.168.12.16        ip01.sevastopol.vm
+192.168.12.16        ip02.sevastopol.vm
+192.168.12.16        ip03.sevastopol.vm
+192.168.12.16        ip04.sevastopol.vm
+192.168.12.16        ip05.sevastopol.vm
+192.168.12.16        ip06.sevastopol.vm
+192.168.12.16        ip07.sevastopol.vm
+192.168.12.16        ip08.sevastopol.vm
+192.168.12.16        ip09.sevastopol.vm
+192.168.12.16        ip10.sevastopol.vm
+
 192.168.13.1    router.lab
 192.168.13.3    ansible.lab
 192.168.13.16   lv-426.lab

@@ -50,12 +50,56 @@ ff02::2		ip6-allrouters
 192.168.12.17   jenkins.vm
 192.168.12.99   theseus.vm
 
+#docker hosts:
+192.168.12.16       proxy.sevastopol.vm
+192.168.12.16          hb.sevastopol.vm
+192.168.12.16          dl.sevastopol.vm
+192.168.12.16        code.sevastopol.vm
+192.168.12.16        book.sevastopol.vm
+192.168.12.16      google.sevastopol.vm
+192.168.12.16      pihole.sevastopol.vm
+192.168.12.16   portainer.sevastopol.vm
+192.168.12.16       homer.sevastopol.vm
+192.168.12.16    heimdall.sevastopol.vm
+192.168.12.16        ip01.sevastopol.vm
+192.168.12.16        ip02.sevastopol.vm
+192.168.12.16        ip03.sevastopol.vm
+192.168.12.16        ip04.sevastopol.vm
+192.168.12.16        ip05.sevastopol.vm
+192.168.12.16        ip06.sevastopol.vm
+192.168.12.16        ip07.sevastopol.vm
+192.168.12.16        ip08.sevastopol.vm
+192.168.12.16        ip09.sevastopol.vm
+192.168.12.16        ip10.sevastopol.vm
+
 192.168.13.1    router.lab
 192.168.13.3    ansible.lab
 192.168.13.16   lv-426.lab
 192.168.13.17   med-lab-01.lab
 192.168.13.18   med-lab-02.lab
 192.168.13.19   med-lab-03.lab
+
+#lab hosts:
+192.168.13.16       proxy.lv-426.lab
+192.168.13.16          hb.lv-426.lab
+192.168.13.16          dl.lv-426.lab
+192.168.13.16        code.lv-426.lab
+192.168.13.16        book.lv-426.lab
+192.168.13.16      google.lv-426.lab
+192.168.13.16      pihole.lv-426.lab
+192.168.13.16   portainer.lv-426.lab
+192.168.13.16       homer.lv-426.lab
+192.168.13.16    heimdall.lv-426.lab
+192.168.13.16        ip01.lv-426.lab
+192.168.13.16        ip02.lv-426.lab
+192.168.13.16        ip03.lv-426.lab
+192.168.13.16        ip04.lv-426.lab
+192.168.13.16        ip05.lv-426.lab
+192.168.13.16        ip06.lv-426.lab
+192.168.13.16        ip07.lv-426.lab
+192.168.13.16        ip08.lv-426.lab
+192.168.13.16        ip09.lv-426.lab
+192.168.13.16        ip10.lv-426.lab
 
 192.168.20.1    router.iot
 192.168.20.2    cortical-implant.iot
