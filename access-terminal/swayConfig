@@ -15,7 +15,8 @@ input "1739:31251:SYNA2393:00_06CB:7A13_Touchpad" {
 }
 
 output eDP-1 {
-    background /home/drake/wallpapers/firefox-nightly-3840x2160.png fill
+    #background /home/drake/wallpapers/firefox-nightly-3840x2160.png fill
+    background /home/drake/wallpapers/dark-grey-terrazzo.png tile
 }
 
 #ALT passthrough:
