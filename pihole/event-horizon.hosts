@@ -11,12 +11,23 @@ ff02::2		ip6-allrouters
 192.168.1.2     plasma-injector.mgmt
 192.168.1.3     graviton.mgmt
 192.168.1.4     plasma-conduit.mgmt
-192.168.1.5     subspace-relay.mgmt
+192.168.1.5     office-AP.mgmt
 192.168.1.6     vinculum.mgmt
 192.168.1.7     mobius.mgmt
 192.168.1.8     tesseract.mgmt
 192.168.1.9     tachyon.mgmt
 192.168.1.10    central_plexus.mgmt
+192.168.1.11    guest-AP.mgmt
+192.168.1.12    living-room-AP.mgmt
+192.168.1.13    dining-AP.mgmt
+192.168.1.14    bedroom-AP.mgmt
+192.168.1.15    kraft-AP.mgmt
+192.168.1.16    office-SW.mgmt
+192.168.1.17    guest-SW.mgmt
+192.168.1.18    living-room-SW.mgmt
+192.168.1.19    dining-SW.mgmt
+192.168.1.20    bedroom-SW.mgmt
+192.168.1.21    kraft-SW.mgmt
 
 192.168.10.1    router.lan
 192.168.10.2    big-brother.lan
