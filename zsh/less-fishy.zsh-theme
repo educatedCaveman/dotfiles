@@ -3,12 +3,12 @@
 # bolded, and the collapsed working directory only applies to /home/$user
 
 _fishy_collapsed_wd() {
-  echo $(pwd | perl -pe '
-   BEGIN {
-      binmode STDIN,  ":encoding(UTF-8)";
-      binmode STDOUT, ":encoding(UTF-8)";
-   }; s|^$ENV{HOME}|~|g; 
-')
+    echo $(pwd | perl -pe '
+        BEGIN {
+            binmode STDIN,  ":encoding(UTF-8)";
+            binmode STDOUT, ":encoding(UTF-8)";
+        }; s|^$ENV{HOME}|~|g; 
+    ')
 }
 
 local user_color='green'; [ $UID -eq 0 ] && user_color='red'
