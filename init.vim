@@ -16,18 +16,7 @@ Plugin 'scrooloose/nerdcommenter'   "comments
 Plugin 'scrooloose/nerdtree'        "file manager
 
 "colorschemes:
-"Plugin 'flazz/vim-colorschemes'
 Plugin 'romainl/Apprentice'
-"Plugin 'xero/blaquemagick.vim'
-"Plugin 'xero/sourcerer.vim'
-"Plugin 'encody/vim-colors'
-"Plugin 'Konstruktionist/vim'
-"Plugin 'marcopaganini/termschool-vim-theme'
-"Plugin 'NLKNguyen/papercolor-theme'
-"Plugin 'w0ng/vim-hybrid'
-"Plugin 'tyrannicaltoucan/vim-deep-space'
-"Plugin 'rakr/vim-two-firewatch'
-"Plugin 'kamwitsta/nordisk'
 Plugin 'zakj/vim-mourning'
 
 " All of your Plugins must be added before the following line
@@ -62,8 +51,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 syntax enable
 colorscheme apprentice
 "colorscheme mourning 
-"set background=dark
-"colorscheme hybrid
 
 "line numbering:
 set relativenumber
