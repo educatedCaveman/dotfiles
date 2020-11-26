@@ -142,3 +142,6 @@ ff02::3 ip6-allhosts
 10.13.38.1      router.vpn2
 10.13.38.2      positron.vpn2
 10.13.38.3      positron2.vpn2
+
+#fake external
+192.168.11.1    mobius.drak3.io
