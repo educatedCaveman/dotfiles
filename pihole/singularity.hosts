@@ -143,3 +143,14 @@ ff02::3 ip6-allhosts
 10.13.38.2      positron.vpn2
 10.13.38.3      positron2.vpn2
 
+#internal https
+192.168.11.5          mobius.drak3.io
+192.168.11.5       tesseract.drak3.io
+192.168.11.5          pihole.drak3.io
+192.168.11.5         pihole2.drak3.io
+192.168.11.5    idrac.mobius.drak3.io
+192.168.11.5           cloud.drak3.io
+192.168.11.5            plex.drak3.io
+192.168.11.5             qbt.drak3.io
+
+
