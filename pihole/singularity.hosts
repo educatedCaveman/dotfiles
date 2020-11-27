@@ -144,13 +144,47 @@ ff02::3 ip6-allhosts
 10.13.38.3      positron2.vpn2
 
 #internal https
-192.168.11.5          mobius.drak3.io
-192.168.11.5       tesseract.drak3.io
-192.168.11.5          pihole.drak3.io
-192.168.11.5         pihole2.drak3.io
-192.168.11.5    idrac.mobius.drak3.io
-192.168.11.5           cloud.drak3.io
-192.168.11.5            plex.drak3.io
-192.168.11.5             qbt.drak3.io
+#servers
+192.168.11.5             mobius.drak3.io
+192.168.11.5          tesseract.drak3.io
+192.168.11.5       idrac.mobius.drak3.io
+192.168.11.5    idrac.tesseract.drak3.io
+192.168.11.5            pihole2.drak3.io
+192.168.11.5              unifi.drak3.io
+
+#jails/VMs
+192.168.11.5      cloud.drak3.io
+192.168.11.5       plex.drak3.io
+192.168.11.5        qbt.drak3.io
+192.168.11.5     pihole.drak3.io
+192.168.11.5        git.drak3.io
+192.168.11.5    jenkins.drak3.io
+192.168.11.5     mineos.drak3.io
+192.168.11.5       sync.drak3.io
+192.168.11.5       cams.drak3.io
+
+#docker, PRD
+192.168.11.5    portainer.drak3.io
+192.168.11.5        nginx.drak3.io
+192.168.11.5           hb.drak3.io
+192.168.11.5         ytdl.drak3.io
+192.168.11.5         book.drak3.io
+192.168.11.5         code.drak3.io
+192.168.11.5           pi.drak3.io
+192.168.11.5        homer.drak3.io
+192.168.11.5     heimdall.drak3.io
+192.168.11.5       google.drak3.io
+
+#docker, DEV
+192.168.11.5    portainer.dev.drak3.io
+192.168.11.5        nginx.dev.drak3.io
+192.168.11.5           hb.dev.drak3.io
+192.168.11.5         ytdl.dev.drak3.io
+192.168.11.5         book.dev.drak3.io
+192.168.11.5         code.dev.drak3.io
+192.168.11.5           pi.dev.drak3.io
+192.168.11.5        homer.dev.drak3.io
+192.168.11.5     heimdall.dev.drak3.io
+192.168.11.5       google.dev.drak3.io
 
 
