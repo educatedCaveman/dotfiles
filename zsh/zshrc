@@ -15,5 +15,11 @@ then
     source ~/.zsh_aliases
 fi
 
+# secrets file:
+if [ -f ~/.zsh_secrets ];
+then
+    source ~/.zsh_secrets
+fi
+
 #for fun:
 neofetch
