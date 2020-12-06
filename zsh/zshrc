@@ -21,5 +21,9 @@ then
     source ~/.zsh_secrets
 fi
 
-#for fun:
-neofetch
+dist=$(uname -s)
+if [[ "${dist}" -eq "Linux" ]]
+then
+    #for fun:
+    neofetch
+fi
