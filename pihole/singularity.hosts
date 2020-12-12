@@ -10,27 +10,27 @@ ff02::3 ip6-allhosts
 
 #local machines
 
-192.168.1.1     router.mgmt
+192.168.1.1              router.mgmt
 192.168.1.2     plasma-injector.mgmt
-192.168.1.3     graviton.mgmt
-192.168.1.4     plasma-conduit.mgmt
-192.168.1.5     office-AP.mgmt
-192.168.1.6     vinculum.mgmt
-192.168.1.7     mobius.mgmt
-192.168.1.8     tesseract.mgmt
-192.168.1.9     tachyon.mgmt
-192.168.1.10    central_plexus.mgmt
-192.168.1.11    guest-AP.mgmt
-192.168.1.12    living-room-AP.mgmt
-192.168.1.13    dining-AP.mgmt
-192.168.1.14    bedroom-AP.mgmt
-192.168.1.15    kraft-AP.mgmt
-192.168.1.16    office-SW.mgmt
-192.168.1.17    guest-SW.mgmt
-192.168.1.18    living-room-SW.mgmt
-192.168.1.19    dining-SW.mgmt
-192.168.1.20    bedroom-SW.mgmt
-192.168.1.21    kraft-SW.mgmt
+192.168.1.3            graviton.mgmt
+192.168.1.4      plasma-conduit.mgmt
+192.168.1.5           office-AP.mgmt
+192.168.1.6            vinculum.mgmt
+192.168.1.7              mobius.mgmt
+192.168.1.8           tesseract.mgmt
+192.168.1.9             tachyon.mgmt
+192.168.1.10     central_plexus.mgmt
+192.168.1.11           guest-AP.mgmt
+192.168.1.12     living-room-AP.mgmt
+192.168.1.13          dining-AP.mgmt
+192.168.1.14         bedroom-AP.mgmt
+192.168.1.15           kraft-AP.mgmt
+192.168.1.16          office-SW.mgmt
+192.168.1.17           guest-SW.mgmt
+192.168.1.18     living-room-SW.mgmt
+192.168.1.19          dining-SW.mgmt
+192.168.1.20         bedroom-SW.mgmt
+192.168.1.21           kraft-SW.mgmt
 
 192.168.10.1    router.lan
 192.168.10.2    big-brother.lan
@@ -87,9 +87,10 @@ ff02::3 ip6-allhosts
 192.168.12.16        ip09.sevastopol.vm
 192.168.12.16        ip10.sevastopol.vm
 
-192.168.13.1    router.lab
-192.168.13.3    ansible.lab
-192.168.13.16   lv-426.lab
+192.168.13.1        router.lab
+192.168.13.2       jenkins.lab
+192.168.13.3       ansible.lab
+192.168.13.16       lv-426.lab
 192.168.13.17   med-lab-01.lab
 192.168.13.18   med-lab-02.lab
 192.168.13.19   med-lab-03.lab
