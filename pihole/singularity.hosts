@@ -32,41 +32,39 @@ ff02::3 ip6-allhosts
 192.168.1.20         bedroom-SW.mgmt
 192.168.1.21           kraft-SW.mgmt
 
-192.168.10.1    router.lan
-192.168.10.2    big-brother.lan
-192.168.10.3    lithium.lan
-192.168.10.5    holodeck.lan
-192.168.10.6    carbon.lan
-192.168.10.7    nitrogen.lan
-192.168.10.8    theseus.lan
-192.168.10.100  theseus.lan
-192.168.10.101  access-terminal.lan
+192.168.10.1              router.lan
+192.168.10.2         big-brother.lan
+192.168.10.3             lithium.lan
+192.168.10.5            holodeck.lan
+192.168.10.6              carbon.lan
+192.168.10.7            nitrogen.lan
+192.168.10.8             theseus.lan
+192.168.10.100           theseus.lan
+192.168.10.101   access-terminal.lan
 192.168.10.102  cortical-implant.lan
-192.168.10.103  tricorder.lan
-192.168.10.104  positron.lan
-192.168.10.105  electron.lan
-192.168.10.106  photon.lan
+192.168.10.103         tricorder.lan
+192.168.10.104          positron.lan
+192.168.10.105          electron.lan
+192.168.10.106            photon.lan
 
-192.168.11.1    router.srv
-192.168.11.2    mobius.srv
-192.168.11.3    tesseract.srv
+192.168.11.1           router.srv
+192.168.11.2           mobius.srv
+192.168.11.3        tesseract.srv
 192.168.11.4    event-horizon.srv
 
-192.168.12.1    router.vm
-192.168.12.2    plex.vm
-192.168.12.5    airlock.vm
+192.168.12.1         router.vm
+192.168.12.2           plex.vm
 192.168.12.7    singularity.vm
 192.168.12.8    rura-penthe.vm
-192.168.12.10   nextcloud.vm
-192.168.12.11   syncthing.vm
-192.168.12.12   mine-os.vm
+192.168.12.10     nextcloud.vm
+192.168.12.11     syncthing.vm
+192.168.12.12       mine-os.vm
 192.168.12.15   qbittorrent.vm
-192.168.12.16   sevastopol.vm
-192.168.12.17   jenkins.vm
-192.168.12.99   theseus.vm
+192.168.12.16    sevastopol.vm
+192.168.12.17       jenkins.vm
+192.168.12.99       theseus.vm
 
 #docker hosts:
-192.168.12.16       proxy.sevastopol.vm
 192.168.12.16          hb.sevastopol.vm
 192.168.12.16          dl.sevastopol.vm
 192.168.12.16        code.sevastopol.vm
@@ -75,7 +73,6 @@ ff02::3 ip6-allhosts
 192.168.12.16      pihole.sevastopol.vm
 192.168.12.16   portainer.sevastopol.vm
 192.168.12.16       homer.sevastopol.vm
-192.168.12.16    heimdall.sevastopol.vm
 192.168.12.16        ip01.sevastopol.vm
 192.168.12.16        ip02.sevastopol.vm
 192.168.12.16        ip03.sevastopol.vm
@@ -86,6 +83,7 @@ ff02::3 ip6-allhosts
 192.168.12.16        ip08.sevastopol.vm
 192.168.12.16        ip09.sevastopol.vm
 192.168.12.16        ip10.sevastopol.vm
+192.168.12.16        ombi.sevastopol.vm
 
 192.168.13.1        router.lab
 192.168.13.2       jenkins.lab
@@ -96,7 +94,6 @@ ff02::3 ip6-allhosts
 192.168.13.19   med-lab-03.lab
 
 #lab hosts:
-192.168.13.16       proxy.lv-426.lab
 192.168.13.16          hb.lv-426.lab
 192.168.13.16          dl.lv-426.lab
 192.168.13.16        code.lv-426.lab
@@ -105,7 +102,6 @@ ff02::3 ip6-allhosts
 192.168.13.16      pihole.lv-426.lab
 192.168.13.16   portainer.lv-426.lab
 192.168.13.16       homer.lv-426.lab
-192.168.13.16    heimdall.lv-426.lab
 192.168.13.16        ip01.lv-426.lab
 192.168.13.16        ip02.lv-426.lab
 192.168.13.16        ip03.lv-426.lab
@@ -116,32 +112,33 @@ ff02::3 ip6-allhosts
 192.168.13.16        ip08.lv-426.lab
 192.168.13.16        ip09.lv-426.lab
 192.168.13.16        ip10.lv-426.lab
+192.168.13.16        ombi.lv-426.lab
 
-192.168.20.1    router.iot
-192.168.20.2    cortical-implant.iot
-192.168.20.3    wiretap.iot
-192.168.20.4    wiretap-mini.iot
-192.168.20.5    wemo-small-fan.iot
-192.168.20.6    wemo-big-fan.iot
-192.168.20.7    wemo-bathroom.iot
-192.168.20.8    work-laptop-wired.iot
+192.168.20.1                  router.iot
+192.168.20.2        cortical-implant.iot
+192.168.20.3                 wiretap.iot
+192.168.20.4            wiretap-mini.iot
+192.168.20.5          wemo-small-fan.iot
+192.168.20.6            wemo-big-fan.iot
+192.168.20.7           wemo-bathroom.iot
+192.168.20.8       work-laptop-wired.iot
 192.168.20.9    work-laptop-wireless.iot
-192.168.20.10   work-laptop-hyperV.iot
-192.168.20.11   positron.iot
-192.168.20.12   trojan-horse.iot
-192.168.20.13   dns-leak.iot
-192.168.20.15   tricorder.iot
-192.168.20.16   petcube.iot
+192.168.20.10     work-laptop-hyperV.iot
+192.168.20.11               positron.iot
+192.168.20.12           trojan-horse.iot
+192.168.20.13               dns-leak.iot
+192.168.20.15              tricorder.iot
+192.168.20.16                petcube.iot
 
-192.168.200.1   router.dmz
+192.168.200.1     router.dmz
 192.168.200.2   wormhole.dmz
 
-10.13.37.1      router.vpn
-10.13.37.2      positron.vpn
+10.13.37.1         router.vpn
+10.13.37.2       positron.vpn
 10.13.37.3      positron2.vpn
 
-10.13.38.1      router.vpn2
-10.13.38.2      positron.vpn2
+10.13.38.1         router.vpn2
+10.13.38.2       positron.vpn2
 10.13.38.3      positron2.vpn2
 
 #internal https
@@ -166,26 +163,22 @@ ff02::3 ip6-allhosts
 
 #docker, PRD
 192.168.11.5    portainer.drak3.io
-192.168.11.5        nginx.drak3.io
 192.168.11.5           hb.drak3.io
 192.168.11.5         ytdl.drak3.io
 192.168.11.5         book.drak3.io
 192.168.11.5         code.drak3.io
 192.168.11.5           pi.drak3.io
 192.168.11.5        homer.drak3.io
-192.168.11.5     heimdall.drak3.io
 192.168.11.5       google.drak3.io
+192.168.11.5         ombi.drak3.io
 
 #docker, DEV
 192.168.11.5    portainer.dev.drak3.io
-192.168.11.5        nginx.dev.drak3.io
 192.168.11.5           hb.dev.drak3.io
 192.168.11.5         ytdl.dev.drak3.io
 192.168.11.5         book.dev.drak3.io
 192.168.11.5         code.dev.drak3.io
 192.168.11.5           pi.dev.drak3.io
 192.168.11.5        homer.dev.drak3.io
-192.168.11.5     heimdall.dev.drak3.io
 192.168.11.5       google.dev.drak3.io
-
-
+192.168.11.5         ombi.dev.drak3.io
