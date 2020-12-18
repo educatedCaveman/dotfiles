@@ -51,6 +51,7 @@ ff02::2		ip6-allrouters
 
 192.168.12.1         router.vm
 192.168.12.2           plex.vm
+192.168.12.3       tautulli.vm
 192.168.12.7    singularity.vm
 192.168.12.8    rura-penthe.vm
 192.168.12.10     nextcloud.vm
@@ -157,6 +158,7 @@ ff02::2		ip6-allrouters
 192.168.11.5     mineos.drak3.io
 192.168.11.5       sync.drak3.io
 192.168.11.5       cams.drak3.io
+192.168.11.5        tau.drak3.io
 
 #docker, PRD
 192.168.11.5    portainer.drak3.io
