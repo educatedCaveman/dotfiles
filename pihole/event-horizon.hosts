@@ -59,7 +59,6 @@ ff02::2		ip6-allrouters
 192.168.12.12       mine-os.vm
 192.168.12.15   qbittorrent.vm
 192.168.12.16    sevastopol.vm
-192.168.12.17       jenkins.vm
 192.168.12.99       theseus.vm
 
 #docker hosts:
