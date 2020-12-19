@@ -6,11 +6,11 @@ pipeline {
     }
 
     stages {
-        // ubuntu hosts
-        // can this be the same as centOS?
-        stage('deploy dotfiles to Debian/Ubunutu hosts') {
+        // linux hosts
+        stage('deploy dotfiles to linux servers') {
             steps {
-                echo 'run ansible playbook for configuring Debian-based hosts'
+                echo 'run ansible playbook for configuring linux hosts'
+                sh 'ansible-playbook ${ANSIBLE_REPO}/deploy_dotfiles_core.yaml'
             }
         }
         // TrueNAS
