@@ -77,3 +77,5 @@
 192.168.11.6 dilithium.srv
 192.168.1.22 ups.mgmt
 192.168.12.19 privatebin.vm
+192.168.12.254 ubuntu-template.vm
+192.168.12.253 centos-template.vm
