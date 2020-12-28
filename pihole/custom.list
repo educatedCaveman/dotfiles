@@ -79,3 +79,10 @@
 192.168.12.19 privatebin.vm
 192.168.12.254 ubuntu-template.vm
 192.168.12.253 centos-template.vm
+192.168.13.20 control-node.lab
+192.168.13.25 server-01.lab
+192.168.13.26 server-02.lab
+192.168.13.30 worker-01.lab
+192.168.13.31 worker-02.lab
+192.168.13.32 worker-03.lab
+192.168.13.33 worker-04.lab
