@@ -73,3 +73,15 @@
 192.168.11.5 haproxy.srv
 192.168.200.2 wormhole.dmz
 192.168.10.8 theseus.lan
+192.168.12.18 gitea.vm
+192.168.11.6 dilithium.srv
+192.168.1.22 ups.mgmt
+192.168.12.254 ubuntu-template.vm
+192.168.12.253 centos-template.vm
+192.168.13.20 control-node.lab
+192.168.13.25 server-01.lab
+192.168.13.26 server-02.lab
+192.168.13.30 worker-01.lab
+192.168.13.31 worker-02.lab
+192.168.13.32 worker-03.lab
+192.168.13.33 worker-04.lab
