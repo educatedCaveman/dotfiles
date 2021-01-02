@@ -2,7 +2,7 @@ pipeline {
     agent any 
 
     environment {
-        ANSIBLE_REPO = '/var/lib/jenkins/workspace/Ansible_pipeline_master'
+        ANSIBLE_REPO = '/var/lib/jenkins/workspace/ansible_master'
     }
 
     stages {
