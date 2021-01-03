@@ -41,7 +41,7 @@
 192.168.12.10 nextcloud.vm
 192.168.12.11 syncthing.vm
 192.168.12.12 mine-os.vm
-192.168.12.15 rtorrent.vm
+192.168.12.15 seedbox.vm
 192.168.12.16 sevastopol.vm
 192.168.12.99 theseus.vm
 192.168.13.1 router.lab
