@@ -4,8 +4,8 @@
 192.168.1.4 plasma-conduit.mgmt
 192.168.1.5 office-AP.mgmt
 192.168.1.6 vinculum.mgmt
-192.168.1.7 mobius.mgmt
-192.168.1.8 tesseract.mgmt
+192.168.1.7 tesseract.mgmt
+192.168.1.8 mobius.mgmt
 192.168.1.9 tachyon.mgmt
 192.168.1.10 central_plexus.mgmt
 192.168.1.11 guest-AP.mgmt
