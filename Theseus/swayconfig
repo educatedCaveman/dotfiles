@@ -321,8 +321,8 @@ bindsym $win+c exec gnome-calculator
 for_window [app_id="gnome-calculator"] floating enable
 
 #launch browser
-bindsym $win+x exec google-chrome-stable
-bindsym $mod+b exec firefox
+#bindsym $win+x exec google-chrome-stable
+bindsym $mod+b exec google-chrome-stable
 
 #screenshots
 bindsym Print exec slurp | grim -g - /home/drake/Screenshots/$(date +%F-%T).png
