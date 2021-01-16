@@ -321,8 +321,8 @@ bindsym $win+c exec gnome-calculator
 for_window [app_id="gnome-calculator"] floating enable
 
 #launch browser
-#bindsym $win+x exec google-chrome-stable
 bindsym $mod+b exec google-chrome-stable
+bindsym $mod+x exec google-chrome-stable --incognito
 
 #screenshots
 bindsym Print exec slurp | grim -g - /home/drake/Screenshots/$(date +%F-%T).png
@@ -366,22 +366,19 @@ exec_always {
 exec swaymsg 'workspace "12: Mail "; exec /usr/bin/evolution'
 exec swaymsg 'workspace "12: Mail "; exec /usr/bin/slack'
 exec swaymsg 'workspace "13: Music "; exec /usr/bin/rhythmbox'
-exec swaymsg 'workspace "30: Steam "; exec /usr/bin/discord'
-#exec /home/drake/scripts/i3-sway/sway-scratch-n-monitor.sh
+#exec swaymsg 'workspace "30: Steam "; exec /usr/bin/discord'
+exec /home/drake/scripts/i3-sway/sway-scratch-n-monitor.sh
 #exec redshift -c ~/.config/redshift.conf &
+#exec swaymsg 'workspace "0: Monitoring " /usr/bin/terminator --profile="htop"'
+#exec swaymsg 'workspace "0: Monitoring " /usr/bin/terminator --profile="speedometer-up"'
+#exec swaymsg 'workspace "0: Monitoring " /usr/bin/terminator --profile="speedometer-down"'
 exec dropbox &
 exec swaymsg 'workspace "0: X "'
 #lock after an hour:
-#exec swayidle timeout 3600 /home/drake/scripts/i3-sway/sway-blurry-lock.sh &
 exec swayidle timeout 3600 '/home/drake/scripts/i3-sway/sway-blurry-lock.sh idle' \
     timeout 3900 'swaymsg "output * dpms off"' \
     resume 'swaymsg "output * dpms on"' &
 exec mako &     #notifications
-
-#application-WS mapping
-#TODO: fix this
-#assign [class="VNC Viewer"] → "20: VNC "
-#assign [class="Remmina"] → "20: VNC "
 
 #for "blank" workspaces:
 workspace "100: Desktop " output DP-4
