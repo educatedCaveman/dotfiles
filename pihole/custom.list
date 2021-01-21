@@ -78,7 +78,7 @@
 192.168.1.22 ups.mgmt
 192.168.12.254 ubuntu-template.vm
 192.168.12.253 centos-template.vm
-192.168.13.20 control-node.lab
+192.168.13.20 swarm-api-lb.lab
 192.168.13.25 manager-01.lab
 192.168.13.26 manager-02.lab
 192.168.13.27 manager-03.lab
@@ -88,3 +88,11 @@
 192.168.13.33 worker-04.lab
 192.168.11.7 pbs.vm
 192.168.11.8 oxygen.vm
+192.168.12.20 swarm-api-lb.vm
+192.168.12.25 manager-01.vm
+192.168.12.26 manager-02.vm
+192.168.12.27 manager-03.vm
+192.168.12.30 worker-01.vm
+192.168.12.31 worker-02.vm
+192.168.12.32 worker-03.vm
+192.168.12.33 worker-04.vm
