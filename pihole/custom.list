@@ -96,3 +96,17 @@
 192.168.12.31 worker-02.vm
 192.168.12.32 worker-03.vm
 192.168.12.33 worker-04.vm
+192.168.13.25 lv426-manager-01.lab
+192.168.13.26 lv426-manager-02.lab
+192.168.13.27 lv426-manager-03.lab
+192.168.13.30 lv426-worker-01.lab
+192.168.13.31 lv426-worker-02.lab
+192.168.13.32 lv426-worker-03.lab
+192.168.13.33 lv426-worker-04.lab
+192.168.12.25 sevastopol-manager-01.vm
+192.168.12.26 sevastopol-manager-02.vm
+192.168.12.27 sevastopol-manager-03.vm
+192.168.12.30 sevastopol-worker-01.vm
+192.168.12.31 sevastopol-worker-02.vm
+192.168.12.32 sevastopol-worker-03.vm
+192.168.12.33 sevastopol-worker-04.vm
