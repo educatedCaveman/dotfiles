@@ -59,8 +59,8 @@
 192.168.12.32 sevastopol-worker-03.vm
 192.168.12.33 sevastopol-worker-04.vm
 192.168.12.99 theseus.vm
+192.168.12.253 LXC-template.vm
 192.168.12.254 ubuntu-template.vm
-192.168.12.253 centos-template.vm
 192.168.13.1 router.lab
 192.168.13.2 jenkins.lab
 192.168.13.3 ansible.lab
