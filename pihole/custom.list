@@ -46,10 +46,7 @@
 192.168.12.7 singularity.vm
 192.168.12.8 rura-penthe.vm
 192.168.12.10 nextcloud.vm
-192.168.12.11 syncthing.vm
-192.168.12.12 mine-os.vm
 192.168.12.15 seedbox.vm
-192.168.12.16 sevastopol.vm
 192.168.12.18 gitlab.vm
 192.168.12.20 swarm-api-lb.vm
 192.168.12.25 sevastopol-manager-01.vm
@@ -65,7 +62,6 @@
 192.168.13.1 router.lab
 192.168.13.2 jenkins.lab
 192.168.13.3 ansible.lab
-192.168.13.16 lv-426.lab
 192.168.13.20 swarm-api-lb.lab
 192.168.13.25 lv426-manager-01.lab
 192.168.13.26 lv426-manager-02.lab
