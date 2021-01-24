@@ -22,6 +22,16 @@ pipeline {
                 sh 'ansible-playbook ${ANSIBLE_REPO}/setup/singularity_nfs.yml'
             }
         }
+
+        // Docker
+        stage('docker') {
+            steps {
+                echo 'deployments related to docker:'
+                sh 'ansible-playbook ${ANSIBLE_REPO}/deploy/docker/dev_swarm_API_LB.yml'
+                sh 'ansible-playbook ${ANSIBLE_REPO}/deploy/docker/prd_swarm_API_LB.yml'
+            }
+        }
+
         // TrueNAS
         stage('deploy dotfiles to TrueNAS servers') {
             steps {
