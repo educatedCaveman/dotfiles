@@ -42,8 +42,7 @@
 192.168.12.1 router.vm
 192.168.12.2 plex.vm
 192.168.12.3 tautulli.vm
-192.168.12.4 singularity-LXC.vm
-192.168.12.7 singularity.vm
+192.168.12.4 singularity.vm
 192.168.12.8 rura-penthe.vm
 192.168.12.10 nextcloud.vm
 192.168.12.15 seedbox.vm
