@@ -1,0 +1,1 @@
+the files go in /etc/netplan, and can be applied with 'netplan apply'
