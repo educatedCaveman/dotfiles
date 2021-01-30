@@ -39,12 +39,6 @@ pipeline {
                 echo 'run ansible playbook for configuring TrueNAS hosts'
             }
         }
-        // template
-        stage('template') {
-            steps {
-                echo 'put useful message here'
-            }
-        }
     }
 }
 
