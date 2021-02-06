@@ -1,0 +1,1 @@
+Acquire::http::Proxy "http://apt-cache.vm:3142";
