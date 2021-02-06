@@ -1,6 +1,6 @@
 ############# config ##################
 #
-# set base_path    /var/www/html/ubuntu
+set base_path    /var/www/html/ubuntu
 #
 # set mirror_path  $base_path/mirror
 # set skel_path    $base_path/skel
