@@ -27,10 +27,7 @@ deb-src http://archive.ubuntu.com/ubuntu focal-updates main restricted universe 
 #deb-src http://archive.ubuntu.com/ubuntu focal-backports main restricted universe multiverse
 
 #raspbian:
-deb http://raspbian.raspberrypi.org/raspbian/ buster main contrib non-free rpi
 deb http://archive.raspberrypi.org/debian/ buster main
-
-deb-src http://raspbian.raspberrypi.org/raspbian/ buster main contrib non-free rpi
 deb-src http://archive.raspberrypi.org/debian/ buster main
 
 
