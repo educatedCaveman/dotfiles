@@ -1,0 +1,8 @@
+# deb http://archive.ubuntu.com/ubuntu focal main restricted universe multiverse
+deb http://192.168.12.6/ubuntu/mirror/archive.ubuntu.com/ubuntu focal main restricted universe multiverse
+
+# deb http://archive.ubuntu.com/ubuntu focal-updates main restricted universe multiverse
+deb http://192.168.12.6/ubuntu/mirror/archive.ubuntu.com/ubuntu focal-updates main restricted universe multiverse
+
+# deb http://archive.ubuntu.com/ubuntu focal-security main restricted universe multiverse
+deb http://192.168.12.6/ubuntu/mirror/archive.ubuntu.com/ubuntu focal-security main restricted universe multiverse
