@@ -1,4 +1,4 @@
-[mysqld]
+[galera]
 binlog_format=ROW
 default-storage-engine=innodb
 innodb_autoinc_lock_mode=2
