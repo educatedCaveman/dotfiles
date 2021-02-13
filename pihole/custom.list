@@ -71,11 +71,10 @@
 192.168.13.31 lv426-worker-02.lab
 192.168.13.32 lv426-worker-03.lab
 192.168.13.33 lv426-worker-04.lab
-192.168.13.200 dev-mariadb-lb.lab
+192.168.13.200 dev-load-balancer.lab
 192.168.13.201 dev-mariadb-1.lab
 192.168.13.202 dev-mariadb-2.lab
 192.168.13.203 dev-mariadb-3.lab
-192.168.13.210 dev-rancher-lb.lab
 192.168.13.211 dev-rancher-1.lab
 192.168.13.212 dev-rancher-2.lab
 192.168.13.213 dev-rancher-3.lab
