@@ -145,7 +145,7 @@ wsrep_provider=/usr/lib/galera/libgalera_smm.so
 
 # Galera Cluster Configuration
 wsrep_cluster_name="dev_cluster"
-wsrep_cluster_address="gcomm://192.168.13.201,192.168.13.202,192.168.13.203"
+wsrep_cluster_address="gcomm://192.168.13.201,192.168.13.202"
 
 # Galera Synchronization Configuration
 wsrep_sst_method=rsync
