@@ -72,9 +72,9 @@
 192.168.13.32 lv426-worker-03.lab
 192.168.13.33 lv426-worker-04.lab
 192.168.13.200 dev-load-balancer.lab
-192.168.13.201 dev-mariadb-01.lab
-192.168.13.202 dev-mariadb-02.lab
-192.168.13.203 dev-mariadb-03.lab
+192.168.13.201 dev-db-01.lab
+192.168.13.202 dev-db-02.lab
+192.168.13.203 dev-db-03.lab
 192.168.13.211 k3s-server-01.lab
 192.168.13.212 k3s-server-02.lab
 192.168.13.213 k3s-server-03.lab
@@ -82,9 +82,9 @@
 192.168.13.222 k3s-worker-02.lab
 192.168.13.223 k3s-worker-03.lab
 192.168.13.224 k3s-worker-04.lab
-192.168.13.231 k3s-storage-01.lab
-192.168.13.232 k3s-storage-02.lab
-192.168.13.233 k3s-storage-03.lab
+192.168.13.231 k3s-data-01.lab
+192.168.13.232 k3s-data-02.lab
+192.168.13.233 k3s-data-03.lab
 192.168.20.1 router.iot
 192.168.20.2 cortical-implant.iot
 192.168.20.3 wiretap.iot
