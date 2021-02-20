@@ -6,6 +6,3 @@ deb http://192.168.12.6/ubuntu/mirror/archive.ubuntu.com/ubuntu focal-updates ma
 
 # deb http://archive.ubuntu.com/ubuntu focal-security main restricted universe multiverse
 deb http://192.168.12.6/ubuntu/mirror/archive.ubuntu.com/ubuntu focal-security main restricted universe multiverse
-
-# docker
-deb https://download.docker.com/linux/ubuntu focal stable
