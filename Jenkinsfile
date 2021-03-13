@@ -19,7 +19,7 @@ pipeline {
             steps {
                 echo 'run the playbooks relating to pihole:'
                 sh 'ansible-playbook ${ANSIBLE_REPO}/deploy/dotfiles/deploy_dotfiles_pihole.yml'
-                sh 'ansible-playbook ${ANSIBLE_REPO}/setup/NFS/singularity_nfs.yml'
+                // sh 'ansible-playbook ${ANSIBLE_REPO}/setup/NFS/singularity_nfs.yml'
             }
         }
 
