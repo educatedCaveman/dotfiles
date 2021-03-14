@@ -31,14 +31,6 @@ pipeline {
                 sh 'ansible-playbook ${ANSIBLE_REPO}/deploy/docker/prd_swarm_API_LB.yml'
             }
         }
-
-        // TrueNAS
-        stage('deploy dotfiles to TrueNAS servers') {
-            steps {
-                // include rura-penthe.vm
-                echo 'run ansible playbook for configuring TrueNAS hosts'
-            }
-        }
     }
 }
 
