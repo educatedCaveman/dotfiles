@@ -44,6 +44,7 @@
 192.168.12.4 singularity.vm
 192.168.12.5 apt-cache.vm
 192.168.12.6 apt-mirror.vm
+192.168.12.7 moria.vm
 192.168.12.8 rura-penthe.vm
 192.168.12.10 nextcloud.vm
 192.168.12.15 seedbox.vm
