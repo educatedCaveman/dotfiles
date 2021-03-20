@@ -314,7 +314,12 @@ bindsym $mod+d exec /home/drake/scripts/i3-sway/rofi.sh
 bindsym $mod+$win+d exec gksudo /home/drake/scripts/i3-sway/rofi.sh
 
 #ALT+TAB:
-bindsym $mod+Tab exec /home/drake/scripts/i3-sway/alt-tab.sh
+# bindsym $mod+Tab exec /home/drake/scripts/i3-sway/alt-tab.sh
+#list of all windows:
+bindsym $win+Tab exec /home/drake/scripts/i3-sway/alt-tab.sh
+#switch to previous window:
+exec /home/drake/scripts/i3-sway/alt-tab.zsh
+bindsym $mod+Tab [con_mark=_prev] focus
 
 #lanch calculator in floating mode
 bindsym $win+c exec gnome-calculator
