@@ -1,0 +1,7 @@
+# docker_swarm.yml
+name: docker_swarm
+root: ~/
+windows:
+  - swarm:    watch -n 1 docker node ls
+  - services: watch -n 1 docker service ls
+  - ~

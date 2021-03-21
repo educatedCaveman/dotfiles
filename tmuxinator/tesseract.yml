@@ -1,0 +1,11 @@
+# tesseract.yml
+name: tesseract
+root: ~/
+windows:
+  - htop: htop
+  - temps:  watch -n 5 sensors
+  # print the commands so we know what was being tried
+  - vm_status:  echo "watch -n 5 sudo qm list"; watch -n 5 sudo qm list
+  - zpool_stus: echo "watch -n 5 sudo zpool status"; watch -n 1 sudo zpool status
+  - zpool_io:   echo "watch -n 1 sudo zpool iostat -vy 1 1"; watch -n 1 sudo zpool iostat -vy 1 1
+  - ~
