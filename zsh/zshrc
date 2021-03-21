@@ -21,5 +21,15 @@ then
     source ~/.zsh_secrets
 fi
 
+# Ruby:
+# export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+# export PATH="$PATH:$GEM_HOME/bin"
+
+# Tmux:
+export ZSH_TMUX_CONFIG="$HOME/.tmux.conf"
+
+# Tmuxinator
+alias mux='tmuxinator'
+
 #for fun:
 neofetch
