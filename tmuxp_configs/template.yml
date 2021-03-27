@@ -1,6 +1,5 @@
 # template.yml
 name: template
-root: ~/
 windows:
   - thing: some-command
   - ~

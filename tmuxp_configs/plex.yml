@@ -1,6 +1,5 @@
 # plex.yml
 name: plex
-root: ~/
 windows:
   - htop: htop
   - plex_logs: lnav /var/lib/plexmediaserver/Library/Application\ Support/Plex\ Media\ Server/Logs/*

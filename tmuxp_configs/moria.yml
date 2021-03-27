@@ -1,6 +1,5 @@
 # moria.yml
 name: moria
-root: ~/
 windows:
   - mining: sh /home/drake/scripts/t_rex_mining/t_rex.sh
   - nVidia: watch -n 1 nvidia-smi

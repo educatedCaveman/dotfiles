@@ -1,6 +1,5 @@
 # pihole.yml
 name: pihole
-root: ~/
 windows:
   - htop: htop
   - pihole_log: lnav /var/log/pihole.log

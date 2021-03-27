@@ -1,0 +1,9 @@
+session_name: theseus
+windows:
+- window_name: monitoring
+  layout: even-vertical
+  panes:
+    - htop
+    - speedometer -t enp2s0
+    - speedometer -r enp2s0
+    

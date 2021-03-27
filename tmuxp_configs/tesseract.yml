@@ -1,6 +1,5 @@
 # tesseract.yml
 name: tesseract
-root: ~/
 windows:
   - htop: htop
   - temps:  watch -n 5 sensors

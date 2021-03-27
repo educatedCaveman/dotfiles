@@ -1,6 +1,5 @@
 # nextcloud.yml
 name: nextcloud
-root: ~/
 windows:
   - htop:     htop
   - status:   echo "sudo snap logs -f nextcloud"; sudo snap logs -f nextcloud

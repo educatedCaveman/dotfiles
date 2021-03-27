@@ -23,6 +23,7 @@ fi
 
 # Tmux:
 export ZSH_TMUX_CONFIG="$HOME/.tmux.conf"
+# export DISABLE_AUTO_TITLE='true'
 
 #for fun:
 neofetch
