@@ -1,0 +1,9 @@
+# apt_cache.yml
+session_name: apt-cache
+windows:
+- window_name: htop
+  panes:
+    - htop
+- window_name: logs
+  panes:
+    - lnav /var/log/apt-cacher-ng/apt-cacher.log

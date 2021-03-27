@@ -1,6 +1,0 @@
-# apt_cache.yml
-name: apt_cache
-windows:
-  - htop
-  - lnav /var/log/apt-cacher-ng/apt-cacher.log
-  - 
