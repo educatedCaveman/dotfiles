@@ -1,6 +1,9 @@
 # docker_swarm.yml
 session_name: docker_swarm
 windows:
-  - swarm:    watch -n 1 docker node ls
-  - services: watch -n 1 docker service ls
-  - ~
+- window_name:  swarm
+  panes:
+    - watch -n 1 docker node ls
+- window_name:  services
+  panes:
+    - watch -n 1 docker service ls

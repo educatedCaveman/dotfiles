@@ -6,10 +6,10 @@ windows:
     - htop
 - window_name:  status
   panes:
-    - echo "sudo snap logs -f nextcloud"; sudo snap logs -f nextcloud
+    - sudo snap logs -f nextcloud
 - window_name:  services
   panes:
-    - echo "sudo watch -n 5 snap services nextcloud"; sudo watch -n 5 snap services nextcloud
+    - sudo watch -n 5 snap services nextcloud
 - window_name:  auth.log
   panes:
     - lnav /var/log/auth.log*
