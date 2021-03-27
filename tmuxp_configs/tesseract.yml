@@ -1,10 +1,19 @@
 # tesseract.yml
 name: tesseract
 windows:
-  - htop: htop
-  - temps:  watch -n 5 sensors
-  # print the commands so we know what was being tried
-  - vm_status:  echo "watch -n 5 sudo qm list"; watch -n 5 sudo qm list
-  - zpool_stus: echo "watch -n 5 sudo zpool status"; watch -n 1 sudo zpool status
-  - zpool_io:   echo "watch -n 1 sudo zpool iostat -vy 1 1"; watch -n 1 sudo zpool iostat -vy 1 1
-  - ~
+- window_name:  htop
+  panes:
+    - htop
+- window_name:  temps
+  panes:
+    - watch -n 5 sensors
+- window_name:  vm_status
+  panes:
+    - echo "watch -n 5 sudo qm list"; watch -n 5 sudo qm list
+- window_name:  zpool_stus
+  panes:
+    - echo "watch -n 5 sudo zpool status"; watch -n 1 sudo zpool status
+- window_name:  zpool_io
+  panes:
+    - echo "watch -n 1 sudo zpool iostat -vy 1 1"; watch -n 1 sudo zpool iostat -vy 1 1
+    

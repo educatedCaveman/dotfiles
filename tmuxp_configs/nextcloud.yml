@@ -1,9 +1,19 @@
 # nextcloud.yml
 name: nextcloud
 windows:
-  - htop:     htop
-  - status:   echo "sudo snap logs -f nextcloud"; sudo snap logs -f nextcloud
-  - services: echo "sudo snap services nextcloud"; sudo snap services nextcloud
-  - auth.log: lnav /var/log/auth.log*
-  - syslog:   lnav /var/log/syslog*
-  - ~
+- window_name:  htop
+  panes:
+    - htop
+- window_name:  status
+  panes:
+    - echo "sudo snap logs -f nextcloud"; sudo snap logs -f nextcloud
+- window_name:  services
+  panes:
+    - echo "sudo snap services nextcloud"; sudo snap services nextcloud
+- window_name:  auth.log
+  panes:
+    - lnav /var/log/auth.log*
+- window_name:  syslog
+  panes:
+    - lnav /var/log/syslog*
+    

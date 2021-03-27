@@ -1,5 +1,6 @@
 # template.yml
 name: template
 windows:
-  - thing: some-command
-  - ~
+- window_name:  htop
+  panes:
+    - htop

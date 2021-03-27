@@ -1,0 +1,12 @@
+# apt_mirror.yml
+name: apt-mirror
+windows:
+- window_name: htop
+  panes:
+    - htop
+- window_name: access_logs
+  panes:
+    - sudo lnav /var/log/apache2/access*.log
+- window_name: error_log
+  panes:
+    - sudo lnav /var/log/apache2/error*.log

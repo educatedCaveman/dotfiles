@@ -1,6 +1,10 @@
 # plex.yml
 name: plex
 windows:
-  - htop: htop
-  - plex_logs: lnav /var/lib/plexmediaserver/Library/Application\ Support/Plex\ Media\ Server/Logs/*
-  - ~
+- window_name:  htop
+  panes:
+    - htop
+- window_name:  plex_logs
+  panes:
+    - lnav /var/lib/plexmediaserver/Library/Application\ Support/Plex\ Media\ Server/Logs/*
+    

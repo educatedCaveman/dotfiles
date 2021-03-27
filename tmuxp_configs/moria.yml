@@ -1,7 +1,13 @@
 # moria.yml
 name: moria
 windows:
-  - mining: sh /home/drake/scripts/t_rex_mining/t_rex.sh
-  - nVidia: watch -n 1 nvidia-smi
-  - htop: htop
-  - ~
+- window_name: mining
+  panes:
+    - sh /home/drake/scripts/t_rex_mining/t_rex.sh
+- window_name: nVidia
+  panes:
+    - watch -n 1 nvidia-smi
+- window_name: htop
+  panes:
+    - htop
+    

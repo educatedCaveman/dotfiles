@@ -1,7 +1,0 @@
-# apt_mirror.yml
-name: apt_mirror
-windows:
-  - htop: htop
-  - access_log: sudo lnav /var/log/apache2/access*.log
-  - error_log: sudo lnav /var/log/apache2/error*.log
-  - ~

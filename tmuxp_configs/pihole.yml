@@ -1,7 +1,13 @@
 # pihole.yml
 name: pihole
 windows:
-  - htop: htop
-  - pihole_log: lnav /var/log/pihole.log
-  - FTL_log: lnav /var/log/pihole-FTL.log
-  - ~
+- window_name:  htop
+  panes:
+    - htop
+- window_name:  pihole_log
+  panes:
+    - lnav /var/log/pihole.log
+- window_name:  FTL_log
+  panes:
+    - lnav /var/log/pihole-FTL.log
+    
