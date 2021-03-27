@@ -1,5 +1,5 @@
 # moria.yml
-name: moria
+session_name: moria
 windows:
 - window_name: mining
   panes:
@@ -10,4 +10,3 @@ windows:
 - window_name: htop
   panes:
     - htop
-    

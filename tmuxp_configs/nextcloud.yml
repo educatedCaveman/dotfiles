@@ -1,5 +1,5 @@
 # nextcloud.yml
-name: nextcloud
+session_name: nextcloud
 windows:
 - window_name:  htop
   panes:

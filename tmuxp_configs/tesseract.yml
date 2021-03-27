@@ -1,5 +1,5 @@
 # tesseract.yml
-name: tesseract
+session_name: tesseract
 windows:
 - window_name:  htop
   panes:

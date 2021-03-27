@@ -1,5 +1,5 @@
 # docker_swarm.yml
-name: docker_swarm
+session_name: docker_swarm
 windows:
   - swarm:    watch -n 1 docker node ls
   - services: watch -n 1 docker service ls

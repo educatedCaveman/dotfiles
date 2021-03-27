@@ -1,5 +1,5 @@
 # plex.yml
-name: plex
+session_name: plex
 windows:
 - window_name:  htop
   panes:
