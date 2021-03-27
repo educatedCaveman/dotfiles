@@ -1,5 +1,5 @@
 # template.yml
-name: template
+session_name: template
 windows:
 - window_name:  htop
   panes:

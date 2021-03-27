@@ -1,0 +1,12 @@
+# apt_cache.yml
+session_name: apt_cache
+windows:
+- window_name: htop
+  panes:
+    - htop
+- window_name: logs
+  panes:
+    - shell_command:
+      - echo "to follow the logs, run the following commands:"
+      - echo "\t - sudo su"
+      - echo "\t - lnav /var/log/apt-cacher-ng/apt-cacher.log"

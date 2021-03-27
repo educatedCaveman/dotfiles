@@ -1,5 +1,5 @@
 # apt_mirror.yml
-session_name: apt-mirror
+session_name: apt_mirror
 windows:
 - window_name: htop
   panes:
