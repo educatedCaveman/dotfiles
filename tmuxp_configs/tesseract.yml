@@ -9,11 +9,11 @@ windows:
     - watch -n 5 sensors
 - window_name:  vm_status
   panes:
-    - echo "watch -n 5 sudo qm list"; watch -n 5 sudo qm list
+    - watch -n 5 sudo qm list
 - window_name:  zpool_stus
   panes:
-    - echo "watch -n 5 sudo zpool status"; watch -n 1 sudo zpool status
+    - watch -n 1 sudo zpool status
 - window_name:  zpool_io
   panes:
-    - echo "watch -n 1 sudo zpool iostat -vy 1 1"; watch -n 1 sudo zpool iostat -vy 1 1
+    - watch -n 1 sudo zpool iostat -vy 1 1
     
