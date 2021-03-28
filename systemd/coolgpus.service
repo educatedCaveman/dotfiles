@@ -1,0 +1,13 @@
+[Unit]
+Description=Headless GPU Fan Control
+After=syslog.target
+
+[Service]
+ExecStart=/usr/local/bin/coolgpus --kill --speed 99 99
+Restart=on-failure
+RestartSec=5s
+ExecStop=/bin/kill -2 $MAINPID
+KillMode=none 
+
+[Install]
+WantedBy=multi-user.target

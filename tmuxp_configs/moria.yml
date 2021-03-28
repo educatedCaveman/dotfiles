@@ -10,3 +10,6 @@ windows:
 - window_name: htop
   panes:
     - htop
+- window_name: nvtop
+  panes:
+    - nvtop
