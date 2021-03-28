@@ -48,6 +48,8 @@
 192.168.12.8 rura-penthe.vm
 192.168.12.9 origami.vm
 192.168.12.10 nextcloud.vm
+192.168.12.13 influxDB.vm
+192.168.12.14 grafana.vm
 192.168.12.15 seedbox.vm
 192.168.12.18 gitlab.vm
 192.168.12.20 swarm-api-lb.vm
