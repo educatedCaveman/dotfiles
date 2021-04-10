@@ -1,0 +1,8 @@
+session_name: carbon
+windows:
+- window_name: monitor
+  panes:
+    - shell_command:
+        - htop
+- window_name: shell
+
