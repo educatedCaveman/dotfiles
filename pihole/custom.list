@@ -93,7 +93,8 @@
 192.168.200.2 nvr.cam
 192.168.200.3 front-door.cam
 192.168.200.4 patio.cam
-192.168.200.5 alley.cam
+192.168.200.5 alley-back.cam
+192.168.200.6 alley-front.cam
 10.13.37.1 router.vpn
 10.13.37.2 positron.vpn
 10.13.37.3 positron2.vpn
