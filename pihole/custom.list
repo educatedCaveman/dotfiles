@@ -39,6 +39,7 @@
 192.168.11.5 haproxy.srv
 192.168.11.6 dilithium.srv
 192.168.11.7 pbs.vm
+192.168.11.8 octopi.srv
 192.168.12.1 router.vm
 192.168.12.2 plex.vm
 192.168.12.3 tautulli.vm
