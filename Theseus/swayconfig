@@ -339,8 +339,10 @@ bindsym $win+$mod+s exec lxappearance
 for_window [instance="lxappearance"] floating enable, border normal 5, resize set 1200 px 720 px
 
 #file browser
-bindsym $win+f exec nemo &>/dev/null &
-for_window [app_id="nemo"] floating enable, border normal 5, resize set 1200 px 720 px
+#bindsym $win+f exec nemo &>/dev/null &
+#for_window [app_id="nemo"] floating enable, border normal 5, resize set 1200 px 720 px
+bindsym $win+f exec nautilus &>/dev/null &
+for_window [app_id="nautilus"] floating enable, border normal 5, resize set 1200 px 720 px
 
 #graphical text editor
 bindsym $win+t exec gedit
