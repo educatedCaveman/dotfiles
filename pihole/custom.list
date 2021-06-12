@@ -52,6 +52,7 @@
 192.168.12.9 origami.vm
 192.168.12.10 nextcloud.vm
 192.168.12.11 minio.vm
+192.168.12.12 graylog.vm
 192.168.12.13 influxdb.vm
 192.168.12.14 grafana.vm
 192.168.12.15 seedbox.vm
