@@ -56,6 +56,7 @@
 192.168.12.13 influxdb.vm
 192.168.12.14 grafana.vm
 192.168.12.15 seedbox.vm
+192.168.12.16 syncthing.vm
 192.168.12.18 gitlab.vm
 192.168.12.20 swarm-api-lb.vm
 192.168.12.25 sevastopol-manager-01.vm
