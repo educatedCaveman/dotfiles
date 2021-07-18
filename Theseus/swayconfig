@@ -379,7 +379,7 @@ exec /home/drake/scripts/i3-sway/sway-scratch-n-monitor.sh
 #exec swaymsg 'workspace "0: Monitoring " /usr/bin/terminator --profile="htop"'
 #exec swaymsg 'workspace "0: Monitoring " /usr/bin/terminator --profile="speedometer-up"'
 #exec swaymsg 'workspace "0: Monitoring " /usr/bin/terminator --profile="speedometer-down"'
-exec dropbox &
+#exec dropbox &
 exec swaymsg 'workspace "0: X "'
 #lock after an hour:
 exec swayidle timeout 3600 '/home/drake/scripts/i3-sway/sway-blurry-lock.sh idle' \
