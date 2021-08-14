@@ -1,0 +1,48 @@
+# This is the camera feed/windows layout configuration file for the
+# displaycameras service.  It ONLY configures the layout and feeds for
+# the cameras; the rest of the configuration is in displaycameras.conf.
+# See the comments in that file for notes on configuring the below.
+
+# This example defines seven 1/2-HD windows, three of which are off-screen to the right,
+# through which the service rotates six camera feeds (it actually uses only six windows)
+# on a full-HD monitor.  If this suites your needs, modify only the camera names to taste
+# and feed URLs to what your cameras or NVR provides.
+
+# Window names
+
+# 2x2 screen with 3 off-screen windows
+windows=(upper_left upper_right lower_left lower_right)
+# Make sure to account for each window above in the list below.
+
+# Windows positions
+
+window_positions=(
+#upper_left: 960x540
+"0 0 959 539" \
+#upper_right: 960x540
+"960 0 1920 539" \
+#lower_left: 960x540
+"0 540 959 1079" \
+#lower_right: 960x540
+"960 540  1919 1079" \
+)
+
+# Camera Names
+camera_names=(Front Patio Alley_Back)
+# Make sure to account for each camera above in the list of feeds below.
+
+# Camera Feeds
+
+camera_feeds=( \
+#patio
+"rtsp://nvr.cam:7447/UApg42nhhzuZUwd3" \
+#alley, back
+"rtsp://nvr.cam:7447/co5p9kwQBPSAEcqt" \
+#front
+"rtsp://nvr.cam:7447/0WzsR7TaHp0ZvI2i" \
+#alley, front (placeholder)
+"rtsp://nvr.cam:7447/abcdefghijklmnop" \
+)
+
+# Are we rotating cameras through the window matrix? (default false if not set here)
+rotate="false"
