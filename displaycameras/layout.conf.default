@@ -41,7 +41,7 @@ camera_feeds=( \
 #front
 "rtsp://nvr.cam:7447/0WzsR7TaHp0ZvI2i" \
 #alley, front (placeholder)
-"https://octopi.drak3.io/webcam/?action=stream" \
+# "https://octopi.drak3.io/webcam/?action=stream" \
 )
 
 # Are we rotating cameras through the window matrix? (default false if not set here)
