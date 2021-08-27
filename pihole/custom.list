@@ -19,6 +19,7 @@
 192.168.1.21 kraft-SW.mgmt
 192.168.1.22 ups.mgmt
 192.168.1.23 nvr.mgmt
+192.168.1.24 cam-AP.mgmt
 192.168.10.1 router.lan
 192.168.10.2 big-brother.lan
 192.168.10.3 lithium.lan
