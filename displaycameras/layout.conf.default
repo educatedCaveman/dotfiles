@@ -39,7 +39,8 @@ camera_feeds=( \
 #alley, back
 "rtsp://nvr.cam:7447/co5p9kwQBPSAEcqt" \
 #front
-"rtsp://nvr.cam:7447/0WzsR7TaHp0ZvI2i" \
+# "rtsp://nvr.cam:7447/0WzsR7TaHp0ZvI2i" \
+"rtsp://nvr.cam:7447/cViPiJq6IsdBi07o" \
 #alley, front (placeholder)
 # "https://octopi.drak3.io/webcam/?action=stream" \
 )
