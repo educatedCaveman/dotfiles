@@ -28,7 +28,7 @@ window_positions=(
 )
 
 # Camera Names
-camera_names=(Front Patio Alley_Back)
+camera_names=(Front Patio Alley_Back Alley_Front)
 # Make sure to account for each camera above in the list of feeds below.
 
 # Camera Feeds
@@ -42,7 +42,7 @@ camera_feeds=( \
 # "rtsp://nvr.cam:7447/0WzsR7TaHp0ZvI2i" \
 "rtsp://nvr.cam:7447/cViPiJq6IsdBi07o" \
 #alley, front (placeholder)
-# "https://octopi.drak3.io/webcam/?action=stream" \
+"rtsp://nvr.cam:7447/OUVsUMd86hewoxW1" \
 )
 
 # Are we rotating cameras through the window matrix? (default false if not set here)
