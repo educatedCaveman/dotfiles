@@ -35,14 +35,13 @@ camera_names=(Front Patio Alley_Back Alley_Front)
 
 camera_feeds=( \
 #patio
-"rtsp://nvr.cam:7447/UApg42nhhzuZUwd3" \
+"rtsp://nvr.cam:7447/OUVsUMd86hewoxW1" \
 #alley, back
 "rtsp://nvr.cam:7447/co5p9kwQBPSAEcqt" \
 #front
-# "rtsp://nvr.cam:7447/0WzsR7TaHp0ZvI2i" \
 "rtsp://nvr.cam:7447/cViPiJq6IsdBi07o" \
-#alley, front (placeholder)
-"rtsp://nvr.cam:7447/OUVsUMd86hewoxW1" \
+#alley, front
+"rtsp://nvr.cam:7447/UApg42nhhzuZUwd3" \
 )
 
 # Are we rotating cameras through the window matrix? (default false if not set here)

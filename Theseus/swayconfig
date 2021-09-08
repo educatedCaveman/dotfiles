@@ -310,7 +310,8 @@ bindsym $win+h exec /home/drake/scripts/i3-sway/sway-hide.sh
 bindsym $mod+Return exec terminator
 
 # start Rofi
-bindsym $mod+d exec /home/drake/scripts/i3-sway/rofi.sh
+#bindsym $mod+d exec /home/drake/scripts/i3-sway/rofi.sh
+bindsym $mod+d exec /usr/bin/wofi --show=run --width=800 --height=500 --gtk-dark
 bindsym $mod+$win+d exec gksudo /home/drake/scripts/i3-sway/rofi.sh
 
 #ALT+TAB:
