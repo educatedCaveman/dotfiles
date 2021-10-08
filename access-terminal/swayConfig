@@ -111,11 +111,6 @@ bindsym $mod+a focus parent
 bindsym $mod+Shift+a focus child
 
 # reload the configuration file
-bindsym $win+Print          grimshot --notify save window ~/Screenshots/$(date +%F-%T).png
-bindsym $mod+Print			grimshot --notify save output ~/Screenshots/$(date +%F-%T).png
-bindsym Print				grimshot --notify save screen ~/Screenshots/$(date +%F-%T).png
-bindsym $mod+Shift+Print	grimshot --notify save area   ~/Screenshots/$(date +%F-%T).png
-
 bindsym $win+r reload
 
 # exit sway (logs you out of your wayland session)
