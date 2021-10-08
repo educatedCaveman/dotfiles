@@ -284,12 +284,10 @@ bindsym $mod+x exec google-chrome-stable --incognito
 bindsym $mod+b exec google-chrome-stable
 
 #screenshots
-# bindsym $mod+Print exec slurp | grim -g - /home/drake/Screenshots/$(date +%F-%T).png
-# bindsym Print exec grim -o eDP-1 /home/drake/Screenshots/$(date +%F-%T).png
-bindsym $win+Print          grimshot --notify save window ~/Screenshots/$(date +%F-%T).png
-bindsym $mod+Print			grimshot --notify save output ~/Screenshots/$(date +%F-%T).png
-bindsym Print				grimshot --notify save screen ~/Screenshots/$(date +%F-%T).png
-bindsym $mod+Shift+Print	grimshot --notify save area   ~/Screenshots/$(date +%F-%T).png
+bindsym $win+Print  exec grimshot --notify save window /home/drake/Screenshots/$(date +%F-%T).png
+bindsym $mod+Print	exec grimshot --notify save output /home/drake/Screenshots/$(date +%F-%T).png
+bindsym Print		exec grimshot --notify save screen /home/drake/Screenshots/$(date +%F-%T).png
+bindsym Shift+Print exec grimshot --notify save area   /home/drake/Screenshots/$(date +%F-%T).png
 
 
 #settings
