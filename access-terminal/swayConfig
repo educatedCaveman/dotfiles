@@ -16,7 +16,8 @@ input "1739:31251:SYNA2393:00_06CB:7A13_Touchpad" {
 output eDP-1 {
     #background /home/drake/wallpapers/firefox-nightly-3840x2160.png fill
     #background /home/drake/wallpapers/dark-grey-terrazzo.png tile
-    background /home/drake/wallpapers/macro_evergreen.png fill
+    #background /home/drake/wallpapers/macro_evergreen.png fill
+    background #2b2b2b solid_color
 }
 
 #ALT passthrough:
@@ -110,6 +111,11 @@ bindsym $mod+a focus parent
 bindsym $mod+Shift+a focus child
 
 # reload the configuration file
+bindsym $win+Print          grimshot --notify save window ~/Screenshots/$(date +%F-%T).png
+bindsym $mod+Print			grimshot --notify save output ~/Screenshots/$(date +%F-%T).png
+bindsym Print				grimshot --notify save screen ~/Screenshots/$(date +%F-%T).png
+bindsym $mod+Shift+Print	grimshot --notify save area   ~/Screenshots/$(date +%F-%T).png
+
 bindsym $win+r reload
 
 # exit sway (logs you out of your wayland session)
@@ -267,15 +273,12 @@ bindsym $win+Down move workspace to output down
 bindsym $mod+Return exec terminator
 
 # start rofi
-bindsym $mod+d exec /home/drake/scripts/i3-sway/rofi.sh
+#bindsym $mod+d exec /home/drake/scripts/i3-sway/rofi.sh
+bindsym $mod+d exec /usr/bin/wofi --show=run --width=800 --height=500 --gtk-dark
 bindsym $mod+$win+d exec gksudo /home/drake/scripts/i3-sway/rofi.sh
 
 #ALT+TAB:
-#list of all windows:
-bindsym $win+Tab exec /home/drake/scripts/i3-sway/alt-tab.sh
-#switch to previous window:
-exec /home/drake/scripts/i3-sway/alt-tab.zsh
-bindsym $mod+Tab [con_mark=_prev] focus
+bindsym $mod+Tab workspace back_and_forth
 
 #lanch calculator in floating mode
 bindsym $win+c exec gnome-calculator
@@ -286,8 +289,13 @@ bindsym $mod+x exec google-chrome-stable --incognito
 bindsym $mod+b exec google-chrome-stable
 
 #screenshots
-bindsym $mod+Print exec slurp | grim -g - /home/drake/Screenshots/$(date +%F-%T).png
-bindsym Print exec grim -o eDP-1 /home/drake/Screenshots/$(date +%F-%T).png
+# bindsym $mod+Print exec slurp | grim -g - /home/drake/Screenshots/$(date +%F-%T).png
+# bindsym Print exec grim -o eDP-1 /home/drake/Screenshots/$(date +%F-%T).png
+bindsym $win+Print          grimshot --notify save window ~/Screenshots/$(date +%F-%T).png
+bindsym $mod+Print			grimshot --notify save output ~/Screenshots/$(date +%F-%T).png
+bindsym Print				grimshot --notify save screen ~/Screenshots/$(date +%F-%T).png
+bindsym $mod+Shift+Print	grimshot --notify save area   ~/Screenshots/$(date +%F-%T).png
+
 
 #settings
 bindsym $win+s exec /home/drake/scripts/i3-sway/gnome-control-center.sh &>/dev/null &

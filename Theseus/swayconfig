@@ -326,7 +326,11 @@ bindsym $mod+b exec google-chrome-stable
 bindsym $mod+x exec google-chrome-stable --incognito
 
 #screenshots
-bindsym Print exec slurp | grim -g - /home/drake/Screenshots/$(date +%F-%T).png
+#bindsym Print exec slurp | grim -g - /home/drake/Screenshots/$(date +%F-%T).png
+bindsym $win+Print          grimshot --notify save window ~/Screenshots/$(date +%F-%T).png
+bindsym $mod+Print			grimshot --notify save output ~/Screenshots/$(date +%F-%T).png
+bindsym Print				grimshot --notify save screen ~/Screenshots/$(date +%F-%T).png
+bindsym $mod+Shift+Print	grimshot --notify save area   ~/Screenshots/$(date +%F-%T).png
 
 #settings
 bindsym $win+s exec /home/drake/scripts/i3-sway/gnome-control-center.sh &>/dev/null &
