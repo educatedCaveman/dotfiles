@@ -143,15 +143,15 @@ bindsym $mod+Shift+e exec "swaynag -t warning -m 'You pressed the exit shortcut.
 
 # resize window (you can also use the mouse for that)
 mode " resize " {
-    bindsym Left    resize shrink width 10 px or 10 ppt
-    bindsym Down    resize grow height 10 px or 10 ppt
-    bindsym Up      resize shrink height 10 px or 10 ppt
-    bindsym Right   resize grow width 10 px or 10 ppt
+    bindsym Left    resize shrink width 25 px
+    bindsym Down    resize grow height 25 px
+    bindsym Up      resize shrink height 25 px
+    bindsym Right   resize grow width 25 px
 
-    bindsym a   resize shrink width 10 px or 10 ppt
-    bindsym s   resize grow height 10 px or 10 ppt
-    bindsym w   resize shrink height 10 px or 10 ppt
-    bindsym d   resize grow width 10 px or 10 ppt
+    bindsym a   resize shrink width 25 px
+    bindsym s   resize grow height 25 px
+    bindsym w   resize shrink height 25 px
+    bindsym d   resize grow width 25 px
 
     bindsym Return mode "default"
     bindsym Escape mode "default"
@@ -373,10 +373,6 @@ exec swaymsg 'workspace "12: Mail "; exec /usr/bin/slack'
 exec swaymsg 'workspace "13: Music "; exec /home/drake/Applications/Plexamp*.AppImage'
 exec /home/drake/scripts/i3-sway/sway-scratch-n-monitor.sh
 #exec redshift -c ~/.config/redshift.conf &
-#exec swaymsg 'workspace "0: Monitoring " /usr/bin/terminator --profile="htop"'
-#exec swaymsg 'workspace "0: Monitoring " /usr/bin/terminator --profile="speedometer-up"'
-#exec swaymsg 'workspace "0: Monitoring " /usr/bin/terminator --profile="speedometer-down"'
-#exec dropbox &
 exec swaymsg 'workspace "0: X "'
 #lock after an hour:
 exec swayidle timeout 3600 '/home/drake/scripts/i3-sway/sway-blurry-lock.sh idle' \
