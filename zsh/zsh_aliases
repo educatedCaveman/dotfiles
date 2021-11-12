@@ -16,3 +16,5 @@ alias clr='clear; ls -lhp'
 alias mkcd='mkcd() {mkdir "$(pwd)/$1"; cd "$(pwd)/$1"}; mkcd'
 alias cpcd='cpcd() {cp "$(pwd)/$1" "$2"; cd "$2"}; cpcd'
 alias mvcd='mvcd() {mv "$(pwd)/$1" "$2"; cd "$2"}; mvcd'
+alias btmouse='bluetoothctl -- power on; bluetoothctl -- connect CE:42:DA:B7:9E:28'
+
