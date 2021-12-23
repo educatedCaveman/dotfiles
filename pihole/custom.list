@@ -59,10 +59,8 @@
 192.168.12.15 seedbox.vm
 192.168.12.16 syncthing.vm
 192.168.12.17 spaghetti.vm
+192.168.12.18 doggo.vm
 192.168.12.20 sevastopol.vm
-192.168.12.21 ethermine01.vm
-192.168.12.22 ethermine02.vm
-192.168.12.23 ethermine03.vm
 192.168.12.99 theseus.vm
 192.168.12.253 LXC-template.vm
 192.168.12.254 ubuntu-template.vm
