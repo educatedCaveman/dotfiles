@@ -8,7 +8,6 @@
 
 echo "$(pwd)"
 
-#git:
 echo "adding all files to git..."
 git add *
 echo "done!"
