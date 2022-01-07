@@ -368,7 +368,7 @@ exec_always {
 
 #autostart
 exec swaymsg 'workspace "12: Mail "; exec /usr/bin/evolution'
-exec swaymsg 'workspace "12: Mail "; exec /usr/bin/slack'
+exec swaymsg 'workspace "12: Mail "; exec /usr/bin/discord'
 # exec swaymsg 'workspace "13: Music "; exec /usr/bin/rhythmbox'
 exec swaymsg 'workspace "13: Music "; exec /home/drake/Applications/Plexamp*.AppImage'
 exec /home/drake/scripts/i3-sway/sway-scratch-n-monitor.sh
