@@ -3,7 +3,6 @@ pipeline {
 
     environment {
         ANSIBLE_REPO = '/var/lib/jenkins/workspace/ansible_master'
-        // DISCORD_WEBHOOK = credentials('JENKINS_DISCORD')
     }
 
     //triggering periodically so the code is always present
