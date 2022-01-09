@@ -44,6 +44,7 @@ pipeline {
             //     WEBHOOK = credentials('JENKINS_DISCORD')
             // }
             discordSend description: "Jenkins Pipeline Build", footer: "Footer Text", link: env.BUILD_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: "${WEBHOOK}"
+            junk
         }
     }
 
