@@ -32,11 +32,11 @@ pipeline {
     post {
         always {
             discordSend \
-                description: "Jenkins Pipeline Build", \
-                footer: "Footer Text", \
-                link: env.BUILD_URL, \
+                description: "repo >> ${GIT_BRANCH} (${BUILD_NUMBER}) - ${JOB_NAME}", \
+                // footer: "Footer Text", \
+                // link: env.BUILD_URL, \
                 result: currentBuild.currentResult, \
-                title: JOB_NAME, \
+                // title: JOB_NAME, \
                 webhookURL: "${WEBHOOK}"
         }
     }
