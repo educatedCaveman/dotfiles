@@ -3,6 +3,7 @@ pipeline {
 
     environment {
         ANSIBLE_REPO = '/var/lib/jenkins/workspace/ansible_master'
+        DISCORD_WEBHOOK = credentials('JENKINS_DISCORD')
     }
 
     //triggering periodically so the code is always present
@@ -36,5 +37,12 @@ pipeline {
             }
         }
     }
+
+    post {
+        always {
+            discordSend description: "Jenkins Pipeline Build", footer: "Footer Text", link: env.BUILD_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: ${DISCORD_WEBHOOK}
+        }
+    }
+
 }
 
