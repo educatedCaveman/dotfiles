@@ -16,6 +16,7 @@ pipeline {
             steps {
                 echo 'run ansible playbook for configuring linux hosts'
                 sh 'ansible-playbook ${ANSIBLE_REPO}/deploy/dotfiles/deploy_dotfiles_core.yml'
+                sh 'junk-command'
             }
         }
 
@@ -27,15 +28,6 @@ pipeline {
                 // sh 'ansible-playbook ${ANSIBLE_REPO}/setup/NFS/singularity_nfs.yml'
             }
         }
-
-        // // Docker
-        // stage('docker') {
-        //     steps {
-        //         echo 'deployments related to docker:'
-        //         sh 'ansible-playbook ${ANSIBLE_REPO}/deploy/docker/dev_swarm_API_LB.yml'
-        //         sh 'ansible-playbook ${ANSIBLE_REPO}/deploy/docker/prd_swarm_API_LB.yml'
-        //     }
-        // }
     }
     
     post {
@@ -44,7 +36,6 @@ pipeline {
             //     WEBHOOK = credentials('JENKINS_DISCORD')
             // }
             discordSend description: "Jenkins Pipeline Build", footer: "Footer Text", link: env.BUILD_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: "${WEBHOOK}"
-            junk
         }
     }
 
