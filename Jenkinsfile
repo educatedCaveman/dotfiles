@@ -32,7 +32,7 @@ pipeline {
     post {
         always {
             discordSend \
-                description: "repo >> ${GIT_BRANCH} (${BUILD_NUMBER}) - ${JOB_NAME}", \
+                description: "${JOB_NAME} - build #${BUILD_NUMBER}", \
                 // footer: "Footer Text", \
                 // link: env.BUILD_URL, \
                 result: currentBuild.currentResult, \
