@@ -27,22 +27,21 @@ pipeline {
             }
         }
 
-        // Docker
-        stage('docker') {
-            steps {
-                echo 'deployments related to docker:'
-                sh 'ansible-playbook ${ANSIBLE_REPO}/deploy/docker/dev_swarm_API_LB.yml'
-                sh 'ansible-playbook ${ANSIBLE_REPO}/deploy/docker/prd_swarm_API_LB.yml'
-            }
-        }
+        // // Docker
+        // stage('docker') {
+        //     steps {
+        //         echo 'deployments related to docker:'
+        //         sh 'ansible-playbook ${ANSIBLE_REPO}/deploy/docker/dev_swarm_API_LB.yml'
+        //         sh 'ansible-playbook ${ANSIBLE_REPO}/deploy/docker/prd_swarm_API_LB.yml'
+        //     }
+        // }
     }
     
     post {
         always {
-            discordSend description: "Jenkins Pipeline Build", footer: "Footer Text", link: env.BUILD_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: credentials('JENKINS_DISCORD')
+            discordSend description: "Jenkins Pipeline Build", footer: "Footer Text", link: env.BUILD_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: string(credentials('JENKINS_DISCORD'))
         }
     }
-
 
 }
 
