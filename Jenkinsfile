@@ -36,5 +36,13 @@ pipeline {
             }
         }
     }
+    
+    post {
+        always {
+            discordSend description: "Jenkins Pipeline Build", footer: "Footer Text", link: env.BUILD_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: credentials('JENKINS_DISCORD')
+        }
+    }
+
+
 }
 
