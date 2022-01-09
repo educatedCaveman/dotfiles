@@ -16,7 +16,6 @@ pipeline {
             steps {
                 echo 'run ansible playbook for configuring linux hosts'
                 sh 'ansible-playbook ${ANSIBLE_REPO}/deploy/dotfiles/deploy_dotfiles_core.yml'
-                sh 'junk-command'
             }
         }
 
@@ -32,9 +31,6 @@ pipeline {
     
     post {
         always {
-            // environment {
-            //     WEBHOOK = credentials('JENKINS_DISCORD')
-            // }
             discordSend description: "Jenkins Pipeline Build", footer: "Footer Text", link: env.BUILD_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: "${WEBHOOK}"
         }
     }
