@@ -43,6 +43,7 @@
 192.168.11.6 dilithium.srv
 192.168.11.7 pbs.vm
 192.168.11.8 octopi.srv
+192.168.11.9 rura-penthe.vm
 192.168.12.1 router.vm
 192.168.12.2 plex.vm
 192.168.12.3 tautulli.vm
@@ -50,7 +51,11 @@
 192.168.12.5 apt-cache.vm
 192.168.12.6 apt-mirror.vm
 192.168.12.7 moria.vm
+<<<<<<< HEAD
 192.168.12.8 rura-penthe.vm
+=======
+192.168.12.9 origami.vm
+>>>>>>> fbebe509dc5653a1147afe76b36409758b94750b
 192.168.12.10 nextcloud.vm
 192.168.12.11 minio.vm
 192.168.12.13 influxdb.vm
