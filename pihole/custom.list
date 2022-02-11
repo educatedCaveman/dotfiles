@@ -51,7 +51,6 @@
 192.168.12.6 apt-mirror.vm
 192.168.12.7 moria.vm
 192.168.12.8 rura-penthe.vm
-192.168.12.9 origami.vm
 192.168.12.10 nextcloud.vm
 192.168.12.11 minio.vm
 192.168.12.13 influxdb.vm
@@ -59,8 +58,6 @@
 192.168.12.15 seedbox.vm
 192.168.12.16 syncthing.vm
 192.168.12.17 jellyfin.vm
-192.168.12.18 doggo-1.vm
-192.168.12.19 doggo-2.vm
 192.168.12.20 sevastopol.vm
 192.168.12.99 theseus.vm
 192.168.12.253 LXC-template.vm

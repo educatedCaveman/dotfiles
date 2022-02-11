@@ -1,9 +1,0 @@
-# moria.yml
-session_name: doggo
-windows:
-- window_name: mining
-  panes:
-    - /home/drake/xmrig/xmrig
-- window_name: htop
-  panes:
-    - htop
