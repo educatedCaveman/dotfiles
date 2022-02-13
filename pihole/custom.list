@@ -51,11 +51,7 @@
 192.168.12.5 apt-cache.vm
 192.168.12.6 apt-mirror.vm
 192.168.12.7 moria.vm
-<<<<<<< HEAD
 192.168.12.8 rura-penthe.vm
-=======
-192.168.12.9 origami.vm
->>>>>>> fbebe509dc5653a1147afe76b36409758b94750b
 192.168.12.10 nextcloud.vm
 192.168.12.11 minio.vm
 192.168.12.13 influxdb.vm
