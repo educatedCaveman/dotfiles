@@ -93,6 +93,7 @@ log { source(src); filter(f_iptables); destination(d_iptables); };
 #log { source(src); destination(console_all); };
 
 destination d_grafana {
+  syslog("192.168.12.20" transport("tcp") port(1514));
   syslog("192.168.13.20" transport("tcp") port(1514));
 };
 log {
