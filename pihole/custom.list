@@ -28,7 +28,6 @@
 192.168.10.6 carbon.lan
 192.168.10.7 nitrogen.lan
 192.168.10.8 theseus.lan
-192.168.10.9 octopi-terminal.lan
 192.168.10.101 access-terminal.lan
 192.168.10.103 tricorder.lan
 192.168.10.102 cortical-implant.lan
@@ -42,7 +41,6 @@
 192.168.11.5 haproxy.srv
 192.168.11.6 dilithium.srv
 192.168.11.7 pbs.vm
-192.168.11.8 octopi.srv
 192.168.11.9 rura-penthe.vm
 192.168.11.10 voron.srv
 192.168.12.1 router.vm
@@ -54,9 +52,7 @@
 192.168.12.7 moria.vm
 192.168.12.8 rura-penthe.vm
 192.168.12.10 nextcloud.vm
-192.168.12.11 minio.vm
 192.168.12.13 influxdb.vm
-192.168.12.14 grafana.vm
 192.168.12.15 seedbox.vm
 192.168.12.16 syncthing.vm
 192.168.12.17 jellyfin.vm
