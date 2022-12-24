@@ -41,17 +41,13 @@
 192.168.11.4 event-horizon.srv
 192.168.11.5 haproxy.srv
 192.168.11.6 dilithium.srv
-192.168.11.7 pbs.vm
 192.168.11.9 rura-penthe.vm
 192.168.11.10 voron.srv
 192.168.12.1 router.vm
 192.168.12.2 plex.vm
-192.168.12.3 tautulli.vm
 192.168.12.4 singularity.vm
-192.168.12.7 moria.vm
 192.168.12.8 rura-penthe.vm
 192.168.12.10 nextcloud.vm
-192.168.12.13 influxdb.vm
 192.168.12.15 seedbox.vm
 192.168.12.17 jellyfin.vm
 192.168.12.20 sevastopol.vm
