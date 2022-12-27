@@ -12,6 +12,7 @@
 192.168.1.12 living-room-AP.mgmt
 192.168.1.13 dining-AP.mgmt
 192.168.1.14 bedroom-AP.mgmt
+192.168.1.14 kraft-AP.mgmt
 192.168.1.16 office-SW.mgmt
 192.168.1.17 guest-SW.mgmt
 192.168.1.18 living-room-SW.mgmt
