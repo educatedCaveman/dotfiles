@@ -55,6 +55,7 @@
 192.168.12.15 seedbox.vm
 192.168.12.17 jellyfin.vm
 192.168.12.20 sevastopol.vm
+192.168.12.20 unifi.localdomain
 192.168.12.99 theseus.vm
 192.168.12.253 LXC-template.vm
 192.168.12.254 ubuntu-template.vm
