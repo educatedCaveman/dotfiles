@@ -54,7 +54,7 @@
 192.168.12.17 jellyfin.vm
 192.168.12.20 sevastopol.vm
 192.168.12.20 unifi.localdomain
-192.168.12.30 docker-data.lxc
+192.168.12.30 swarm-data.lxc
 192.168.12.31 portainer.vm
 192.168.12.40 apis-LB.lxc
 192.168.12.41 apis-1.vm
