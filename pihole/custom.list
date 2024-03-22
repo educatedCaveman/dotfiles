@@ -64,10 +64,7 @@
 192.168.13.4 apis-3.vm
 192.168.13.11 vespae-1.vm
 192.168.13.12 vespae-2.vm
-192.168.13.21 xeno-1.vm
-192.168.13.22 xeno-2.vm
-192.168.13.23 xeno-3.vm
-192.168.13.24 xeno-4.vm
+192.168.13.252 xeno.vm
 192.168.13.253 portainer.vm
 192.168.20.1 router.iot
 192.168.20.2 cortical-implant.iot
