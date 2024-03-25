@@ -49,8 +49,13 @@
 192.168.12.2 plex.vm
 192.168.12.3 jenkins.vm
 192.168.12.4 singularity.vm
+192.168.12.5 prowlarr.vm
+192.168.12.6 radarr.vm
+192.168.12.7 sonarr.vm
 192.168.12.8 rura-penthe.vm
+192.168.12.9 lidarr.vm
 192.168.12.10 nextcloud.vm
+192.168.12.11 bazarr.vm
 192.168.12.15 seedbox.vm
 192.168.12.17 jellyfin.vm
 192.168.12.20 sevastopol.vm
