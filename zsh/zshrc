@@ -26,7 +26,18 @@ export ZSH_TMUX_CONFIG="$HOME/.tmux.conf"
 # export DISABLE_AUTO_TITLE='true'
 
 #for fun:
-neofetch
+DISTRO=$(lsb_release -i | awk '{print $3}')
+case $DISTRO in
+    # when using manjaro, it defaults to Arch
+    ManjaroLinux)
+        fastfetch --logo "manjaro"
+        ;;
+
+    # default to non-specific distro
+    *)
+        fastfetch
+        ;;
+esac
 
 
 # For Ruby (esp. Jekyll)
