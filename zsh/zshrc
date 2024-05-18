@@ -32,6 +32,9 @@ case $DISTRO in
     # when using manjaro, it defaults to Arch
     *anjaro*) fastfetch --logo "manjaro" ;;
 
+    # when using manjaro, it defaults to Arch
+    Ubuntu) neofetch ;;
+
     # default to non-specific distro
     *) fastfetch ;;
 esac
