@@ -66,6 +66,9 @@
 192.168.13.4 apis-3.vm
 192.168.13.11 vespae-1.vm
 192.168.13.12 vespae-2.vm
+192.168.13.20 formicae-1.vm
+192.168.13.21 formicae-2.vm
+192.168.13.22 formicae-3.vm
 192.168.13.252 xeno.vm
 192.168.13.253 portainer.vm
 192.168.20.1 router.iot
