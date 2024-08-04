@@ -15,7 +15,7 @@ pipeline {
         stage('deploy dotfiles to linux servers') {
             steps {
                 echo 'run ansible playbook for configuring linux hosts'
-                sh 'ansible-playbook ${ANSIBLE_REPO}/deploy/dotfiles/deploy_dotfiles_core.yml'
+                sh 'ansible-playbook ${ANSIBLE_REPO}/deploy/dotfiles/deploy_dotfiles_core.yml -i ${ANSIBLE_REPO}/hosts.ini'
             }
         }
 
@@ -23,7 +23,7 @@ pipeline {
         stage('pihole') {
             steps {
                 echo 'run the playbooks relating to pihole:'
-                sh 'ansible-playbook ${ANSIBLE_REPO}/deploy/dotfiles/deploy_dotfiles_pihole.yml'
+                sh 'ansible-playbook ${ANSIBLE_REPO}/deploy/dotfiles/deploy_dotfiles_pihole.yml -i ${ANSIBLE_REPO}/hosts.ini'
                 // sh 'ansible-playbook ${ANSIBLE_REPO}/setup/NFS/singularity_nfs.yml'
             }
         }
