@@ -15,7 +15,7 @@ pipeline {
         stage('deploy dotfiles to linux servers') {
             steps {
                 echo 'run ansible playbook for configuring linux hosts'
-                sh 'ansible-playbook ${ANSIBLE_REPO}/deploy/dotfiles/deploy_dotfiles_core.yml -i ${ANSIBLE_REPO}/hosts.ini'
+                sh 'ansible-playbook deploy/dotfiles/deploy_dotfiles_core.yml -i hosts.ini'
             }
         }
 
