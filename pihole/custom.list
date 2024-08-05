@@ -69,6 +69,9 @@
 192.168.13.20 formicae-1.vm
 192.168.13.21 formicae-2.vm
 192.168.13.22 formicae-3.vm
+192.168.13.23 formicae-4.vm
+192.168.13.24 formicae-5.vm
+192.168.13.25 formicae-6.vm
 192.168.13.252 xeno.vm
 192.168.13.253 portainer.vm
 192.168.20.1 router.iot
