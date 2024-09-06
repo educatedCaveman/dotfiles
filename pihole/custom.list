@@ -68,6 +68,11 @@
 192.168.13.12 vespae-2.vm
 192.168.13.13 vespae-3.vm
 192.168.13.14 vespae-4.vm
+192.168.13.15 vespae-5.vm
+192.168.13.16 vespae-6.vm
+192.168.13.17 vespae-7.vm
+192.168.13.18 vespae-8.vm
+192.168.13.19 vespae-9.vm
 192.168.13.20 formicae-1.vm
 192.168.13.21 formicae-2.vm
 192.168.13.22 formicae-3.vm
