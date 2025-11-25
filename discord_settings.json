@@ -10,6 +10,6 @@
     "height": 788
   },
   "BACKGROUND_COLOR": "#000000",
-  "offloadAdmControls": false,
+  "offloadAdmControls": true,
   "enableHardwareAcceleration": true
 }
