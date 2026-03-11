@@ -27,19 +27,7 @@ fi
 # export DISABLE_AUTO_TITLE='true'
 
 #for fun:
-# DISTRO=$(lsb_release -i | awk '{print $3}')
-# case $DISTRO in
-    
-#     # when using manjaro, it defaults to Arch
-#     *anjaro*) fastfetch --logo "manjaro" ;;
-# export HOMEBREW_PREFIX="/opt/homebrew"
-#     # when using manjaro, it defaults to Arch
-#     Ubuntu | Raspbian | Debian) neofetch ;;
-
-#     # default to non-specific distro
-#     *) fastfetch ;;
-# esac
-
+fastfetch
 
 # for mac:
 source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -49,8 +37,3 @@ export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
 export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
 
-# for nvm
-# if [ -f /usr/share/nvm/init-nvm.sh ];
-# then
-#     source /usr/share/nvm/init-nvm.sh
-# fi
