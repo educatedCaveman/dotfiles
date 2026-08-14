@@ -33,7 +33,8 @@ case $DISTRO in
     *anjaro*) fastfetch --logo "manjaro" ;;
 
     # when using manjaro, it defaults to Arch
-    Ubuntu | Raspbian | Debian) neofetch ;;
+    # Ubuntu | Raspbian | Debian) neofetch ;;
+    Ubuntu | Raspbian | Debian) fastfetch ;;
 
     # default to non-specific distro
     *) fastfetch ;;
