@@ -3,7 +3,7 @@ ZSH_THEME="less-fishy"  #custom theme, based on fishy
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="yyyy-mm-dd"
-plugins=(git sudo colored-man-pages history-substring-search python rsync tmux zsh-autosuggestions )
+plugins=(git sudo colored-man-pages history-substring-search python rsync tmux zsh-autosuggestions direnv)
 
 source $ZSH/oh-my-zsh.sh
 
