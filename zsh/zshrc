@@ -51,3 +51,10 @@ if [ -f /usr/share/nvm/init-nvm.sh ];
 then
     source /usr/share/nvm/init-nvm.sh
 fi
+
+# theseus-specific:
+if [[ "$(hostname)" == "theseus2" ]];
+then
+    # ansible bootstrap config. also for running locally
+    export ANSIBLE_CONFIG="${HOME}/git/ansible/bootstrap_config.cfg"
+fi
