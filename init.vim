@@ -16,7 +16,7 @@ Plugin 'scrooloose/nerdcommenter'   "comments
 Plugin 'scrooloose/nerdtree'        "file manager
 
 "colorschemes:
-Plugin 'romainl/Apprentice'
+"Plugin 'romainl/Apprentice'
 Plugin 'zakj/vim-mourning'
 
 " All of your Plugins must be added before the following line
@@ -49,8 +49,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 "appearance:
 syntax enable
-colorscheme apprentice
-"colorscheme mourning 
+"colorscheme apprentice
+colorscheme mourning 
 
 "line numbering:
 set relativenumber
